@@ -54,3 +54,8 @@ Five raster machine prototypes now have deterministic alpha-bounds scaling: enti
 ## Compact pad carrier
 A new compact pad carrier is selectable and active in the in-game study. Alpha-cropped sprite bounds are limited to 0.76 cells wide and 0.90 cells long; cargo remains 0.94 cells wide. Teal panels are recolored to the team color, ivory remains. Previous studies remain archived. This prototype follows routes and pickup/drop transitions; the raster limbs do not yet have an independent animation cycle. Browser preview and the 576-stone conservation test passed.
 
+
+## Isolated pivot mechanism study
+A separate canvas model demonstrates the common cross-axis, two fixed-length arms, forward-facing suction pads, attached cube rotation and reverse departure. Pause, scrub and overhead/side cameras are available. The underlying game code was verified unchanged before saving this checkpoint. The model is deliberately simplified and does not replace the current game character.
+Validation: node tests/isolated-pivot.cjs checks 181 rotation poses for rigid arm length, pad-to-cube rear-face contact, floor clearance and cube-to-hull clearance. Browser scrub, pause and camera controls were checked.
+
