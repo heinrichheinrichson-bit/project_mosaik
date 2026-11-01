@@ -312,9 +312,9 @@ function paintRiggedCarrier(c,x,y,s,heading,swing,color,loaded=true,grip=1){
  else{eye(-.095,.036,variant==='tuk'?.055:.045);eye(.095,.036,variant==='tuk'?.035:.045);}
  c.fillStyle='#ffc966';if(variant==='pip'){c.beginPath();c.ellipse(-s*.31,-s*.02,s*.09,s*.045,-.3,0,Math.PI*2);c.fill();}else if(variant==='tuk'){c.fillRect(-s*.35,-s*.025,s*.10,s*.05);for(const yy of [-.065,.065]){c.beginPath();c.arc(-s*.38,s*yy,s*.055,0,Math.PI*2);c.fill();c.fillStyle='#c09342';c.beginPath();c.arc(-s*.38,s*yy,s*.021,0,Math.PI*2);c.fill();c.fillStyle='#ffc966';}}else{c.beginPath();c.arc(-s*.19,0,s*.04,0,Math.PI*2);c.fill();}c.restore();
 }
- if(loaded){const cp=project(pose.cargo);renderStone(c,cp.x,cp.y,s*.94,color,stoneStyle);}
  // Fixed pads contact the near cube face. No arms, axle or swing mechanism.
- for(const side of [-1,1]){const points=[];for(let j=0;j<16;j++){const q=j*Math.PI/8;points.push(pose.turn({x:.61,y:side*.18+Math.cos(q)*.065,z:Math.sin(q)*.065}));}line({x:.40,y:side*.18,z:.22},{x:.61,y:side*.18,z:.22},'#e9d9b4',.085);poly(points,'#253b45');}
+ for(const side of [-1,1]){const points=[];for(let j=0;j<16;j++){const q=j*Math.PI/8;points.push(pose.turn({x:.61,y:side*.18+Math.cos(q)*.065,z:Math.sin(q)*.065}));}line({x:.20,y:side*.18,z:.22},{x:.61,y:side*.18,z:.22},'#e9d9b4',.085);poly(points,'#253b45');}
+ if(loaded){const cp=project(pose.cargo);renderStone(c,cp.x,cp.y,s*.94,color,stoneStyle);}
  c.restore();return pose;
 }
 function drawRiggedPuzzleAgent(a,p){
@@ -773,8 +773,9 @@ document.querySelector('#liveRigScrub').oninput=e=>{carrierStudyPhase=Number(e.t
 function animateLiveCarrier(t){const can=liveCarrierStudy.querySelector('canvas'),c=can.getContext('2d'),phase=carrierStudyPhase===null?(t%6500)/6500:carrierStudyPhase;c.clearRect(0,0,460,290);c.fillStyle='#e4d4b7';c.fillRect(0,0,460,290);
  // Left is an enlarged inspection; bottom is literal gameplay scale.
  const sw=0,move=Math.sin(phase*Math.PI*2)*20;
- if(phase<.20)renderStone(c,230+90*1.08,115,90*.94,COLORS.c.hex,stoneStyle);
+ 
  paintRiggedCarrier(c,230+move,115,90,0,sw,COLORS.c.hex,phase>=.20);
+ if(phase<.20)renderStone(c,230+90*1.08,115,90*.94,COLORS.c.hex,stoneStyle);
  c.fillStyle='#62583f';c.font='12px system-ui';c.textAlign='center';c.fillText(phase<.20?'Leer · Form und Laufbild':'Beladen · feste Aufnahme vor dem Körper',230,165);
  const pitch=typeof tile==='number'?tile:15;for(let k=0;k<13;k++)renderStone(c,100+k*pitch,215,pitch,COLORS.d.hex,stoneStyle);
  paintRiggedCarrier(c,180,243,pitch,0,sw,COLORS.c.hex,phase>=.20);renderStone(c,280,243,pitch,COLORS.c.hex,stoneStyle);c.fillStyle='#62583f';c.fillText('Echte Spielgröße · Vergleichsstein rechts',230,279);requestAnimationFrame(animateLiveCarrier);
