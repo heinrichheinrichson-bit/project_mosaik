@@ -67,3 +67,7 @@ The actual game now offers a rounded ivory carrier with a team-colored shell and
 ## In-game carrier appearance study
 Three code-rendered body variants can be previewed and tested in the real puzzle. No swing arms or overhead transfer: fixed front pads and forward cargo. The default remains the original placeholder; rejected studies are archived. Validation: 576-stone routing and conservation check passed. These remain visual prototypes, not final character art or a validated long-body corner collision model.
 
+
+## Rounded sprite bodies
+Replaced the flat procedural body drawings with alpha-cropped, shaded toy sprites, recolored by team. Same runtime painter in the appearance study and gameplay. Swing arms remain absent. Current bodies are directional sprites rotated in 2D; they are visual prototypes, not full 3D turnarounds. Front cargo clearance increased to keep the face visible.
+
