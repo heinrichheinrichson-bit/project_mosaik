@@ -1,0 +1,72 @@
+[
+  {
+    "level": 3,
+    "title": "Sonnenblume im Vollbild",
+    "traffic": "free",
+    "seconds": 116.5,
+    "peakActors": 36,
+    "overlapSamples": 220,
+    "waitingSamples": 0,
+    "wallMs": 1998
+  },
+  {
+    "level": 4,
+    "title": "Farbringe",
+    "traffic": "free",
+    "seconds": 127.4,
+    "peakActors": 34,
+    "overlapSamples": 298,
+    "waitingSamples": 0,
+    "wallMs": 2470
+  },
+  {
+    "level": 5,
+    "title": "Spiralgarten",
+    "traffic": "free",
+    "seconds": 236.6,
+    "peakActors": 31,
+    "overlapSamples": 288,
+    "waitingSamples": 0,
+    "wallMs": 4040
+  },
+  {
+    "level": 6,
+    "title": "Verzahnte Kämme",
+    "traffic": "free",
+    "seconds": 125.9,
+    "peakActors": 33,
+    "overlapSamples": 245,
+    "waitingSamples": 0,
+    "wallMs": 2302
+  },
+  {
+    "level": 7,
+    "title": "Mosaikviertel",
+    "traffic": "free",
+    "seconds": 139.6,
+    "peakActors": 39,
+    "overlapSamples": 257,
+    "waitingSamples": 0,
+    "wallMs": 2500
+  },
+  {
+    "level": 8,
+    "title": "Schmetterling",
+    "traffic": "free",
+    "seconds": 132.5,
+    "peakActors": 40,
+    "overlapSamples": 251,
+    "waitingSamples": 0,
+    "wallMs": 2543
+  },
+  {
+    "level": 9,
+    "title": "Stadtlabyrinth",
+    "traffic": "free",
+    "seconds": 131.6,
+    "peakActors": 36,
+    "overlapSamples": 250,
+    "waitingSamples": 0,
+    "wallMs": 2345
+  }
+]
