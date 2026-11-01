@@ -42,3 +42,7 @@ Validation: node tests/visual-clearance.cjs solves all seven full boards and che
 The character study shows beetle carriers, soft workshop creatures, mini robots, crabs and clay creatures, plus the prior placeholder. All cards animate concurrently, with empty and loaded views at small and enlarged scales. Clicking a card switches the actual puzzle actors without resetting the puzzle. Team colors are retained. These are early canvas shape studies. The new carriers hold the stone forward to expose more of their body.
 Validation: JavaScript syntax, all six in-game character switches, and the 576-stone gameplay conservation test passed.
 
+
+## Raster character prototype
+A generated overhead furry workshop creature is embedded into the game and corridor preview. Runtime recoloring keeps cream areas and maps teal fur to the team color. The sprite uses a small sway while moving; this is not yet a rigged walk cycle. The body width is 0.693 tiles and its length is 1.134 tiles. Existing shape studies remain archived in the figure panel. Carry offsets now reduce near occupied cells.
+
