@@ -63,3 +63,7 @@ Validation: node tests/isolated-pivot.cjs checks 181 rotation poses for rigid ar
 ## Rounded carrier visual comparison
 The actual game now offers a rounded ivory carrier with a team-colored shell and short suction pads. The first design remains selectable. This checkpoint changes graphics and comparison controls; pickup mechanics remain the previous prototype and are not claimed complete. The separate pivot model remains available. Inline scripts passed syntax checks; the live game and preview were checked in the browser without console errors.
 
+
+## In-game carrier appearance study
+Three code-rendered body variants can be previewed and tested in the real puzzle. No swing arms or overhead transfer: fixed front pads and forward cargo. The default remains the original placeholder; rejected studies are archived. Validation: 576-stone routing and conservation check passed. These remain visual prototypes, not final character art or a validated long-body corner collision model.
+
