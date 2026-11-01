@@ -46,3 +46,7 @@ Validation: JavaScript syntax, all six in-game character switches, and the 576-s
 ## Raster character prototype
 A generated overhead furry workshop creature is embedded into the game and corridor preview. Runtime recoloring keeps cream areas and maps teal fur to the team color. The sprite uses a small sway while moving; this is not yet a rigged walk cycle. The body width is 0.693 tiles and its length is 1.134 tiles. Existing shape studies remain archived in the figure panel. Carry offsets now reduce near occupied cells.
 
+
+## Compact machine comparison
+Five raster machine prototypes now have deterministic alpha-bounds scaling: entire machine at most 0.52 cells wide and 0.70 cells long, cargo stays 0.94 cells wide. Includes forks, tracks, wheels and grippers. This is a silhouette/scale comparison; the images do not yet have rigged joint animations. Previous character studies remain archived.
+
