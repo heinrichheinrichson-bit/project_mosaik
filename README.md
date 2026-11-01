@@ -71,3 +71,7 @@ Three code-rendered body variants can be previewed and tested in the real puzzle
 ## Rounded sprite bodies
 Replaced the flat procedural body drawings with alpha-cropped, shaded toy sprites, recolored by team. Same runtime painter in the appearance study and gameplay. Swing arms remain absent. Current bodies are directional sprites rotated in 2D; they are visual prototypes, not full 3D turnarounds. Front cargo clearance increased to keep the face visible.
 
+
+## Flat front contact extraction study
+The active character study now demonstrates a flush bumper contact at the only accessible face of an embedded cube. It approaches, contacts and pulls backward with the cargo on the floor. No arms or forks. The study uses the existing character sprites, includes scrubbing and an actual-size view. Full-game trial is hidden: cornering and route integration are not validated. node tests/flat-contact.cjs checks 1001 poses for contact continuity and non-penetration against the robot and neighboring stones. Rejected mechanism HTML snapshots remain in the local work archive.
+
