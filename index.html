@@ -141,11 +141,12 @@ class TrafficLab{
 
 // DYNAMIC MOSAIC: timed traffic on the actual, progressively cleared puzzle board.
 const MSTEP=.10;
+let figureTrafficMode='free';
 class MosaicRouter{
  constructor(puzzle){this.p=puzzle;this.reservations=new Map();this.mode='out';}
  isBox(k){return this.p.teams.some((_,i)=>{const s=this.p.source(i);return idx(s.x,s.y)===k;});}
  neighbors(k,wait=false,reverse=false){const p=point(k),l=this.p.laneLayout(),out=wait?[k]:[],add=(x,y,maxY)=>{if(x>=l.min&&x<=l.max&&y>=l.min&&y<=maxY&&!this.p.board[idx(x,y)])out.push(idx(x,y));};if(this.mode==='out'){if(p.y>l.entry){add(p.x,p.y+(reverse?1:-1),l.source);}else{for(const[dx,dy]of dirs)add(p.x+dx,p.y+dy,l.entry);if(reverse&&p.y===l.entry)add(p.x,p.y+1,l.source);}}else{for(const[dx,dy]of dirs)add(p.x+dx,p.y+dy,l.sink);if(p.y>l.entry)for(const dx of [-1,1])for(const dy of [-1,1])if(p.y+dy>l.entry)add(p.x+dx,p.y+dy,l.sink);}return out;}
- clearTransition(a,b,t){if(a===b&&this.isBox(a))return true;for(const r of this.reservations.get(t)||[]){if(r.a===r.b&&this.isBox(r.a))continue;if(trafficSweep(point(a),point(b),point(r.a),point(r.b)))return false;}return true;}
+ clearTransition(a,b,t){if(figureTrafficMode==='free')return true;if(a===b&&this.isBox(a))return true;for(const r of this.reservations.get(t)||[]){if(r.a===r.b&&this.isBox(r.a))continue;if(trafficSweep(point(a),point(b),point(r.a),point(r.b)))return false;}return true;}
  route(start,goals,time,hold=0){
   const goalSet=new Set(goals),distance=new Map(goals.map(k=>[k,0])),q=[...goals];for(let i=0;i<q.length;i++)for(const n of this.neighbors(q[i],false,true))if(!distance.has(n)){distance.set(n,distance.get(q[i])+1);q.push(n);}if(!distance.has(start))return null;
   const horizon=time+320,heap=[],nodes=[],best=new Map();let serial=0;
@@ -556,5 +557,12 @@ const beforeRefinedPad=drawParkingPad;drawParkingPad=function(x){if(!refinedScre
 const beforeRefinedProjection=screen;screen=function(x,y){const p=beforeRefinedProjection(x,y);if(!refinedScreen||!splitParkingOn()||!document.body.classList.contains('screen-study-open')||y<=27)return p;const nodes=[[0,0],[3,-12],[9,-4],[13.5,0],[18,4],[24,12],[27,0]];for(let i=0;i<nodes.length-1;i++){const a=nodes[i],b=nodes[i+1];if(x>=a[0]&&x<=b[0]){p.x+=(a[1]+(b[1]-a[1])*(x-a[0])/(b[0]-a[0]))*Math.min(1,(y-27)/6);break;}}return p;};
 const scaleBeforeRefinement=matchQueueBoxScale;matchQueueBoxScale=function(){scaleBeforeRefinement();if(refinedScreen&&document.body.classList.contains('screen-study-open')){const width=document.querySelector('#game').getBoundingClientRect().width;document.querySelector('#queues').style.setProperty('--queue-box-width',(59*1.15/1.07*width/420)+'px');}};
 function setRefinedScreen(on){refinedScreen=on;screenStudy.classList.toggle('refined-screen',on);refinementControls.querySelectorAll('[data-refinement]').forEach(b=>b.setAttribute('aria-pressed',String((b.dataset.refinement==='new')===on)));matchQueueBoxScale();alignQueueToBays();}refinementControls.querySelectorAll('[data-refinement]').forEach(b=>b.onclick=()=>setRefinedScreen(b.dataset.refinement==='new'));setRefinedScreen(true);screenControls.querySelector('h2').textContent='Proportionen & Gesamtbild';
-</script></html>
+</script>
+<script>
+// Movement study: geometry and stone ownership remain unchanged; only actor traffic is optional.
+const movementStudy=document.createElement('section');movementStudy.className='queue-comparison';movementStudy.innerHTML='<strong>Bewegung · Vergleich</strong><p>Durchlässig: Figuren können sich überall kreuzen. Steine bleiben Hindernisse, Ziele bleiben reserviert und die geraden Startwege bleiben erhalten. Beim Wechsel startet das Rätsel neu.</p><button data-traffic="free">Neu · Durchlässig</button><button data-traffic="strict">Bisher · Mit Kollisionen</button>';screenControls.insertBefore(movementStudy,refinementControls);
+function setFigureTraffic(mode){figureTrafficMode=mode;movementStudy.querySelectorAll('[data-traffic]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.traffic===mode)));chooseLevel(3);}
+movementStudy.querySelectorAll('[data-traffic]').forEach(b=>b.onclick=()=>setFigureTraffic(b.dataset.traffic));movementStudy.querySelector('[data-traffic="free"]').setAttribute('aria-pressed','true');movementStudy.querySelector('[data-traffic="strict"]').setAttribute('aria-pressed','false');
+</script>
+</html>
 
