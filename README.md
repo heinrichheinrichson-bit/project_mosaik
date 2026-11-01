@@ -59,3 +59,7 @@ A new compact pad carrier is selectable and active in the in-game study. Alpha-c
 A separate canvas model demonstrates the common cross-axis, two fixed-length arms, forward-facing suction pads, attached cube rotation and reverse departure. Pause, scrub and overhead/side cameras are available. The underlying game code was verified unchanged before saving this checkpoint. The model is deliberately simplified and does not replace the current game character.
 Validation: node tests/isolated-pivot.cjs checks 181 rotation poses for rigid arm length, pad-to-cube rear-face contact, floor clearance and cube-to-hull clearance. Browser scrub, pause and camera controls were checked.
 
+
+## Rounded carrier visual comparison
+The actual game now offers a rounded ivory carrier with a team-colored shell and short suction pads. The first design remains selectable. This checkpoint changes graphics and comparison controls; pickup mechanics remain the previous prototype and are not claimed complete. The separate pivot model remains available. Inline scripts passed syntax checks; the live game and preview were checked in the browser without console errors.
+
