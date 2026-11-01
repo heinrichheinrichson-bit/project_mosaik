@@ -709,5 +709,9 @@ var friendlyCarrierLook=true;const initialCompactPadSrc=compactPadImage.src,frie
 const lookControls=document.createElement('div');lookControls.innerHTML='<button data-carrier-look="friendly">Runder Träger · neuer Entwurf</button><button data-carrier-look="first">Erster Entwurf</button>';compactPadStudy.insertBefore(lookControls,compactPadStudy.querySelector('canvas'));lookControls.querySelectorAll('button').forEach(b=>b.onclick=()=>chooseCarrierLook(b.dataset.carrierLook==='friendly'));compactPadStudy.querySelector('strong').textContent='Figur im tatsächlichen Spielscreen';compactPadStudy.querySelectorAll('p')[0].textContent='Neue Körperform mit großer Farbfläche, kurzen Saugpolstern und kleinem Statuslicht. Gleiche Unterlage, gleiche Steine, gleicher Maßstab. Die Bilder darunter vergleichen die leere Figur mit einer vorgehaltenen Ladung.';compactPadStudy.querySelectorAll('p')[1].textContent='Dieser Vergleich betrifft die Gestaltung. Die bisherige Spielanimation ist unverändert; die separate Schwenkstudie bleibt über ihren Knopf erreichbar.';chooseCarrierLook(true);
 const firstCompactPreview=drawCompactPadPreview; // existing preview loop reads the same shared texture
 </script>
-</html>
+<script>
+// Rejected character experiments remain archived; keep the original placeholder active.
+characterKind='placeholder';
+const rejectedCarrierArchive=document.createElement('details');rejectedCarrierArchive.innerHTML='<summary>Verworfene Trägerentwürfe · archiviert</summary>';compactPadStudy.before(rejectedCarrierArchive);rejectedCarrierArchive.append(compactPadStudy);
+</script></html>
 
