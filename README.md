@@ -75,3 +75,8 @@ Replaced the flat procedural body drawings with alpha-cropped, shaded toy sprite
 ## Flat front contact extraction study
 The active character study now demonstrates a flush bumper contact at the only accessible face of an embedded cube. It approaches, contacts and pulls backward with the cargo on the floor. No arms or forks. The study uses the existing character sprites, includes scrubbing and an actual-size view. Full-game trial is hidden: cornering and route integration are not validated. node tests/flat-contact.cjs checks 1001 poses for contact continuity and non-penetration against the robot and neighboring stones. Rejected mechanism HTML snapshots remain in the local work archive.
 
+
+## Forward travel after extraction
+Loaded characters now reverse only until the planned turning area. A conservative free circle around the assembly center is checked against occupied board cells; a six-step stationary turn rotates the body and cube together, preserving contact. Afterwards the character faces its route direction and carries the cube ahead. Picked trips with a planned turn retain that route so replanning cannot invalidate the turn timing. This applies to the current free-traffic character test. Full-game tight-corner footprint behavior remains experimental.
+Validation: node tests/forward-carry-levels.cjs completed 576 deliveries and 576 planned turns on each of levels 3, 4 and 6. A separate 1448-pose geometry check verified fixed pivot, continuous motion, constant contact distance and final forward heading.
+
