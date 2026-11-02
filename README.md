@@ -105,3 +105,9 @@ Options 08 curved collector bay with extended walls, 09 compact tunnel bay, 10 s
 
 ## Center garage origin correction
 Center live shell/hood now draw directly at the arrival/occlusion origin rather than reprojecting the old single-intake origin. This removes the stale translation relative to actor clipping. Restored cream front trim after mistaken recoloring; option 09 is the interim default.
+
+## Perimeter-route comparison
+New default for free-traffic full boards: straight from source to the one-cell perimeter centerline, along that ring, then shortest available inner approach. Retrace the same inner approach, follow the ring to the bottom, then a direct discrete diagonal to the intake. Replanning disabled for these trips to preserve the chosen return path. Current routing remains selectable; switching restarts the level. Tests/perimeter-paths.cjs clears levels 3, 6 and 9 (576 stones each), checks exact inner-route reversal, adjacent route steps, reservation conservation and zero traffic waits. Browser visual verification blocked by browser-control kernel initialization failure.
+
+## Initial catalogue studies
+Eight original 24x24 drawings, thumbnail selection and per-color portions. These are rough art studies, not accepted final catalogue art; user requests finer more composed pictures. All eight completed 576 deliveries under original routing.
