@@ -102,3 +102,6 @@ Added options 05 open wedge, 06 short parallel-sided tunnel, and 07 inset oval. 
 
 ## Garage screen composition studies
 Options 08 curved collector bay with extended walls, 09 compact tunnel bay, 10 shared parking plinth. Previous designs retained. Existing arrival timing/occlusion unchanged. Enlarged preview fits the extended forms. All three selected and visually inspected in the full screen; collector entry preview inspected with cargo.
+
+## Center garage origin correction
+Center live shell/hood now draw directly at the arrival/occlusion origin rather than reprojecting the old single-intake origin. This removes the stale translation relative to actor clipping. Restored cream front trim after mistaken recoloring; option 09 is the interim default.
