@@ -117,3 +117,6 @@ Third comparison mode, selected on reload: prefer a straight clear approach from
 
 ## Warm-white perimeter surface
 Full-board outer walking margin now uses a warm-white surface, excluding the exact 24x24 image interior so cleared floor stays sand colored. Both lower stair treads use matching white shading with darker risers. Existing geometry, routes and timing unchanged. Study toggle retains the previous sand finish; switches without restarting. Inline scripts syntax checked; browser visual verification still unavailable.
+
+## First detailed mosaic art study
+Original 40x40 raccoon/doughnut night scene with 15 colors, stored as catalogue pixel data. The detail study compares 24 and 40 cells on the same 312px board with the production stone painter; a larger stone preview is included. Explicitly an art study, not a playable 40-cell level. Activating pauses/resets the sunflower, disables box interactions and changes title/count; return or level selection restores gameplay. Offline rendered both resolutions using the exact renderStone function with @napi-rs/canvas; 576/1600 cell and palette validation passed. Browser UI verification blocked by kernel initialization error. Existing playable routes and studies retained.
