@@ -111,3 +111,6 @@ New default for free-traffic full boards: straight from source to the one-cell p
 
 ## Initial catalogue studies
 Eight original 24x24 drawings, thumbnail selection and per-color portions. These are rough art studies, not accepted final catalogue art; user requests finer more composed pictures. All eight completed 576 deliveries under original routing.
+
+## Relaxed border routing
+Third comparison mode, selected on reload: prefer a straight clear approach from the ring when available; otherwise use an inner BFS path. Return independently via the least-cost combination of inner escape and perimeter route to the bottom, then directly to intake. Preserve planned trips without geometric replans. Strict retracing and original free routes remain selectable. Tests/relaxed-border-paths.cjs checks complete delivery, continuous routes, declared straight approaches, conservation and no traffic waits. Browser verification remains blocked by browser-control initialization failure.
