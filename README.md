@@ -138,3 +138,6 @@ Separate art variant with 169 explicit cell changes, retained in changes.json. C
 
 ## Rejected frog cleanup removed
 User rejected the crown/feet reshaping. Removed the cleaned-frog study script and selection from the active app; bold black-outline frog is again the default art selection. Rejected assets remain only as historical files, not selectable or loaded by the app. No further pixel modifications made.
+
+## User-selected black spot correction
+Changed only cells (33,11) and (34,11), zero-based in the 48x48 bold frog, from black to surrounding bright green. All remaining cells asserted identical. Eye whites, pupil, silhouette, crown, feet and palette untouched. Original remains selectable; corrected version default in art study. Exact tile renderer before/after inspected offline.
