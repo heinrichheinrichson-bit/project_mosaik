@@ -114,3 +114,6 @@ Eight original 24x24 drawings, thumbnail selection and per-color portions. These
 
 ## Relaxed border routing
 Third comparison mode, selected on reload: prefer a straight clear approach from the ring when available; otherwise use an inner BFS path. Return independently via the least-cost combination of inner escape and perimeter route to the bottom, then directly to intake. Preserve planned trips without geometric replans. Strict retracing and original free routes remain selectable. Tests/relaxed-border-paths.cjs checks complete delivery, continuous routes, declared straight approaches, conservation and no traffic waits. Browser verification remains blocked by browser-control initialization failure.
+
+## Warm-white perimeter surface
+Full-board outer walking margin now uses a warm-white surface, excluding the exact 24x24 image interior so cleared floor stays sand colored. Both lower stair treads use matching white shading with darker risers. Existing geometry, routes and timing unchanged. Study toggle retains the previous sand finish; switches without restarting. Inline scripts syntax checked; browser visual verification still unavailable.
