@@ -93,3 +93,6 @@ Validation: node tests/garage-entry.cjs completed levels 3, 4 and 6 with 576 ful
 
 ## Constant-speed garage arrival
 Supersedes the fixed six-step entry duration: the garage continues at the last incoming projected route speed. Arc-length sampling preserves speed while centering under the hood. The engine tail is sized to that distance and speed; cargo and body remain opaque and full-size until occluded. All approved studies/settings remain. Validation: three 576-delivery levels with zero added traffic waits; tests/garage-speed.cjs checks speed within 1.5% on left/center/right entries at 80 and 150 px/s.
+
+## Garage appearance study
+Four runtime choices preserve the original garage and add soft/flat sides, clearer depth, and quiet mint finishes. All share the same footprint, entry roof boundary, arrival speed and routing. The live puzzle and enlarged scrub preview use the same painters. Browser-checked all new choices with no console errors.
