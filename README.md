@@ -120,3 +120,6 @@ Full-board outer walking margin now uses a warm-white surface, excluding the exa
 
 ## First detailed mosaic art study
 Original 40x40 raccoon/doughnut night scene with 15 colors, stored as catalogue pixel data. The detail study compares 24 and 40 cells on the same 312px board with the production stone painter; a larger stone preview is included. Explicitly an art study, not a playable 40-cell level. Activating pauses/resets the sunflower, disables box interactions and changes title/count; return or level selection restores gameplay. Offline rendered both resolutions using the exact renderStone function with @napi-rs/canvas; 576/1600 cell and palette validation passed. Browser UI verification blocked by kernel initialization error. Existing playable routes and studies retained.
+
+## Revised freestanding raccoon study
+Redrawn silhouette, separated eye masks and hands, defined doughnut contour, 12 colors, 833 occupied cells on a 40x40 grid. Null cells remain empty, including the doughnut hole. Art study switches between cutout and previous night scene at either resolution. Counters count occupied cells. Both versions rendered and visually inspected using the actual renderStone painter offline; browser UI verification remains unavailable. Not a playable 40x40 level yet.
