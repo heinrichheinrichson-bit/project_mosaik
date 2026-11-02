@@ -135,3 +135,6 @@ Same eight-color frog silhouette, remapped to higher-contrast swatches with near
 
 ## Local 48-cell frog pixel cleanup
 Separate art variant with 169 explicit cell changes, retained in changes.json. Crown/feet reshaped and hind-leg green noise simplified; established face region and eight-color palette asserted unchanged. Resolution selector locked to 48 for this revision instead of pretending unedited variants were reviewed. Previous bold frog retained. Actual tile painter before/after rendered and visually inspected offline; UI browser verification still unavailable. Art study only.
+
+## Rejected frog cleanup removed
+User rejected the crown/feet reshaping. Removed the cleaned-frog study script and selection from the active app; bold black-outline frog is again the default art selection. Rejected assets remain only as historical files, not selectable or loaded by the app. No further pixel modifications made.
