@@ -141,3 +141,6 @@ User rejected the crown/feet reshaping. Removed the cleaned-frog study script an
 
 ## User-selected black spot correction
 Changed only cells (33,11) and (34,11), zero-based in the 48x48 bold frog, from black to surrounding bright green. All remaining cells asserted identical. Eye whites, pupil, silhouette, crown, feet and palette untouched. Original remains selectable; corrected version default in art study. Exact tile renderer before/after inspected offline.
+
+## Compact whale motif trial
+New generated pixel-art source selected for broad silhouette and fins instead of fine digits. Fixed six-entry palette, nearest sampling/majority-cell reduction, black occupied boundary. Original source and prompt retained. 40-cell default uses 460 stones; 32/48/56 remain available. Frog variants hidden from active production choices, historical data retained. Fixed-palette label now reflects palette length. Data/painter checked offline; browser interaction remains unverified. Art trial only, not a playable level.
