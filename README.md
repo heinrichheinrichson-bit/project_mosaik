@@ -99,3 +99,6 @@ Four runtime choices preserve the original garage and add soft/flat sides, clear
 
 ## Distinct garage silhouettes
 Added options 05 open wedge, 06 short parallel-sided tunnel, and 07 inset oval. Previous options remain available. Same route and roof occlusion boundary. Verified actual selected state and rendered shape of all three in browser, plus final full occlusion in enlarged preview; no console errors.
+
+## Garage screen composition studies
+Options 08 curved collector bay with extended walls, 09 compact tunnel bay, 10 shared parking plinth. Previous designs retained. Existing arrival timing/occlusion unchanged. Enlarged preview fits the extended forms. All three selected and visually inspected in the full screen; collector entry preview inspected with cargo.
