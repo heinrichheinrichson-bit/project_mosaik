@@ -1,0 +1,6 @@
+// Entry position is sampled by travelled distance, never by an eased time fraction.
+function garageEntryTrack(u,center,end){const p=Math.max(0,Math.min(1,u)),q=Math.min(1,p*2),ease=q*q*(3-2*q);return{dx:(center.x-end.x)*ease,dy:32*p,clipY:center.y+4.5+.57*11,alpha:1,scale:1};}
+function garageEntryArc(center,end){const points=[{u:0,d:0}],N=96;let last=garageEntryTrack(0,center,end),distance=0;for(let i=1;i<=N;i++){const u=i/N,p=garageEntryTrack(u,center,end);distance+=Math.hypot(p.dx-last.dx,p.dy-last.dy);points.push({u,d:distance});last=p;}return{points,length:distance};}
+function garageEntryAtDistance(distance,center,end){const arc=garageEntryArc(center,end),d=Math.max(0,Math.min(arc.length,distance));let lo=0,hi=arc.points.length-1;while(lo+1<hi){const m=(lo+hi)>>1;if(arc.points[m].d<d)lo=m;else hi=m;}const a=arc.points[lo],b=arc.points[hi],u=a.u+(b.u-a.u)*(b.d===a.d?0:(d-a.d)/(b.d-a.d));return garageEntryTrack(u,center,end);}
+
+module.exports={garageEntryTrack,garageEntryArc,garageEntryAtDistance};
