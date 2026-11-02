@@ -80,3 +80,7 @@ The active character study now demonstrates a flush bumper contact at the only a
 Loaded characters now reverse only until the planned turning area. A conservative free circle around the assembly center is checked against occupied board cells; a six-step stationary turn rotates the body and cube together, preserving contact. Afterwards the character faces its route direction and carries the cube ahead. Picked trips with a planned turn retain that route so replanning cannot invalidate the turn timing. This applies to the current free-traffic character test. Full-game tight-corner footprint behavior remains experimental.
 Validation: node tests/forward-carry-levels.cjs completed 576 deliveries and 576 planned turns on each of levels 3, 4 and 6. A separate 1448-pose geometry check verified fixed pivot, continuous motion, constant contact distance and final forward heading.
 
+
+## Original transport paths with forward-facing sprites
+Supersedes the previous reversing/turning trials. Removed planned turn holds and reverse orientation. Cargo is painted unrotated at the original route anchor, as with the placeholders. The body follows the already-traversed cargo trail, which also survives route replanning. This deliberately prioritizes calm movement over exact pickup/contact mechanics, per user instruction. No additional traffic waits. Validation: original 576-stone free-movement check passed; node tests/carrier-trail.cjs checks 121 corner samples for forward orientation, continuous body motion and staying on the traversed path.
+
