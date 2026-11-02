@@ -132,3 +132,6 @@ New original pixel-art frog source generated with built-in imagegen; exact promp
 
 ## Black outline and bold palette comparison
 Same eight-color frog silhouette, remapped to higher-contrast swatches with near-black contour cells. Every occupied four-neighbor boundary cell is black in actual pixel data, not a renderer overlay. Preserves occupied fields and stone counts at each resolution. Previous frog retained. Default art-preview selection is the new version with quieter tiles; flat/current remain available. Boundary/occupancy invariants checked and exact renderStone comparison visually inspected offline. Art study only.
+
+## Local 48-cell frog pixel cleanup
+Separate art variant with 169 explicit cell changes, retained in changes.json. Crown/feet reshaped and hind-leg green noise simplified; established face region and eight-color palette asserted unchanged. Resolution selector locked to 48 for this revision instead of pretending unedited variants were reviewed. Previous bold frog retained. Actual tile painter before/after rendered and visually inspected offline; UI browser verification still unavailable. Art study only.
