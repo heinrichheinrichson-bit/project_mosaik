@@ -129,3 +129,6 @@ Five original transparent illustrations generated with built-in imagegen: raccoo
 
 ## Fixed eight-color frog experiment
 New original pixel-art frog source generated with built-in imagegen; exact prompt and source retained in assets/eight-color-test. Conversion maps pixels to eight fixed swatches before majority-vote cell reduction, using nearest sampling and binary alpha; no averaged output colors or dithering. Four resolutions available. Added flat/current/quiet material comparison; fixed-palette source disables color-count selection. Export remains art-study JSON, not playable levels. Eight palette entries and valid cell counts checked at every resolution, all inline scripts compile, exact production painter comparison visually inspected offline. Browser UI verification still unavailable.
+
+## Black outline and bold palette comparison
+Same eight-color frog silhouette, remapped to higher-contrast swatches with near-black contour cells. Every occupied four-neighbor boundary cell is black in actual pixel data, not a renderer overlay. Preserves occupied fields and stone counts at each resolution. Previous frog retained. Default art-preview selection is the new version with quieter tiles; flat/current remain available. Boundary/occupancy invariants checked and exact renderStone comparison visually inspected offline. Art study only.
