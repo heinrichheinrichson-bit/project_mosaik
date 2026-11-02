@@ -144,3 +144,14 @@ Changed only cells (33,11) and (34,11), zero-based in the 48x48 bold frog, from 
 
 ## Compact whale motif trial
 New generated pixel-art source selected for broad silhouette and fins instead of fine digits. Fixed six-entry palette, nearest sampling/majority-cell reduction, black occupied boundary. Original source and prompt retained. 40-cell default uses 460 stones; 32/48/56 remain available. Frog variants hidden from active production choices, historical data retained. Fixed-palette label now reflects palette length. Data/painter checked offline; browser interaction remains unverified. Art trial only, not a playable level.
+
+
+## Katalog und Pixel-Editor
+
+`editor.html` öffnen (oder im Spiel auf **Katalog & Editor öffnen**). Zwölf bearbeitbare Vorlagen; eigene Motive, PNG-Import und JSON-Sicherungen. Pipette auswählen oder Alt-Klick / Rechtsklick auf einen Stein: exakte Palettenfarbe aufnehmen, danach andere Steine bemalen. Leere Zellen bleiben transparent. Rückgängig und Füllen sind verfügbar.
+
+**Vor Bearbeitung spielen** verwendet die gespeicherte Vergleichsbasis, **Aktuellen Stand spielen** die aktuellen Pixel und Schatullen. Fehlende Schatullen werden für den Test neu erzeugt. Vier Startplätze, manuelle Auswahl und automatischer Test, drei Figuren, drei Pfadmodi und Tempoauswahl. Eigene Testansicht für Raster 8–96; die festen ursprünglichen Level bleiben erhalten. Automatik prüft bewusst seriell, manuelles Spielen erlaubt mehrere aktive Teams.
+
+Änderungen werden lokal im Browser gespeichert. Regelmäßig **Katalog sichern** als JSON verwenden: Browserdaten sind keine GitHub-Sicherung. Vergleichsbasis kann ausdrücklich neu gesetzt werden.
+
+Bauen: `node tools/build-editor.cjs`. Modelltests: `node tests/editor.cjs`.
