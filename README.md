@@ -96,3 +96,6 @@ Supersedes the fixed six-step entry duration: the garage continues at the last i
 
 ## Garage appearance study
 Four runtime choices preserve the original garage and add soft/flat sides, clearer depth, and quiet mint finishes. All share the same footprint, entry roof boundary, arrival speed and routing. The live puzzle and enlarged scrub preview use the same painters. Browser-checked all new choices with no console errors.
+
+## Distinct garage silhouettes
+Added options 05 open wedge, 06 short parallel-sided tunnel, and 07 inset oval. Previous options remain available. Same route and roof occlusion boundary. Verified actual selected state and rendered shape of all three in browser, plus final full occlusion in enlarged preview; no console errors.
