@@ -19,6 +19,7 @@ const LAB_FIELDS=[
   ['replan','Freie Wege bei neuen Lücken verkürzen','select',[[false,'Aus'],[true,'An · nur bei freien Wegen']]],['spread','Leichte Laufversätze',0,1,.02,'Steinbreiten']]],
  ['Beweglicher Laufrahmen',true,[
  ['pathCorners','Übergänge und Rahmenecken','select',[['soft','Leicht abgerundet · freie Bereiche'],['sharp','Kantig · bisheriger Verlauf']]],
+ ['outboundJoin','Anfahrt von den Boxen','select',[['direct','Direkter Bogen zur Seitenbahn / zum unteren Steinzugang'],['bottom','Über unteren Rahmen · bisher']]],
  ['frameLanes','Hin- und Rückbahn','select',[['single','Gemeinsamer Rahmen · bisher'],['double','Zwei getrennte Rahmen']]],
  ['returnTracking','Rückbahn während der Fahrt','select',[['fixed','Fest · gesamtes Restbild'],['local','Bei Aufnahme fest · nur bevorstehende Steine'],['live','Laufend nachrücken · nur Steine unter der Figur']]],
  ['returnFrameGap','Rückbahn · Abstand zum äußersten Stein',1,4,1,'freie Steinbreiten'],
