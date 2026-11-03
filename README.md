@@ -155,3 +155,19 @@ New generated pixel-art source selected for broad silhouette and fins instead of
 Änderungen werden lokal im Browser gespeichert. Regelmäßig **Katalog sichern** als JSON verwenden: Browserdaten sind keine GitHub-Sicherung. Vergleichsbasis kann ausdrücklich neu gesetzt werden.
 
 Bauen: `node tools/build-editor.cjs`. Modelltests: `node tests/editor.cjs`.
+
+
+### Neue Pixelmotive und Rastervarianten
+
+Sechs zusätzliche direkt im Raster gestaltete Motive: Geist, Rakete, Vulkan, Toast, Mond und Kugelfisch. Schwarze Außenkonturen, 4–7 feste Farben, freier Hintergrund. Jedes neue Motiv hat Varianten in 32, 40, 48 und 56. Über **Motivraster / Palette → Variante öffnen** sind außerdem die ursprünglichen Größen und 12/16/20-Farbvarianten der bisherigen Bildvorlagen verfügbar. Jede geöffnete Variante ist separat bearbeitbar und spielbar; Variantenwechsel überschreibt keine Bearbeitungen. Beim Laden werden nur fehlende neue Motive ergänzt. Eigene gespeicherte Motive bleiben erhalten.
+
+Prüfung: `node tests/new-motifs.cjs`, `node tests/editor-ui.cjs`, `node tests/editor-migration.cjs`. UI-Tests verwenden eine DOM-Simulation mit gemocktem Canvas. Die Vorschautafel in `docs/neue-motive-spielsteine.png` wurde mit dem echten Steinrenderer erzeugt.
+
+
+## Atelier 01 · 16 zusätzliche Motive
+
+Im Editor **Motivübersicht** öffnen; der Gruppenfilter steht auf **Neue Motivserie**. Sechs Tiere, drei menschliche Figuren, drei Gegenstände, zwei Essensmotive und zwei abstrakte Bilder. Die Entwürfe wurden mit Imagegen gestaltet und in begrenzte feste Pixelpaletten übertragen. Schwarze Konturen, freie Außenflächen und bei Teekanne/Schleife auch freie Innenöffnungen. Jede Vorlage hat 32/40/48/56/64-Varianten, standardmäßig 56 × 56.
+
+Bestehende Browser-Bearbeitungen bleiben beim Ergänzen erhalten. Über **Alle Motive und bisherigen Studien** ist der ältere Katalog erreichbar. **Bildauswahl** im Motivstatus dient zum Vormerken. Die große Übersicht unterstützt flache Pixel und den originalen Steinrenderer. Die separat aufgebaute Spielansicht bleibt ein bekannter offener Unterschied zum Originalspiel; die Atelier-Erweiterung behauptet keine identische Spielintegration.
+
+Quellen und Prompts liegen unter `assets/catalogue-atelier-v1`. `tools/rasterize-atelier.py` erzeugt die Daten aus diesen Quellen (Python mit Pillow und NumPy); `tools/import-atelier.cjs` übernimmt die Vorlagen in die ausgelieferten Seeds. Browserstände werden dabei nicht angefasst. Editor bauen: `node tools/build-editor.cjs`. Tests: `node tests/studio-catalogue.cjs`, `node tests/editor-ui.cjs`, `node tests/editor-migration.cjs`. UI-Tests simulieren den DOM und ersetzen keine Browser-Sichtprüfung.

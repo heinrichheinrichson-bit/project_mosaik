@@ -1,0 +1,251 @@
+[
+  {
+    "id": "fox",
+    "name": "Fuchs mit Hintergedanken",
+    "cat": "Tiere · frech",
+    "subject": "a sly orange fox seated snugly inside its huge sweeping cream-tipped tail, alert pointed ears and one eyebrow raised, three-quarter view, paws hidden inside the tail silhouette",
+    "palette": [
+      "#000000",
+      "#f68b23",
+      "#c94c19",
+      "#ffb52e",
+      "#fff1cd",
+      "#dfc293",
+      "#ed7280"
+    ]
+  },
+  {
+    "id": "toucan",
+    "name": "Der große Auftritt",
+    "cat": "Tiere · bunt",
+    "subject": "a proud black toucan leaning back with an enormous curved golden yellow and fiery orange beak, ivory chest, vivid emerald wing patch, smug expressive face, compact body on one broad green tropical leaf, no visible toes",
+    "palette": [
+      "#000000",
+      "#fff1cd",
+      "#ffca27",
+      "#f37725",
+      "#ee4266",
+      "#27ba66",
+      "#126d61"
+    ]
+  },
+  {
+    "id": "cat",
+    "name": "Katzenkönig",
+    "cat": "Tiere · frech",
+    "subject": "a plump grey tuxedo cat sitting as a compact loaf, a tiny broad gold crown tilted between its ears, cream chest and muzzle, half-closed unimpressed eyes, thick tail curled around the body, no whiskers or toes",
+    "palette": [
+      "#000000",
+      "#626a8e",
+      "#9ea9c4",
+      "#fff1cd",
+      "#dfc293",
+      "#ffca27",
+      "#ed7280"
+    ]
+  },
+  {
+    "id": "dragon",
+    "name": "Drachenpause",
+    "cat": "Tiere · Fantasie",
+    "subject": "a lovable chunky jade dragon asleep curled around a large orange egg, folded wings visible as broad teal shapes, short rounded cream horns, head resting on egg with one nostril and closed eye, large curved tail completes a balanced oval silhouette, no toes, no scales texture",
+    "palette": [
+      "#000000",
+      "#29ba78",
+      "#127b73",
+      "#77dd83",
+      "#fff1cd",
+      "#f68b23",
+      "#ffca27"
+    ]
+  },
+  {
+    "id": "owl",
+    "name": "Nachtschicht",
+    "cat": "Tiere · Charakter",
+    "subject": "a stout indigo owl in three-quarter view with big expressive cream eye disks, a skeptical raised brow, gold hooked beak, folded wings in broad graphic blue clusters, perched on a thick horizontal burnt-orange branch hiding all toes, tail tucked",
+    "palette": [
+      "#000000",
+      "#343c83",
+      "#6265bb",
+      "#309ac6",
+      "#fff1cd",
+      "#ffca27",
+      "#c87535"
+    ]
+  },
+  {
+    "id": "crocodile",
+    "name": "Krokodil mit Stil",
+    "cat": "Tiere · frech",
+    "subject": "a grinning chubby emerald crocodile portrait from chest up, looking sideways, long broad rounded snout with a few large cream teeth, a small purple bow tie beneath the chin, expressive heavy eyebrows, no hands, no fingers, solid compact silhouette",
+    "palette": [
+      "#000000",
+      "#31bb64",
+      "#167454",
+      "#9ce25a",
+      "#fff1cd",
+      "#a653be",
+      "#ed7280"
+    ]
+  },
+  {
+    "id": "pirate",
+    "name": "Kapitän Feierabend",
+    "cat": "Figuren · frech",
+    "subject": "a charismatic stout cartoon pirate bust, big black tricorn hat with broad red band and a simple ivory skull emblem formed from large blocks, bushy burnt-orange beard, big rounded nose, one golden hoop earring, one visible expressive eye and black eyepatch, dark blue coat, no hands",
+    "palette": [
+      "#000000",
+      "#fff1cd",
+      "#ffbf83",
+      "#db8050",
+      "#cb4c29",
+      "#e63e55",
+      "#286b9b",
+      "#ffc82f"
+    ]
+  },
+  {
+    "id": "chef",
+    "name": "Küchengeheimnis",
+    "cat": "Figuren · lustig",
+    "subject": "a mischievous chubby chef bust wearing a large soft white toque tilted sideways, expressive face with one eyebrow raised, broad black curled moustache, red neckerchief, blue jacket, head and shoulders only, no hands or utensils",
+    "palette": [
+      "#000000",
+      "#fff1cd",
+      "#dfc293",
+      "#ffbf83",
+      "#db8050",
+      "#e63e55",
+      "#286b9b"
+    ]
+  },
+  {
+    "id": "witch",
+    "name": "Zauberstunde",
+    "cat": "Figuren · Fantasie",
+    "subject": "a charming confident young witch bust with large swooping purple pointed hat and gold buckle, orange bob haircut with broad curls, warm expressive face, teal cloak and one round gold clasp, playful sideways smile, no hands, no fine hair texture, compact beautiful portrait",
+    "palette": [
+      "#000000",
+      "#7239aa",
+      "#b95bd5",
+      "#f68b23",
+      "#ffbf83",
+      "#db8050",
+      "#fff1cd",
+      "#16aa9e",
+      "#ffc82f"
+    ]
+  },
+  {
+    "id": "teapot",
+    "name": "Tee mit Haltung",
+    "cat": "Gegenstände",
+    "subject": "an elegant chunky turquoise ceramic teapot in three-quarter side view, large curved spout, generous rounded handle with open negative space, coral lid with gold knob, ivory curved decorative band and bold dark blue shadow shapes, no face, exquisite balanced charming silhouette, no steam wisps",
+    "palette": [
+      "#000000",
+      "#22cbd1",
+      "#137da7",
+      "#164c7b",
+      "#fff1cd",
+      "#ed7280",
+      "#ffc82f"
+    ]
+  },
+  {
+    "id": "van",
+    "name": "Ab ans Meer",
+    "cat": "Gegenstände · Reise",
+    "subject": "a beautifully designed compact vintage turquoise and ivory camper van in three-quarter front view, rounded front with two large headlamps and simple coral spare wheel cover, dark blue windows, golden luggage suitcase on roof rack, big dark tires, no text, no landscape, coherent readable perspective",
+    "palette": [
+      "#000000",
+      "#22cbd1",
+      "#137da7",
+      "#164c7b",
+      "#fff1cd",
+      "#dfc293",
+      "#ed7280",
+      "#ffc82f"
+    ]
+  },
+  {
+    "id": "skate",
+    "name": "Rollende Disco",
+    "cat": "Gegenstände · Retro",
+    "subject": "one wonderful retro coral pink roller skate facing diagonally left in side three-quarter view, cream toe cap, teal tongue and large purple wheels, simplified thick gold zigzag lacing with no holes, beautifully curved boot silhouette, dark purple undercarriage, no face, no floor or stars",
+    "palette": [
+      "#000000",
+      "#ed5c83",
+      "#bc355d",
+      "#fff1cd",
+      "#22cbd1",
+      "#753ba6",
+      "#ffc82f"
+    ]
+  },
+  {
+    "id": "burger",
+    "name": "Hoch gestapelt",
+    "cat": "Essen · bunt",
+    "subject": "a delicious beautifully layered tall cartoon burger in a compact three-quarter view, domed golden bun with just three broad ivory seed marks, bright lettuce curls as thick rounded clusters, vivid tomato slab, folded yellow cheese, dark brown patty, balanced juicy food illustration, no face, no hands, no thin dangling pieces",
+    "palette": [
+      "#000000",
+      "#e7902d",
+      "#ffbf45",
+      "#a75224",
+      "#fff1cd",
+      "#40bc58",
+      "#14784e",
+      "#ed4552",
+      "#ffd836"
+    ]
+  },
+  {
+    "id": "sundae",
+    "name": "Süße Versuchung",
+    "cat": "Essen · lustig",
+    "subject": "a luxurious compact ice cream sundae in a deep indigo footed bowl, three broad scoops in cream, strawberry pink and golden caramel, thick dark chocolate sauce, one large bright red cherry with a simple thick curved short stem, expressive appetizing polished game food art, no face, no sprinkles or delicate details",
+    "palette": [
+      "#000000",
+      "#fff1cd",
+      "#dfc293",
+      "#f16c98",
+      "#c13d65",
+      "#ffbf45",
+      "#6a343d",
+      "#414a96",
+      "#e53c44",
+      "#288b5d"
+    ]
+  },
+  {
+    "id": "waves",
+    "name": "Sonne im Wellenspiel",
+    "cat": "Abstrakt · Landschaft",
+    "subject": "a striking compact circular emblem of a vivid coral setting sun behind three interlocking sweeping turquoise and indigo ocean waves, ivory foam forming broad bold curved bands, golden sky crescent, beautifully balanced Japanese graphic inspired pixel art composition, circle silhouette with a few bold wave scallops, no border frame, no tiny foam dots",
+    "palette": [
+      "#000000",
+      "#ed5c55",
+      "#ffbf45",
+      "#fff1cd",
+      "#28cbd4",
+      "#1289ac",
+      "#263a7d"
+    ]
+  },
+  {
+    "id": "ribbon",
+    "name": "Unmögliche Schleife",
+    "cat": "Abstrakt · Form",
+    "subject": "a clever beautiful broad continuous folded ribbon forming a compact rounded triangular impossible knot, thick golden yellow front surfaces, vivid coral pink sides and deep violet inner planes, clearly black outlined folded edges and large negative spaces, precise polished optical illusion pixel art, absolutely no face, no surrounding sparkles, no fine lines",
+    "palette": [
+      "#000000",
+      "#ffce39",
+      "#ed9225",
+      "#f15d8a",
+      "#b82c64",
+      "#793fb2",
+      "#3e285f"
+    ]
+  }
+]
