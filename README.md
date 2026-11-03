@@ -171,3 +171,16 @@ Im Editor **Motivübersicht** öffnen; der Gruppenfilter steht auf **Neue Motivs
 Bestehende Browser-Bearbeitungen bleiben beim Ergänzen erhalten. Über **Alle Motive und bisherigen Studien** ist der ältere Katalog erreichbar. **Bildauswahl** im Motivstatus dient zum Vormerken. Die große Übersicht unterstützt flache Pixel und den originalen Steinrenderer. Die separat aufgebaute Spielansicht bleibt ein bekannter offener Unterschied zum Originalspiel; die Atelier-Erweiterung behauptet keine identische Spielintegration.
 
 Quellen und Prompts liegen unter `assets/catalogue-atelier-v1`. `tools/rasterize-atelier.py` erzeugt die Daten aus diesen Quellen (Python mit Pillow und NumPy); `tools/import-atelier.cjs` übernimmt die Vorlagen in die ausgelieferten Seeds. Browserstände werden dabei nicht angefasst. Editor bauen: `node tools/build-editor.cjs`. Tests: `node tests/studio-catalogue.cjs`, `node tests/editor-ui.cjs`, `node tests/editor-migration.cjs`. UI-Tests simulieren den DOM und ersetzen keine Browser-Sichtprüfung.
+
+
+## Spielvergleich frei einstellen
+
+Im Editor ein Motiv mit **Aktuellen Stand spielen** oder **Vor Bearbeitung spielen** öffnen. Figurengröße: Basis **Feste Originalgröße** oder **mit der Steinbreite skalieren**, 25–800 Prozent. Die Größe ist rein visuell; sie ändert weder Pfadbreite noch Fahrtempo oder Reservierungen. Ladungsgröße und Abstand sind getrennt regelbar.
+
+Zusätzlich: Fahrtempo, globale Startabstände, Öffnungszeit, Figuren je Team, Parkplatzfreigabe, serielle/parallele Automatik, drei Pfadmodi und optionale Abkürzungen bei freien Wegen, sichere sichtbare Laufversätze, Aufnahmezeit/-darstellung, Einfahrttempo/-tiefe/-kurve, sämtliche ursprünglichen Garagenformen, Boxen-/Sockelgröße und Anordnung sowie Steinoberfläche.
+
+**Bildwerte wirken sofort. Bewegungs- und Layoutwerte** werden mit **Übernehmen & Neustart** aktiv, damit bestehende Routen nicht rückwirkend versetzt werden. A und B speichern vollständige Vergleiche, einschließlich Figur, Pfadmodus und Vorspultempo. Die Einstellungen bleiben lokal erhalten und können separat als JSON gesichert und geladen werden. Vorher/Nachher verwendet denselben aktiven Parametersatz.
+
+**Originalnah** verwendet Originalgrafiken, 13-Bildpunkte-Größenbasis, 130 Bildpunkte pro Sekunde auf geraden Brettstrecken bei 1×, sechs gleichzeitig aktive Figuren je Team, 0,1 s Startabstand und 0,55 s Öffnungszeit. **Bisheriger Editor** stellt die früheren Grundwerte ein. **Groß & ruhig** ist ein weiterer Versuch. Diese Vorlagen sind keine Behauptung einer identischen Engine: die Editor-Pfadfindung ist weiterhin separat. Das Originalspiel wird durch die Regler nicht verändert.
+
+Originalgrafiken und reine Zeichenfunktionen werden mit `node tools/extract-play-visuals.cjs` aus `index.html` übernommen. Danach `node tools/build-editor.cjs`. Prüfungen: `node tests/play-lab.cjs`. Optionaler Render-/DOM-Test mit `@napi-rs/canvas`: `node tests/play-lab-render.cjs`; er ist keine Browserautomatisierung.
