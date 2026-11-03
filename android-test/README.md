@@ -1,16 +1,29 @@
-# Mosaik Test · Galaxy S22
+# Mosaik Android test 0.2.0
 
-Offline-Test-App für den aktuellen Rätselkatalog und die bestehende Editor-Spielengine.
+The APK packages game.html instead of the editor. The phone markup/styles come
+from the original index.html; session, settings, renderer and animation are shared
+with the editor play mode. The original study is retained.
 
-- Hochformat, 50 neue Atelier-II-Motive und optional alle 66 Atelier-Motive.
-- Manuelle Schatullenauswahl, Automatik, Pause, Rücknahme und Vorspulen.
-- Bestehende Figuren, Module, Pfadvarianten, Beladungsanzeigen und Größenregler.
-- Voreinstellung: 1×, 90 Bildpunkte/s, maximal 6 je Team, Hinbahn 2 / Rückbahn 1, lokale feste Rückroute bei Aufnahme, direkter Anfahrtsbogen, heller Würfelrand.
-- Einstellungen und abgeschlossene Rätsel werden auf diesem Gerät lokal gespeichert.
-- Die App hat einen eigenen Speicher. Browserbearbeitungen vom PC werden nicht automatisch übertragen.
-- Keine Internet-, Kamera-, Kontakt- oder Speicherberechtigung. Kein Server nötig.
-- Kleine signierte Debug-APK zum internen Testen; keine Play-Store-Veröffentlichung.
+Editor: Im Spiel öffnen sends an exact snapshot through same-origin browser
+storage. Für Spiel / APK exportieren produces a mosaic-game-puzzle JSON file.
+The game/APK imports that file through Rätsel importieren and stores it under
+Eigene Rätsel. Pixels, dimensions, palette, queues and settings are preserved.
+Later edits require a new handoff/export. PC and phone storage remain separate.
 
-Build: tools/build-android-test.py mit installiertem Android SDK 35, Build-Tools 35 und Android-Studio-JBR. Java-Quellen und Ressourcen liegen hier. Das bestehende editor.html und mobile.js werden gemeinsam eingebettet; die Spiellogik wird nicht kopiert oder neu implementiert. Die lokale HTTPS-Basis von loadDataWithBaseURL ermöglicht einen stabilen Browser-Speicherursprung.
+Build:
+    node tools/build-editor.cjs
+    node tools/build-game.cjs
+    python tools/build-android-test.py
 
-Build-Ausgaben und der lokale Test-Signaturschlüssel sind von Git ausgeschlossen. Derselbe Schlüssel ermöglicht spätere Test-Updates ohne Deinstallation.
+Requires SDK build-tools 35.0.0, android-35 and Android Studio JBR.
+Debug signed, versionCode 2, same package/key as 0.1.0; install over the old app.
+Preserve the ignored debug.keystore for subsequent updates. WebView debugging is
+enabled in this test. No internet or storage permissions. Individual content URIs
+are granted through Android's document picker. Includes 66 offline Atelier motifs.
+
+Verified: transfer/session parity, exact incremental/full board render parity,
+Android WebView installation/catalogue/gameplay/portrait layout/settings/back,
+and real JSON import through the native document picker. Emulator performance
+samples do not prove performance on a physical S22. That still needs testing.
+
+The old mobile.js remains for its historical regression test; it is not packaged.

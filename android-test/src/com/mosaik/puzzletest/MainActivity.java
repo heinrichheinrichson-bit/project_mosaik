@@ -14,6 +14,7 @@ import java.io.ByteArrayOutputStream;
 
 public final class MainActivity extends Activity {
   private WebView web;
+  private android.webkit.ValueCallback<android.net.Uri[]> fileResult;
   @Override public void onCreate(Bundle state) {
     super.onCreate(state);
     web = new WebView(this);
@@ -21,9 +22,21 @@ public final class MainActivity extends Activity {
     web.getSettings().setJavaScriptEnabled(true);
     web.getSettings().setDomStorageEnabled(true);
     web.getSettings().setAllowFileAccess(false);
-    web.getSettings().setAllowContentAccess(false);
+    // Only content URIs explicitly selected in Android's document picker.
+    web.getSettings().setAllowContentAccess(true);
     web.getSettings().setTextZoom(100);
-    web.setWebChromeClient(new WebChromeClient());
+    web.setWebChromeClient(new WebChromeClient() {
+      @Override public boolean onShowFileChooser(WebView view, android.webkit.ValueCallback<android.net.Uri[]> callback, FileChooserParams params) {
+        if (fileResult != null) fileResult.onReceiveValue(null);
+        fileResult = callback;
+        android.content.Intent pick = new android.content.Intent(android.content.Intent.ACTION_OPEN_DOCUMENT);
+        pick.addCategory(android.content.Intent.CATEGORY_OPENABLE);
+        pick.setType("*/*");
+        try { startActivityForResult(pick, 41); }
+        catch (android.content.ActivityNotFoundException e) { fileResult.onReceiveValue(null); fileResult=null; }
+        return true;
+      }
+    });
     web.setWebViewClient(new WebViewClient() {
       @Override public boolean shouldOverrideUrlLoading(WebView view, WebResourceRequest request) { return true; }
     });
@@ -49,6 +62,13 @@ public final class MainActivity extends Activity {
       input.close();
       web.loadDataWithBaseURL("https://appassets.androidplatform.net/",bytes.toString("UTF-8"),"text/html","UTF-8",null);
     } catch (Exception e) { throw new RuntimeException("Mosaik konnte nicht geladen werden",e); }
+  }
+  @Override protected void onActivityResult(int request, int result, android.content.Intent data) {
+    super.onActivityResult(request,result,data);
+    if (request == 41 && fileResult != null) {
+      fileResult.onReceiveValue(result == RESULT_OK && data != null && data.getData() != null ? new android.net.Uri[]{data.getData()} : null);
+      fileResult=null;
+    }
   }
   @Override public void onBackPressed() {
     web.evaluateJavascript("window.mosaikAndroidBack ? window.mosaikAndroidBack() : false", new android.webkit.ValueCallback<String>() { @Override public void onReceiveValue(String handled) {
