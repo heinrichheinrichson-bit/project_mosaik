@@ -40,7 +40,12 @@ Shared settings panel: originalSettings uses LAB_FIELDS extracted from play-app.
 with staged apply/restart and the same mosaik-play-lab-v2 storage and A/B profiles.
 Cross-tab editor settings announce pending changes without resetting a live game.
 Actual playback speed is synchronized with the original header control.
-The active snapshot explicitly excludes unsupported legacy editor layout values;
-these inputs are disabled and the original design studies remain authoritative.
-Stone surface and garage shape settings apply to native original renderers.
+All 49 PlayLabOptions settings now have enabled controls and runtime bindings.
+Native module renderers are transformed for garage/parking/box scale and position;
+legacy modules and sprite-only figures are selectable. Frame guides, entry curve,
+queue spacing, JSON import/export and presets are connected. Default module geometry
+retains the reference original screen. Larger module layouts extend the canvas.
+All 18 historical level documents join the 84 seed motifs in one sorted catalogue.
+Original controls are moved (not cloned) into collapsible study categories, including
+the old standalone stone, box and team sidebars. Old duplicate level tabs are hidden.
 Browser regression covers staged edits, restart, scale, speed and persistence.
