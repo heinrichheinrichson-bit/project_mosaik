@@ -34,3 +34,13 @@ selection and editor handoff.
 APK 0.2.0 predates this original-screen integration and is not an updated build.
 Future Android work must use this chosen surface, not silently package the
 rejected substitute surface again.
+
+
+Shared settings panel: originalSettings uses LAB_FIELDS extracted from play-app.js,
+with staged apply/restart and the same mosaik-play-lab-v2 storage and A/B profiles.
+Cross-tab editor settings announce pending changes without resetting a live game.
+Actual playback speed is synchronized with the original header control.
+The active snapshot explicitly excludes unsupported legacy editor layout values;
+these inputs are disabled and the original design studies remain authoritative.
+Stone surface and garage shape settings apply to native original renderers.
+Browser regression covers staged edits, restart, scale, speed and persistence.

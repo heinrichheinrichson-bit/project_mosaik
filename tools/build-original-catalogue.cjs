@@ -2,6 +2,8 @@ const fs=require('fs'),path=require('path'),vm=require('vm'),root=path.resolve(_
 const scripts=[read('core.js'),read('play-options.js'),read('board-cache.js'),read('play-core.js'),'const ORIGINAL_CATALOGUE_SEEDS='+read('seeds.json').replace(/</g,'\\u003c')+';'];
 // Reuse the tested transport visuals without replacing the original screen.
 const helpers=['playFollower','playVisualOffset','playEntryOffset','drawPlayLoadCue'].map(name=>{const line=read('play-app.js').split(/\r?\n/).find(l=>l.startsWith('function '+name+'('));if(!line)throw Error(name);return line;}).join('\n');
+const fields=read('play-app.js').match(/const LAB_FIELDS=([\s\S]*?);\r?\nfunction savePlayLab/)[1];
+scripts.push('const ORIGINAL_LAB_FIELDS='+fields+';');
 scripts.push(read('original-catalogue.js').replace('/* TRANSPORT_HELPERS */',helpers));
 for(const [i,s]of scripts.entries())new vm.Script(s,{filename:'original-catalogue-'+i});
 const start='<!-- ORIGINAL_CATALOGUE_RUNTIME_START -->',end='<!-- ORIGINAL_CATALOGUE_RUNTIME_END -->';let html=fs.readFileSync(path.join(root,'index.html'),'utf8');const a=html.indexOf(start);if(a>=0){const b=html.indexOf(end,a);if(b<0)throw Error('Unclosed catalogue block');html=html.slice(0,a)+html.slice(b+end.length);}
