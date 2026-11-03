@@ -41,6 +41,9 @@ html.game-playing,html.game-playing body{overflow:hidden}#playDialog{scrollbar-w
 playLayout=function(){const g=playGame,pad=g.padding||0,n=Math.max(g.w,g.h),pitch=388/(n+4+2*pad),bx=(420-g.w*pitch)/2,by=8+(2+pad)*pitch+(n-g.h)*pitch/2;
 return{pitch,bx,by,parkingY:by+g.h*pitch+Math.max((pad+2)*pitch+48,Math.min(playApplied.parkingGap,86))};};
 globalThis.mosaicGameCanvasHeight=(parkingY,o)=>Math.ceil(parkingY+Math.max(34*o.parkingScale,31*o.boxScale,23*o.garageScale*o.garageLength)+8);
+// Use the preserved original board and two-step drawing, not a substitute.
+let referenceCache=null,referenceKey='';
+globalThis.mosaicGameBackdrop=(c,g,l,height)=>{const pad=2+g.padding,frame={x:l.bx-pad*l.pitch,y:l.by-pad*l.pitch,w:(g.w+2*pad)*l.pitch,h:(g.h+2*pad)*l.pitch},key=JSON.stringify([frame,height]);if(!referenceCache||key!==referenceKey){referenceCache=document.createElement('canvas');referenceCache.width=420;referenceCache.height=height;MosaicReferenceBoard.paint(referenceCache.getContext('2d'),frame);referenceKey=key;}c.drawImage(referenceCache,0,0);return true;};
 let hintMessage='',hintUntil=0;
 const baseDraw=drawPlay;drawPlay=function(){baseDraw();updateRemaining();if(Date.now()<hintUntil)$('playStatus').textContent=hintMessage;phone.classList.toggle('game-alert',!!(playGame?.error||playGame?.lost));for(const b of tools.querySelectorAll('[data-speed]'))b.classList.toggle('active',Number(b.dataset.speed)===playApplied.playback);};
 const hint=$('gameHint').onclick;$('gameHint').onclick=()=>{hint();hintMessage=$('playStatus').textContent;hintUntil=Date.now()+4000;phone.classList.add('game-hint');setTimeout(()=>phone.classList.remove('game-hint'),4000);};
