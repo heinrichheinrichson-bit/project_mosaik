@@ -18,6 +18,7 @@ const LAB_FIELDS=[
   ['pathMode','Pfadmodus','select',[['relaxed','Locker · passender Randzugang'],['strict','Streng · gleicher Rückweg'],['free','Freie Wege'],['frame','Beweglicher Rahmen · laufend'],['frame-batch','Beweglicher Rahmen · schrittweise']]],
   ['replan','Freie Wege bei neuen Lücken verkürzen','select',[[false,'Aus'],[true,'An · nur bei freien Wegen']]],['spread','Leichte Laufversätze',0,1,.02,'Steinbreiten']]],
  ['Beweglicher Laufrahmen',true,[
+ ['pathCorners','Übergänge und Rahmenecken','select',[['soft','Leicht abgerundet · freie Bereiche'],['sharp','Kantig · bisheriger Verlauf']]],
  ['frameGap','Freier Abstand zum äußersten Stein',1,4,1,'Steinbreiten'],['frameBatch','Nachrückschritt',1,8,1,'Reihen / Spalten'],
  ['frameReturn','Rückweg innerhalb des Bildes','select',[['independent','Passenden Rückzugang wählen'],['same','Gleichen Innenweg zurück'],['pickup','Bei Aufnahme · aktuellen Rahmen neu vergeben']]],
  ['frameDirection','Richtung auf dem Rahmen','select',[['shortest','Kürzere Seite wählen'],['clockwise','Immer im Uhrzeigersinn']]],
