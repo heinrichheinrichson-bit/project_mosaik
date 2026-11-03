@@ -1,0 +1,383 @@
+{
+  "series": "Atelier II",
+  "date": "2026-11-03",
+  "motifs": 50,
+  "rasterVariants": 250,
+  "delivered": 78210,
+  "checks": {
+    "allRasterOutlines": true,
+    "paletteLimit10": true,
+    "allRasterQueuePlans": true,
+    "allDefault56FullEditorPlayRuns": true,
+    "stoneConservation": true,
+    "uniqueReservations": true,
+    "existingEditMigration": true,
+    "editorUIWiring": true,
+    "nativeCanvasRender": true,
+    "browserAutomation": false
+  },
+  "playTestSettings": {
+    "pathMode": "frame",
+    "frameReturn": "pickup",
+    "pathCorners": "soft",
+    "autoMode": "parallel",
+    "travelSpeed": 600,
+    "maxPerTeam": 24,
+    "launchInterval": 0,
+    "startDelay": 0,
+    "pickupDuration": 0
+  },
+  "editorStatus": "draft candidates for selection; difficulty not manually balanced",
+  "items": [
+    {
+      "id": "studio-v2-hermit",
+      "name": "Muschelheld",
+      "colors": 6,
+      "stones": 1859,
+      "fullPlayRun": "passed"
+    },
+    {
+      "id": "studio-v2-puffin",
+      "name": "Klippenkavalier",
+      "colors": 6,
+      "stones": 1281,
+      "fullPlayRun": "passed"
+    },
+    {
+      "id": "studio-v2-redpanda",
+      "name": "Kleine Pause",
+      "colors": 7,
+      "stones": 1712,
+      "fullPlayRun": "passed"
+    },
+    {
+      "id": "studio-v2-corgi",
+      "name": "König auf kurzen Beinen",
+      "colors": 6,
+      "stones": 1578,
+      "fullPlayRun": "passed"
+    },
+    {
+      "id": "studio-v2-otter",
+      "name": "Muschelfrühstück",
+      "colors": 6,
+      "stones": 1670,
+      "fullPlayRun": "passed"
+    },
+    {
+      "id": "studio-v2-chameleon",
+      "name": "Farbwechsel",
+      "colors": 8,
+      "stones": 1548,
+      "fullPlayRun": "passed"
+    },
+    {
+      "id": "studio-v2-armadillo",
+      "name": "Runde Sache",
+      "colors": 6,
+      "stones": 1771,
+      "fullPlayRun": "passed"
+    },
+    {
+      "id": "studio-v2-octopus",
+      "name": "Achtmal gute Laune",
+      "colors": 6,
+      "stones": 1535,
+      "fullPlayRun": "passed"
+    },
+    {
+      "id": "studio-v2-penguin",
+      "name": "Eisgekühlter Stil",
+      "colors": 6,
+      "stones": 1615,
+      "fullPlayRun": "passed"
+    },
+    {
+      "id": "studio-v2-capybara",
+      "name": "Wellnessheld",
+      "colors": 6,
+      "stones": 1464,
+      "fullPlayRun": "passed"
+    },
+    {
+      "id": "studio-v2-astronaut",
+      "name": "Sternenpause",
+      "colors": 6,
+      "stones": 1554,
+      "fullPlayRun": "passed"
+    },
+    {
+      "id": "studio-v2-diver",
+      "name": "Tiefenentspannt",
+      "colors": 8,
+      "stones": 1279,
+      "fullPlayRun": "passed"
+    },
+    {
+      "id": "studio-v2-gardener",
+      "name": "Grüner Daumen",
+      "colors": 8,
+      "stones": 1805,
+      "fullPlayRun": "passed"
+    },
+    {
+      "id": "studio-v2-viking",
+      "name": "Kleine Eroberung",
+      "colors": 8,
+      "stones": 1571,
+      "fullPlayRun": "passed"
+    },
+    {
+      "id": "studio-v2-magician",
+      "name": "Hut voller Überraschung",
+      "colors": 8,
+      "stones": 1286,
+      "fullPlayRun": "passed"
+    },
+    {
+      "id": "studio-v2-detective",
+      "name": "Dem Keks auf der Spur",
+      "colors": 7,
+      "stones": 1567,
+      "fullPlayRun": "passed"
+    },
+    {
+      "id": "studio-v2-dancer",
+      "name": "Discofieber",
+      "colors": 8,
+      "stones": 1163,
+      "fullPlayRun": "passed"
+    },
+    {
+      "id": "studio-v2-knight",
+      "name": "Tapferer Topfhelm",
+      "colors": 8,
+      "stones": 1394,
+      "fullPlayRun": "passed"
+    },
+    {
+      "id": "studio-v2-sailor",
+      "name": "Land in Sicht",
+      "colors": 8,
+      "stones": 1653,
+      "fullPlayRun": "passed"
+    },
+    {
+      "id": "studio-v2-bookworm",
+      "name": "Noch ein Kapitel",
+      "colors": 8,
+      "stones": 1613,
+      "fullPlayRun": "passed"
+    },
+    {
+      "id": "studio-v2-camera",
+      "name": "Bitte lächeln",
+      "colors": 6,
+      "stones": 1866,
+      "fullPlayRun": "passed"
+    },
+    {
+      "id": "studio-v2-jukebox",
+      "name": "Lieblingslied",
+      "colors": 6,
+      "stones": 1670,
+      "fullPlayRun": "passed"
+    },
+    {
+      "id": "studio-v2-roller",
+      "name": "Süße Spritztour",
+      "colors": 6,
+      "stones": 1141,
+      "fullPlayRun": "passed"
+    },
+    {
+      "id": "studio-v2-lighthouse",
+      "name": "Leuchtzeichen",
+      "colors": 6,
+      "stones": 1209,
+      "fullPlayRun": "passed"
+    },
+    {
+      "id": "studio-v2-gramophone",
+      "name": "Goldener Klang",
+      "colors": 6,
+      "stones": 1263,
+      "fullPlayRun": "passed"
+    },
+    {
+      "id": "studio-v2-train",
+      "name": "Nächster Halt Freude",
+      "colors": 6,
+      "stones": 1751,
+      "fullPlayRun": "passed"
+    },
+    {
+      "id": "studio-v2-wateringcan",
+      "name": "Gießkannenliebe",
+      "colors": 6,
+      "stones": 1324,
+      "fullPlayRun": "passed"
+    },
+    {
+      "id": "studio-v2-treasure",
+      "name": "Gut versteckt",
+      "colors": 6,
+      "stones": 2061,
+      "fullPlayRun": "passed"
+    },
+    {
+      "id": "studio-v2-typewriter",
+      "name": "Freche Zeilen",
+      "colors": 6,
+      "stones": 1826,
+      "fullPlayRun": "passed"
+    },
+    {
+      "id": "studio-v2-spaceship",
+      "name": "Ab ins Blaue",
+      "colors": 6,
+      "stones": 1283,
+      "fullPlayRun": "passed"
+    },
+    {
+      "id": "studio-v2-taco",
+      "name": "Knuspriger Charakter",
+      "colors": 6,
+      "stones": 1586,
+      "fullPlayRun": "passed"
+    },
+    {
+      "id": "studio-v2-ramen",
+      "name": "Heiße Schüssel",
+      "colors": 6,
+      "stones": 1766,
+      "fullPlayRun": "passed"
+    },
+    {
+      "id": "studio-v2-croissant",
+      "name": "Bonjour Knusper",
+      "colors": 6,
+      "stones": 1635,
+      "fullPlayRun": "passed"
+    },
+    {
+      "id": "studio-v2-sushi",
+      "name": "Sushi mit Stil",
+      "colors": 6,
+      "stones": 1710,
+      "fullPlayRun": "passed"
+    },
+    {
+      "id": "studio-v2-pancakes",
+      "name": "Sonntagsstapel",
+      "colors": 6,
+      "stones": 1699,
+      "fullPlayRun": "passed"
+    },
+    {
+      "id": "studio-v2-pear",
+      "name": "Freches Früchtchen",
+      "colors": 6,
+      "stones": 1339,
+      "fullPlayRun": "passed"
+    },
+    {
+      "id": "studio-v2-icepop",
+      "name": "Sommerlaune",
+      "colors": 6,
+      "stones": 1115,
+      "fullPlayRun": "passed"
+    },
+    {
+      "id": "studio-v2-pizza",
+      "name": "Nur noch ein Stück",
+      "colors": 6,
+      "stones": 1394,
+      "fullPlayRun": "passed"
+    },
+    {
+      "id": "studio-v2-cherries",
+      "name": "Doppelt frech",
+      "colors": 6,
+      "stones": 1684,
+      "fullPlayRun": "passed"
+    },
+    {
+      "id": "studio-v2-cupcake",
+      "name": "Kleine Krönung",
+      "colors": 6,
+      "stones": 1317,
+      "fullPlayRun": "passed"
+    },
+    {
+      "id": "studio-v2-koi",
+      "name": "Tanz der Farben",
+      "colors": 6,
+      "stones": 1844,
+      "fullPlayRun": "passed"
+    },
+    {
+      "id": "studio-v2-sunmoon",
+      "name": "Tag trifft Nacht",
+      "colors": 6,
+      "stones": 1831,
+      "fullPlayRun": "passed"
+    },
+    {
+      "id": "studio-v2-flowerwheel",
+      "name": "Blütenwirbel",
+      "colors": 7,
+      "stones": 1461,
+      "fullPlayRun": "passed"
+    },
+    {
+      "id": "studio-v2-mountain",
+      "name": "Bergsommer",
+      "colors": 7,
+      "stones": 1923,
+      "fullPlayRun": "passed"
+    },
+    {
+      "id": "studio-v2-wavefish",
+      "name": "Wellenfänger",
+      "colors": 6,
+      "stones": 1706,
+      "fullPlayRun": "passed"
+    },
+    {
+      "id": "studio-v2-rainboots",
+      "name": "Pfützenglück",
+      "colors": 7,
+      "stones": 1332,
+      "fullPlayRun": "passed"
+    },
+    {
+      "id": "studio-v2-mushroomhouse",
+      "name": "Pilzadresse",
+      "colors": 7,
+      "stones": 1881,
+      "fullPlayRun": "passed"
+    },
+    {
+      "id": "studio-v2-snail",
+      "name": "Mit eigenem Tempo",
+      "colors": 6,
+      "stones": 1698,
+      "fullPlayRun": "passed"
+    },
+    {
+      "id": "studio-v2-rhino",
+      "name": "Sanfter Riese",
+      "colors": 6,
+      "stones": 1497,
+      "fullPlayRun": "passed"
+    },
+    {
+      "id": "studio-v2-cactus",
+      "name": "Stachelig charmant",
+      "colors": 7,
+      "stones": 1480,
+      "fullPlayRun": "passed"
+    }
+  ]
+}

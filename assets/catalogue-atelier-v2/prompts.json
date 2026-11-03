@@ -1,7 +1,7 @@
 [
   {
     "id": "hermit",
-    "prompt": "Original premium pixel-art motif for a mosaic puzzle game. Single isolated full subject on pure white background with no ground shadow, no text, no frame. Carefully composed 64x64 pixel-art aesthetic enlarged, hard crisp pixel edges, continuous clean black one-logical-pixel outline, expressive clear silhouette, generous white margins. Large coherent vivid color clusters, very limited 8-10 color palette including black and cream, no dithering, no gradients, no texture noise. Avoid filigree, thin strings, thin fingers, toes, whiskers, tiny separated specks. Charming professional characterful editorial illustration, readable at 56x56 grid, not a generic child drawing. Subject:mischievous orange-red hermit crab with huge turquoise spiral seashell and broad claws.",
+    "prompt": "Create a polished original pixel-art motif for a mosaic puzzle game: a mischievous orange-red hermit crab wearing a large turquoise spiral seashell, two big expressive eyes, chunky rounded claws held proudly. Single isolated full subject centered on plain pure white background, no ground shadow, no text. Professional carefully composed 64x64 pixel-art aesthetic enlarged with crisp hard pixel edges, continuous pure black outline about one logical pixel thick, strong readable silhouette, large coherent color clusters, no dithering, no gradients, no thin legs or tiny toes; legs simplified into broad shapes. Limited palette only black, cream, orange, red, turquoise, dark teal, yellow. Artwork occupies 80% of square canvas with generous blank margins. Charming premium puzzle artwork, sophisticated characterful pose rather than generic child drawing.",
     "tool": "built-in image_gen"
   },
   {
