@@ -1,4 +1,4 @@
-Portion-wise interleaved queues; frame mode, six workers/team, parallel automatic teams, speed 600, zero launch/open/pickup delays.
+Variable capacities; row-permutation colour mixing; frame paths; six workers/team; parallel auto; speed600; zero launch/open/pickup delays.
 catalogue-compact-whale: 460 delivered PASS
 catalogue-raccoon: 1204 delivered PASS
 catalogue-wizard: 1061 delivered PASS

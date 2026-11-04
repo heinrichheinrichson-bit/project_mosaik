@@ -4,7 +4,7 @@
 
 Editor series URL: /editor.html?serie=atelier3. All motifs also run in the actual original game screen, with an Atelier III optgroup. There are 114 seed motifs plus 18 original levels, before saved custom documents.
 
-Queue generation now removes one reachable portion at a time, then prefers colours not used recently. Four balanced columns favour a different colour from the box directly above. Jobs retain their serial dependency order; colour-region targeting follows this portion plan. Closed outlines can still require black first, and late leftovers can still repeat. No pixels or colours are changed.
+Queue generation removes one reachable portion at a time, preferring colours not used recently. Target capacities rotate between 15, 20, 25, 30 and 35 (scaled when an explicit portion parameter is used). A reachable colour region is split evenly around that target, so exact counts can differ. Regions below ten are deferred while another colour offers a sufficient reachable amount; genuinely isolated small regions can remain. Each group of four ordered jobs is assigned to columns by evaluating all permutations and minimizing vertical colour repetitions. Jobs retain their serial dependency order; colour-region targeting follows this portion plan. Closed outlines can still require black first, and late leftovers can still repeat. No pixels or colours are changed.
 
 The previous whole-run column packing was rejected: it produced monochrome columns. Its black-box statistic did not measure useful mixing. The replacement audit measures vertical repetitions and diversity in each of the first three visible rows. The three reported motifs are explicitly checked for at least two colours per column in those rows.
 
