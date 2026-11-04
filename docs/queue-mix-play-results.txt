@@ -1,5 +1,4 @@
-Full catalogue simulation: frame mode, six concurrent workers per team, 600 px/s, no launch/open/pickup delays, automatic parallel teams.
-
+Portion-wise interleaved queues; frame mode, six workers/team, parallel automatic teams, speed 600, zero launch/open/pickup delays.
 catalogue-compact-whale: 460 delivered PASS
 catalogue-raccoon: 1204 delivered PASS
 catalogue-wizard: 1061 delivered PASS
@@ -30,6 +29,7 @@ studio-witch: 1679 delivered PASS
 studio-teapot: 1276 delivered PASS
 studio-van: 1727 delivered PASS
 29 catalogue motifs: 30989 stones delivered PASS
+
 studio-skate: 1369 delivered PASS
 studio-burger: 1914 delivered PASS
 studio-sundae: 1171 delivered PASS
@@ -60,6 +60,7 @@ studio-v2-jukebox: 1670 delivered PASS
 studio-v2-roller: 1141 delivered PASS
 studio-v2-lighthouse: 1209 delivered PASS
 29 catalogue motifs: 44853 stones delivered PASS
+
 studio-v2-gramophone: 1263 delivered PASS
 studio-v2-train: 1751 delivered PASS
 studio-v2-wateringcan: 1324 delivered PASS
@@ -90,6 +91,7 @@ studio-v3-fox: 1807 delivered PASS
 studio-v3-bee: 1407 delivered PASS
 studio-v3-turtle: 1472 delivered PASS
 29 catalogue motifs: 46092 stones delivered PASS
+
 studio-v3-hippo: 1690 delivered PASS
 studio-v3-toucan: 1146 delivered PASS
 studio-v3-seal: 1167 delivered PASS
@@ -118,5 +120,3 @@ studio-v3-comet: 1567 delivered PASS
 studio-v3-arches: 1999 delivered PASS
 studio-v3-island: 1956 delivered PASS
 27 catalogue motifs: 42243 stones delivered PASS
-
-TOTAL: 114 motifs; 164177 stones delivered.

@@ -4,9 +4,9 @@
 
 Editor series URL: /editor.html?serie=atelier3. All motifs also run in the actual original game screen, with an Atelier III optgroup. There are 114 seed motifs plus 18 original levels, before saved custom documents.
 
-Queue packing keeps complete reachable colour runs together and puts successive runs into other columns. Documents record the tested packing style (balanced or rotating); independent quantities and serial dependency order are preserved. This reduces black across the first three visible rows while retaining upcoming colours for planning. A closed contour can still require a black first move.
+Queue generation now removes one reachable portion at a time, then prefers colours not used recently. Four balanced columns favour a different colour from the box directly above. Jobs retain their serial dependency order; colour-region targeting follows this portion plan. Closed outlines can still require black first, and late leftovers can still repeat. No pixels or colours are changed.
 
-The audit covers the 84 prior seed motifs: 694 black boxes in the first three visible rows before, 287 after; average visible colours 1.96 before, 3.94 after. Full quantities and serial removal are checked for all 114 seeds. No random recolouring or picture changes are used.
+The previous whole-run column packing was rejected: it produced monochrome columns. Its black-box statistic did not measure useful mixing. The replacement audit measures vertical repetitions and diversity in each of the first three visible rows. The three reported motifs are explicitly checked for at least two colours per column in those rows.
 
 Known untouched generated queue versions are migrated, including stored raster variants. Custom queues that differ from those versions remain unchanged. Exact canonical pixels/palette can reuse the checked plan without recomputing it at startup. IndexedDB updates replace only still-matching queue data, preserving concurrent edits. Generating queues manually in the editor uses the new packer.
 

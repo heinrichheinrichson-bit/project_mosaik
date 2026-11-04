@@ -2,1141 +2,2509 @@
   {
     "id": "catalogue-compact-whale",
     "name": "Wal · kompakte Formen",
-    "oldBlack": 4,
-    "newBlack": 4,
-    "oldDistinct": 2,
-    "newDistinct": 5,
-    "jobs": 20,
-    "tiny": 2
+    "before": {
+      "repeats": 6,
+      "pairs": 8,
+      "rows": [
+        4,
+        3,
+        4
+      ]
+    },
+    "after": {
+      "repeats": 0,
+      "pairs": 8,
+      "rows": [
+        4,
+        4,
+        4
+      ]
+    }
   },
   {
     "id": "catalogue-raccoon",
     "name": "Donutdieb",
-    "oldBlack": 2,
-    "newBlack": 2,
-    "oldDistinct": 6,
-    "newDistinct": 8,
-    "jobs": 65,
-    "tiny": 13
+    "before": {
+      "repeats": 4,
+      "pairs": 8,
+      "rows": [
+        4,
+        4,
+        4
+      ]
+    },
+    "after": {
+      "repeats": 0,
+      "pairs": 8,
+      "rows": [
+        4,
+        4,
+        4
+      ]
+    }
   },
   {
     "id": "catalogue-wizard",
     "name": "Feierabendzauber",
-    "oldBlack": 0,
-    "newBlack": 0,
-    "oldDistinct": 5,
-    "newDistinct": 5,
-    "jobs": 63,
-    "tiny": 19
+    "before": {
+      "repeats": 7,
+      "pairs": 8,
+      "rows": [
+        4,
+        4,
+        4
+      ]
+    },
+    "after": {
+      "repeats": 0,
+      "pairs": 8,
+      "rows": [
+        4,
+        4,
+        4
+      ]
+    }
   },
   {
     "id": "catalogue-toast",
     "name": "Toast im Urlaub",
-    "oldBlack": 3,
-    "newBlack": 3,
-    "oldDistinct": 4,
-    "newDistinct": 4,
-    "jobs": 63,
-    "tiny": 12
+    "before": {
+      "repeats": 8,
+      "pairs": 8,
+      "rows": [
+        4,
+        4,
+        4
+      ]
+    },
+    "after": {
+      "repeats": 0,
+      "pairs": 8,
+      "rows": [
+        4,
+        4,
+        4
+      ]
+    }
   },
   {
     "id": "catalogue-abstract",
     "name": "Sonnenwelle",
-    "oldBlack": 0,
-    "newBlack": 0,
-    "oldDistinct": 4,
-    "newDistinct": 4,
-    "jobs": 63,
-    "tiny": 9
+    "before": {
+      "repeats": 8,
+      "pairs": 8,
+      "rows": [
+        4,
+        4,
+        4
+      ]
+    },
+    "after": {
+      "repeats": 0,
+      "pairs": 8,
+      "rows": [
+        4,
+        4,
+        4
+      ]
+    }
   },
   {
     "id": "catalogue-test-3",
     "name": "Sonnenblume im Vollbild",
-    "oldBlack": 0,
-    "newBlack": 0,
-    "oldDistinct": 2,
-    "newDistinct": 5,
-    "jobs": 23,
-    "tiny": 1
+    "before": {
+      "repeats": 6,
+      "pairs": 7,
+      "rows": [
+        4,
+        4,
+        3
+      ]
+    },
+    "after": {
+      "repeats": 0,
+      "pairs": 8,
+      "rows": [
+        4,
+        4,
+        4
+      ]
+    }
   },
   {
     "id": "catalogue-test-4",
     "name": "Farbringe",
-    "oldBlack": 0,
-    "newBlack": 0,
-    "oldDistinct": 2,
-    "newDistinct": 4,
-    "jobs": 23,
-    "tiny": 1
+    "before": {
+      "repeats": 8,
+      "pairs": 8,
+      "rows": [
+        4,
+        4,
+        4
+      ]
+    },
+    "after": {
+      "repeats": 0,
+      "pairs": 8,
+      "rows": [
+        1,
+        4,
+        4
+      ]
+    }
   },
   {
     "id": "catalogue-test-5",
     "name": "Spiralgarten",
-    "oldBlack": 0,
-    "newBlack": 0,
-    "oldDistinct": 4,
-    "newDistinct": 4,
-    "jobs": 25,
-    "tiny": 1
+    "before": {
+      "repeats": 8,
+      "pairs": 8,
+      "rows": [
+        4,
+        4,
+        4
+      ]
+    },
+    "after": {
+      "repeats": 0,
+      "pairs": 8,
+      "rows": [
+        4,
+        4,
+        4
+      ]
+    }
   },
   {
     "id": "catalogue-test-6",
     "name": "Verzahnte Kämme",
-    "oldBlack": 0,
-    "newBlack": 0,
-    "oldDistinct": 2,
-    "newDistinct": 5,
-    "jobs": 24,
-    "tiny": 0
+    "before": {
+      "repeats": 7,
+      "pairs": 8,
+      "rows": [
+        4,
+        4,
+        4
+      ]
+    },
+    "after": {
+      "repeats": 0,
+      "pairs": 8,
+      "rows": [
+        4,
+        4,
+        4
+      ]
+    }
   },
   {
     "id": "catalogue-test-7",
     "name": "Mosaikviertel",
-    "oldBlack": 0,
-    "newBlack": 0,
-    "oldDistinct": 4,
-    "newDistinct": 4,
-    "jobs": 27,
-    "tiny": 5
+    "before": {
+      "repeats": 8,
+      "pairs": 8,
+      "rows": [
+        4,
+        4,
+        4
+      ]
+    },
+    "after": {
+      "repeats": 0,
+      "pairs": 8,
+      "rows": [
+        4,
+        4,
+        4
+      ]
+    }
   },
   {
     "id": "catalogue-test-8",
     "name": "Schmetterling",
-    "oldBlack": 0,
-    "newBlack": 0,
-    "oldDistinct": 4,
-    "newDistinct": 7,
-    "jobs": 23,
-    "tiny": 1
+    "before": {
+      "repeats": 5,
+      "pairs": 8,
+      "rows": [
+        4,
+        4,
+        4
+      ]
+    },
+    "after": {
+      "repeats": 0,
+      "pairs": 8,
+      "rows": [
+        4,
+        4,
+        4
+      ]
+    }
   },
   {
     "id": "catalogue-test-9",
     "name": "Stadtlabyrinth",
-    "oldBlack": 0,
-    "newBlack": 0,
-    "oldDistinct": 2,
-    "newDistinct": 7,
-    "jobs": 24,
-    "tiny": 1
+    "before": {
+      "repeats": 5,
+      "pairs": 8,
+      "rows": [
+        4,
+        4,
+        4
+      ]
+    },
+    "after": {
+      "repeats": 0,
+      "pairs": 8,
+      "rows": [
+        4,
+        4,
+        4
+      ]
+    }
   },
   {
     "id": "new-pixel-ghost",
     "name": "Inkognito � Frecher Geist",
-    "oldBlack": 7,
-    "newBlack": 4,
-    "oldDistinct": 2,
-    "newDistinct": 4,
-    "jobs": 25,
-    "tiny": 1
+    "before": {
+      "repeats": 6,
+      "pairs": 7,
+      "rows": [
+        3,
+        4,
+        3
+      ]
+    },
+    "after": {
+      "repeats": 0,
+      "pairs": 8,
+      "rows": [
+        3,
+        3,
+        3
+      ]
+    }
   },
   {
     "id": "new-pixel-rocket",
     "name": "Feierabend zum Mond",
-    "oldBlack": 5,
-    "newBlack": 6,
-    "oldDistinct": 3,
-    "newDistinct": 3,
-    "jobs": 23,
-    "tiny": 3
+    "before": {
+      "repeats": 8,
+      "pairs": 8,
+      "rows": [
+        3,
+        3,
+        3
+      ]
+    },
+    "after": {
+      "repeats": 0,
+      "pairs": 8,
+      "rows": [
+        4,
+        4,
+        4
+      ]
+    }
   },
   {
     "id": "new-pixel-volcano",
     "name": "Der kleine Hitzkopf",
-    "oldBlack": 5,
-    "newBlack": 3,
-    "oldDistinct": 3,
-    "newDistinct": 4,
-    "jobs": 20,
-    "tiny": 1
+    "before": {
+      "repeats": 8,
+      "pairs": 8,
+      "rows": [
+        4,
+        4,
+        4
+      ]
+    },
+    "after": {
+      "repeats": 1,
+      "pairs": 8,
+      "rows": [
+        4,
+        4,
+        4
+      ]
+    }
   },
   {
     "id": "new-pixel-toast",
     "name": "Toast mit Attit�de",
-    "oldBlack": 5,
-    "newBlack": 6,
-    "oldDistinct": 2,
-    "newDistinct": 3,
-    "jobs": 30,
-    "tiny": 2
+    "before": {
+      "repeats": 8,
+      "pairs": 8,
+      "rows": [
+        3,
+        3,
+        3
+      ]
+    },
+    "after": {
+      "repeats": 0,
+      "pairs": 8,
+      "rows": [
+        2,
+        3,
+        4
+      ]
+    }
   },
   {
     "id": "new-pixel-moon",
     "name": "Noch f�nf Minuten",
-    "oldBlack": 6,
-    "newBlack": 4,
-    "oldDistinct": 2,
-    "newDistinct": 5,
-    "jobs": 19,
-    "tiny": 1
+    "before": {
+      "repeats": 5,
+      "pairs": 7,
+      "rows": [
+        3,
+        4,
+        3
+      ]
+    },
+    "after": {
+      "repeats": 0,
+      "pairs": 8,
+      "rows": [
+        3,
+        4,
+        4
+      ]
+    }
   },
   {
     "id": "new-pixel-fish",
     "name": "Dicke Backen",
-    "oldBlack": 4,
-    "newBlack": 3,
-    "oldDistinct": 2,
-    "newDistinct": 4,
-    "jobs": 26,
-    "tiny": 4
+    "before": {
+      "repeats": 8,
+      "pairs": 8,
+      "rows": [
+        4,
+        4,
+        4
+      ]
+    },
+    "after": {
+      "repeats": 1,
+      "pairs": 8,
+      "rows": [
+        4,
+        4,
+        4
+      ]
+    }
   },
   {
     "id": "studio-fox",
     "name": "Fuchs mit Hintergedanken",
-    "oldBlack": 8,
-    "newBlack": 3,
-    "oldDistinct": 2,
-    "newDistinct": 4,
-    "jobs": 55,
-    "tiny": 3
+    "before": {
+      "repeats": 8,
+      "pairs": 8,
+      "rows": [
+        4,
+        4,
+        4
+      ]
+    },
+    "after": {
+      "repeats": 0,
+      "pairs": 8,
+      "rows": [
+        4,
+        4,
+        4
+      ]
+    }
   },
   {
     "id": "studio-toucan",
     "name": "Der große Auftritt",
-    "oldBlack": 12,
-    "newBlack": 3,
-    "oldDistinct": 1,
-    "newDistinct": 4,
-    "jobs": 60,
-    "tiny": 2
+    "before": {
+      "repeats": 8,
+      "pairs": 8,
+      "rows": [
+        4,
+        4,
+        4
+      ]
+    },
+    "after": {
+      "repeats": 0,
+      "pairs": 8,
+      "rows": [
+        4,
+        4,
+        4
+      ]
+    }
   },
   {
     "id": "studio-cat",
     "name": "Katzenkönig",
-    "oldBlack": 8,
-    "newBlack": 3,
-    "oldDistinct": 2,
-    "newDistinct": 4,
-    "jobs": 72,
-    "tiny": 3
+    "before": {
+      "repeats": 8,
+      "pairs": 8,
+      "rows": [
+        4,
+        4,
+        4
+      ]
+    },
+    "after": {
+      "repeats": 0,
+      "pairs": 8,
+      "rows": [
+        4,
+        3,
+        4
+      ]
+    }
   },
   {
     "id": "studio-dragon",
     "name": "Drachenpause",
-    "oldBlack": 9,
-    "newBlack": 3,
-    "oldDistinct": 2,
-    "newDistinct": 4,
-    "jobs": 75,
-    "tiny": 2
+    "before": {
+      "repeats": 8,
+      "pairs": 8,
+      "rows": [
+        4,
+        4,
+        4
+      ]
+    },
+    "after": {
+      "repeats": 0,
+      "pairs": 8,
+      "rows": [
+        4,
+        4,
+        4
+      ]
+    }
   },
   {
     "id": "studio-owl",
     "name": "Nachtschicht",
-    "oldBlack": 11,
-    "newBlack": 3,
-    "oldDistinct": 2,
-    "newDistinct": 4,
-    "jobs": 62,
-    "tiny": 3
+    "before": {
+      "repeats": 8,
+      "pairs": 8,
+      "rows": [
+        4,
+        4,
+        4
+      ]
+    },
+    "after": {
+      "repeats": 0,
+      "pairs": 8,
+      "rows": [
+        4,
+        4,
+        4
+      ]
+    }
   },
   {
     "id": "studio-crocodile",
     "name": "Krokodil mit Stil",
-    "oldBlack": 11,
-    "newBlack": 6,
-    "oldDistinct": 2,
-    "newDistinct": 3,
-    "jobs": 71,
-    "tiny": 2
+    "before": {
+      "repeats": 8,
+      "pairs": 8,
+      "rows": [
+        3,
+        3,
+        3
+      ]
+    },
+    "after": {
+      "repeats": 0,
+      "pairs": 8,
+      "rows": [
+        4,
+        4,
+        4
+      ]
+    }
   },
   {
     "id": "studio-pirate",
     "name": "Kapitän Feierabend",
-    "oldBlack": 12,
-    "newBlack": 3,
-    "oldDistinct": 1,
-    "newDistinct": 4,
-    "jobs": 72,
-    "tiny": 5
+    "before": {
+      "repeats": 8,
+      "pairs": 8,
+      "rows": [
+        4,
+        4,
+        4
+      ]
+    },
+    "after": {
+      "repeats": 0,
+      "pairs": 8,
+      "rows": [
+        4,
+        4,
+        4
+      ]
+    }
   },
   {
     "id": "studio-chef",
     "name": "Küchengeheimnis",
-    "oldBlack": 11,
-    "newBlack": 3,
-    "oldDistinct": 2,
-    "newDistinct": 4,
-    "jobs": 61,
-    "tiny": 3
+    "before": {
+      "repeats": 8,
+      "pairs": 8,
+      "rows": [
+        4,
+        4,
+        4
+      ]
+    },
+    "after": {
+      "repeats": 1,
+      "pairs": 8,
+      "rows": [
+        4,
+        4,
+        4
+      ]
+    }
   },
   {
     "id": "studio-witch",
     "name": "Zauberstunde",
-    "oldBlack": 12,
-    "newBlack": 3,
-    "oldDistinct": 1,
-    "newDistinct": 4,
-    "jobs": 67,
-    "tiny": 3
+    "before": {
+      "repeats": 8,
+      "pairs": 8,
+      "rows": [
+        4,
+        4,
+        4
+      ]
+    },
+    "after": {
+      "repeats": 0,
+      "pairs": 8,
+      "rows": [
+        4,
+        4,
+        4
+      ]
+    }
   },
   {
     "id": "studio-teapot",
     "name": "Tee mit Haltung",
-    "oldBlack": 7,
-    "newBlack": 3,
-    "oldDistinct": 2,
-    "newDistinct": 4,
-    "jobs": 51,
-    "tiny": 2
+    "before": {
+      "repeats": 8,
+      "pairs": 8,
+      "rows": [
+        4,
+        4,
+        4
+      ]
+    },
+    "after": {
+      "repeats": 0,
+      "pairs": 8,
+      "rows": [
+        4,
+        4,
+        4
+      ]
+    }
   },
   {
     "id": "studio-van",
     "name": "Ab ans Meer",
-    "oldBlack": 12,
-    "newBlack": 6,
-    "oldDistinct": 1,
-    "newDistinct": 3,
-    "jobs": 69,
-    "tiny": 6
+    "before": {
+      "repeats": 8,
+      "pairs": 8,
+      "rows": [
+        3,
+        3,
+        3
+      ]
+    },
+    "after": {
+      "repeats": 0,
+      "pairs": 8,
+      "rows": [
+        4,
+        4,
+        4
+      ]
+    }
   },
   {
     "id": "studio-skate",
     "name": "Rollende Disco",
-    "oldBlack": 9,
-    "newBlack": 3,
-    "oldDistinct": 2,
-    "newDistinct": 4,
-    "jobs": 53,
-    "tiny": 3
+    "before": {
+      "repeats": 8,
+      "pairs": 8,
+      "rows": [
+        4,
+        4,
+        4
+      ]
+    },
+    "after": {
+      "repeats": 0,
+      "pairs": 8,
+      "rows": [
+        4,
+        4,
+        4
+      ]
+    }
   },
   {
     "id": "studio-burger",
     "name": "Hoch gestapelt",
-    "oldBlack": 10,
-    "newBlack": 3,
-    "oldDistinct": 2,
-    "newDistinct": 4,
-    "jobs": 75,
-    "tiny": 1
+    "before": {
+      "repeats": 8,
+      "pairs": 8,
+      "rows": [
+        4,
+        4,
+        4
+      ]
+    },
+    "after": {
+      "repeats": 0,
+      "pairs": 8,
+      "rows": [
+        4,
+        4,
+        4
+      ]
+    }
   },
   {
     "id": "studio-sundae",
     "name": "Süße Versuchung",
-    "oldBlack": 7,
-    "newBlack": 3,
-    "oldDistinct": 2,
-    "newDistinct": 4,
-    "jobs": 50,
-    "tiny": 7
+    "before": {
+      "repeats": 8,
+      "pairs": 8,
+      "rows": [
+        4,
+        4,
+        4
+      ]
+    },
+    "after": {
+      "repeats": 1,
+      "pairs": 8,
+      "rows": [
+        4,
+        4,
+        4
+      ]
+    }
   },
   {
     "id": "studio-waves",
     "name": "Sonne im Wellenspiel",
-    "oldBlack": 7,
-    "newBlack": 3,
-    "oldDistinct": 2,
-    "newDistinct": 4,
-    "jobs": 74,
-    "tiny": 2
+    "before": {
+      "repeats": 8,
+      "pairs": 8,
+      "rows": [
+        4,
+        4,
+        4
+      ]
+    },
+    "after": {
+      "repeats": 0,
+      "pairs": 8,
+      "rows": [
+        4,
+        4,
+        4
+      ]
+    }
   },
   {
     "id": "studio-ribbon",
     "name": "Unmögliche Schleife",
-    "oldBlack": 7,
-    "newBlack": 3,
-    "oldDistinct": 2,
-    "newDistinct": 4,
-    "jobs": 63,
-    "tiny": 4
+    "before": {
+      "repeats": 8,
+      "pairs": 8,
+      "rows": [
+        4,
+        4,
+        4
+      ]
+    },
+    "after": {
+      "repeats": 0,
+      "pairs": 8,
+      "rows": [
+        4,
+        4,
+        4
+      ]
+    }
   },
   {
     "id": "studio-v2-hermit",
     "name": "Muschelheld",
-    "oldBlack": 12,
-    "newBlack": 3,
-    "oldDistinct": 1,
-    "newDistinct": 4,
-    "jobs": 72,
-    "tiny": 2
+    "before": {
+      "repeats": 8,
+      "pairs": 8,
+      "rows": [
+        4,
+        4,
+        4
+      ]
+    },
+    "after": {
+      "repeats": 0,
+      "pairs": 8,
+      "rows": [
+        4,
+        4,
+        4
+      ]
+    }
   },
   {
     "id": "studio-v2-puffin",
     "name": "Klippenkavalier",
-    "oldBlack": 12,
-    "newBlack": 3,
-    "oldDistinct": 1,
-    "newDistinct": 4,
-    "jobs": 49,
-    "tiny": 2
+    "before": {
+      "repeats": 8,
+      "pairs": 8,
+      "rows": [
+        4,
+        4,
+        4
+      ]
+    },
+    "after": {
+      "repeats": 0,
+      "pairs": 8,
+      "rows": [
+        3,
+        3,
+        3
+      ]
+    }
   },
   {
     "id": "studio-v2-redpanda",
     "name": "Kleine Pause",
-    "oldBlack": 10,
-    "newBlack": 3,
-    "oldDistinct": 2,
-    "newDistinct": 4,
-    "jobs": 66,
-    "tiny": 3
+    "before": {
+      "repeats": 8,
+      "pairs": 8,
+      "rows": [
+        4,
+        4,
+        4
+      ]
+    },
+    "after": {
+      "repeats": 0,
+      "pairs": 8,
+      "rows": [
+        4,
+        4,
+        4
+      ]
+    }
   },
   {
     "id": "studio-v2-corgi",
     "name": "König auf kurzen Beinen",
-    "oldBlack": 9,
-    "newBlack": 3,
-    "oldDistinct": 2,
-    "newDistinct": 4,
-    "jobs": 59,
-    "tiny": 2
+    "before": {
+      "repeats": 8,
+      "pairs": 8,
+      "rows": [
+        4,
+        4,
+        4
+      ]
+    },
+    "after": {
+      "repeats": 0,
+      "pairs": 8,
+      "rows": [
+        4,
+        4,
+        4
+      ]
+    }
   },
   {
     "id": "studio-v2-otter",
     "name": "Muschelfrühstück",
-    "oldBlack": 8,
-    "newBlack": 3,
-    "oldDistinct": 2,
-    "newDistinct": 4,
-    "jobs": 63,
-    "tiny": 1
+    "before": {
+      "repeats": 8,
+      "pairs": 8,
+      "rows": [
+        4,
+        4,
+        4
+      ]
+    },
+    "after": {
+      "repeats": 0,
+      "pairs": 8,
+      "rows": [
+        2,
+        2,
+        3
+      ]
+    }
   },
   {
     "id": "studio-v2-chameleon",
     "name": "Farbwechsel",
-    "oldBlack": 9,
-    "newBlack": 6,
-    "oldDistinct": 2,
-    "newDistinct": 3,
-    "jobs": 61,
-    "tiny": 3
+    "before": {
+      "repeats": 8,
+      "pairs": 8,
+      "rows": [
+        3,
+        3,
+        3
+      ]
+    },
+    "after": {
+      "repeats": 0,
+      "pairs": 8,
+      "rows": [
+        4,
+        4,
+        4
+      ]
+    }
   },
   {
     "id": "studio-v2-armadillo",
     "name": "Runde Sache",
-    "oldBlack": 8,
-    "newBlack": 6,
-    "oldDistinct": 2,
-    "newDistinct": 3,
-    "jobs": 68,
-    "tiny": 4
+    "before": {
+      "repeats": 8,
+      "pairs": 8,
+      "rows": [
+        3,
+        3,
+        3
+      ]
+    },
+    "after": {
+      "repeats": 0,
+      "pairs": 8,
+      "rows": [
+        3,
+        3,
+        3
+      ]
+    }
   },
   {
     "id": "studio-v2-octopus",
     "name": "Achtmal gute Laune",
-    "oldBlack": 12,
-    "newBlack": 6,
-    "oldDistinct": 1,
-    "newDistinct": 3,
-    "jobs": 59,
-    "tiny": 4
+    "before": {
+      "repeats": 8,
+      "pairs": 8,
+      "rows": [
+        3,
+        3,
+        3
+      ]
+    },
+    "after": {
+      "repeats": 0,
+      "pairs": 8,
+      "rows": [
+        3,
+        3,
+        3
+      ]
+    }
   },
   {
     "id": "studio-v2-penguin",
     "name": "Eisgekühlter Stil",
-    "oldBlack": 12,
-    "newBlack": 6,
-    "oldDistinct": 1,
-    "newDistinct": 3,
-    "jobs": 61,
-    "tiny": 3
+    "before": {
+      "repeats": 8,
+      "pairs": 8,
+      "rows": [
+        3,
+        3,
+        3
+      ]
+    },
+    "after": {
+      "repeats": 1,
+      "pairs": 8,
+      "rows": [
+        2,
+        3,
+        2
+      ]
+    }
   },
   {
     "id": "studio-v2-capybara",
     "name": "Wellnessheld",
-    "oldBlack": 7,
-    "newBlack": 3,
-    "oldDistinct": 2,
-    "newDistinct": 4,
-    "jobs": 58,
-    "tiny": 4
+    "before": {
+      "repeats": 8,
+      "pairs": 8,
+      "rows": [
+        4,
+        4,
+        4
+      ]
+    },
+    "after": {
+      "repeats": 1,
+      "pairs": 8,
+      "rows": [
+        3,
+        4,
+        4
+      ]
+    }
   },
   {
     "id": "studio-v2-astronaut",
     "name": "Sternenpause",
-    "oldBlack": 12,
-    "newBlack": 3,
-    "oldDistinct": 1,
-    "newDistinct": 4,
-    "jobs": 59,
-    "tiny": 2
+    "before": {
+      "repeats": 8,
+      "pairs": 8,
+      "rows": [
+        4,
+        4,
+        4
+      ]
+    },
+    "after": {
+      "repeats": 0,
+      "pairs": 8,
+      "rows": [
+        3,
+        3,
+        3
+      ]
+    }
   },
   {
     "id": "studio-v2-diver",
     "name": "Tiefenentspannt",
-    "oldBlack": 12,
-    "newBlack": 6,
-    "oldDistinct": 1,
-    "newDistinct": 3,
-    "jobs": 53,
-    "tiny": 6
+    "before": {
+      "repeats": 8,
+      "pairs": 8,
+      "rows": [
+        3,
+        3,
+        3
+      ]
+    },
+    "after": {
+      "repeats": 0,
+      "pairs": 8,
+      "rows": [
+        3,
+        4,
+        4
+      ]
+    }
   },
   {
     "id": "studio-v2-gardener",
     "name": "Grüner Daumen",
-    "oldBlack": 9,
-    "newBlack": 6,
-    "oldDistinct": 2,
-    "newDistinct": 3,
-    "jobs": 71,
-    "tiny": 2
+    "before": {
+      "repeats": 8,
+      "pairs": 8,
+      "rows": [
+        3,
+        3,
+        3
+      ]
+    },
+    "after": {
+      "repeats": 0,
+      "pairs": 8,
+      "rows": [
+        4,
+        4,
+        4
+      ]
+    }
   },
   {
     "id": "studio-v2-viking",
     "name": "Kleine Eroberung",
-    "oldBlack": 11,
-    "newBlack": 3,
-    "oldDistinct": 2,
-    "newDistinct": 4,
-    "jobs": 64,
-    "tiny": 6
+    "before": {
+      "repeats": 8,
+      "pairs": 8,
+      "rows": [
+        4,
+        4,
+        4
+      ]
+    },
+    "after": {
+      "repeats": 0,
+      "pairs": 8,
+      "rows": [
+        3,
+        4,
+        4
+      ]
+    }
   },
   {
     "id": "studio-v2-magician",
     "name": "Hut voller Überraschung",
-    "oldBlack": 12,
-    "newBlack": 3,
-    "oldDistinct": 1,
-    "newDistinct": 4,
-    "jobs": 52,
-    "tiny": 5
+    "before": {
+      "repeats": 8,
+      "pairs": 8,
+      "rows": [
+        4,
+        4,
+        4
+      ]
+    },
+    "after": {
+      "repeats": 0,
+      "pairs": 8,
+      "rows": [
+        4,
+        4,
+        4
+      ]
+    }
   },
   {
     "id": "studio-v2-detective",
     "name": "Dem Keks auf der Spur",
-    "oldBlack": 12,
-    "newBlack": 6,
-    "oldDistinct": 1,
-    "newDistinct": 3,
-    "jobs": 62,
-    "tiny": 4
+    "before": {
+      "repeats": 8,
+      "pairs": 8,
+      "rows": [
+        3,
+        3,
+        3
+      ]
+    },
+    "after": {
+      "repeats": 0,
+      "pairs": 8,
+      "rows": [
+        4,
+        4,
+        4
+      ]
+    }
   },
   {
     "id": "studio-v2-dancer",
     "name": "Discofieber",
-    "oldBlack": 12,
-    "newBlack": 3,
-    "oldDistinct": 1,
-    "newDistinct": 4,
-    "jobs": 47,
-    "tiny": 4
+    "before": {
+      "repeats": 8,
+      "pairs": 8,
+      "rows": [
+        4,
+        4,
+        4
+      ]
+    },
+    "after": {
+      "repeats": 1,
+      "pairs": 8,
+      "rows": [
+        3,
+        3,
+        2
+      ]
+    }
   },
   {
     "id": "studio-v2-knight",
     "name": "Tapferer Topfhelm",
-    "oldBlack": 10,
-    "newBlack": 6,
-    "oldDistinct": 2,
-    "newDistinct": 3,
-    "jobs": 55,
-    "tiny": 1
+    "before": {
+      "repeats": 8,
+      "pairs": 8,
+      "rows": [
+        3,
+        3,
+        3
+      ]
+    },
+    "after": {
+      "repeats": 0,
+      "pairs": 8,
+      "rows": [
+        4,
+        4,
+        4
+      ]
+    }
   },
   {
     "id": "studio-v2-sailor",
     "name": "Land in Sicht",
-    "oldBlack": 12,
-    "newBlack": 6,
-    "oldDistinct": 1,
-    "newDistinct": 3,
-    "jobs": 66,
-    "tiny": 6
+    "before": {
+      "repeats": 8,
+      "pairs": 8,
+      "rows": [
+        3,
+        3,
+        3
+      ]
+    },
+    "after": {
+      "repeats": 0,
+      "pairs": 8,
+      "rows": [
+        4,
+        4,
+        4
+      ]
+    }
   },
   {
     "id": "studio-v2-bookworm",
     "name": "Noch ein Kapitel",
-    "oldBlack": 9,
-    "newBlack": 3,
-    "oldDistinct": 2,
-    "newDistinct": 4,
-    "jobs": 63,
-    "tiny": 3
+    "before": {
+      "repeats": 8,
+      "pairs": 8,
+      "rows": [
+        4,
+        4,
+        4
+      ]
+    },
+    "after": {
+      "repeats": 0,
+      "pairs": 8,
+      "rows": [
+        4,
+        4,
+        4
+      ]
+    }
   },
   {
     "id": "studio-v2-camera",
     "name": "Bitte lächeln",
-    "oldBlack": 8,
-    "newBlack": 6,
-    "oldDistinct": 2,
-    "newDistinct": 3,
-    "jobs": 71,
-    "tiny": 2
+    "before": {
+      "repeats": 8,
+      "pairs": 8,
+      "rows": [
+        3,
+        3,
+        3
+      ]
+    },
+    "after": {
+      "repeats": 0,
+      "pairs": 8,
+      "rows": [
+        4,
+        4,
+        4
+      ]
+    }
   },
   {
     "id": "studio-v2-jukebox",
     "name": "Lieblingslied",
-    "oldBlack": 7,
-    "newBlack": 6,
-    "oldDistinct": 2,
-    "newDistinct": 3,
-    "jobs": 65,
-    "tiny": 3
+    "before": {
+      "repeats": 8,
+      "pairs": 8,
+      "rows": [
+        3,
+        3,
+        3
+      ]
+    },
+    "after": {
+      "repeats": 0,
+      "pairs": 8,
+      "rows": [
+        3,
+        3,
+        4
+      ]
+    }
   },
   {
     "id": "studio-v2-roller",
     "name": "Süße Spritztour",
-    "oldBlack": 12,
-    "newBlack": 3,
-    "oldDistinct": 1,
-    "newDistinct": 4,
-    "jobs": 45,
-    "tiny": 2
+    "before": {
+      "repeats": 8,
+      "pairs": 8,
+      "rows": [
+        4,
+        4,
+        4
+      ]
+    },
+    "after": {
+      "repeats": 0,
+      "pairs": 8,
+      "rows": [
+        4,
+        4,
+        4
+      ]
+    }
   },
   {
     "id": "studio-v2-lighthouse",
     "name": "Leuchtzeichen",
-    "oldBlack": 8,
-    "newBlack": 3,
-    "oldDistinct": 2,
-    "newDistinct": 4,
-    "jobs": 46,
-    "tiny": 1
+    "before": {
+      "repeats": 8,
+      "pairs": 8,
+      "rows": [
+        4,
+        4,
+        4
+      ]
+    },
+    "after": {
+      "repeats": 1,
+      "pairs": 8,
+      "rows": [
+        3,
+        4,
+        4
+      ]
+    }
   },
   {
     "id": "studio-v2-gramophone",
     "name": "Goldener Klang",
-    "oldBlack": 12,
-    "newBlack": 3,
-    "oldDistinct": 1,
-    "newDistinct": 4,
-    "jobs": 49,
-    "tiny": 3
+    "before": {
+      "repeats": 8,
+      "pairs": 8,
+      "rows": [
+        4,
+        4,
+        4
+      ]
+    },
+    "after": {
+      "repeats": 0,
+      "pairs": 8,
+      "rows": [
+        4,
+        4,
+        4
+      ]
+    }
   },
   {
     "id": "studio-v2-train",
     "name": "Nächster Halt Freude",
-    "oldBlack": 12,
-    "newBlack": 3,
-    "oldDistinct": 1,
-    "newDistinct": 4,
-    "jobs": 68,
-    "tiny": 2
+    "before": {
+      "repeats": 8,
+      "pairs": 8,
+      "rows": [
+        4,
+        4,
+        4
+      ]
+    },
+    "after": {
+      "repeats": 0,
+      "pairs": 8,
+      "rows": [
+        3,
+        4,
+        4
+      ]
+    }
   },
   {
     "id": "studio-v2-wateringcan",
     "name": "Gießkannenliebe",
-    "oldBlack": 9,
-    "newBlack": 6,
-    "oldDistinct": 2,
-    "newDistinct": 3,
-    "jobs": 51,
-    "tiny": 1
+    "before": {
+      "repeats": 8,
+      "pairs": 8,
+      "rows": [
+        3,
+        3,
+        3
+      ]
+    },
+    "after": {
+      "repeats": 1,
+      "pairs": 8,
+      "rows": [
+        3,
+        4,
+        4
+      ]
+    }
   },
   {
     "id": "studio-v2-treasure",
     "name": "Gut versteckt",
-    "oldBlack": 12,
-    "newBlack": 3,
-    "oldDistinct": 1,
-    "newDistinct": 4,
-    "jobs": 82,
-    "tiny": 7
+    "before": {
+      "repeats": 8,
+      "pairs": 8,
+      "rows": [
+        4,
+        4,
+        4
+      ]
+    },
+    "after": {
+      "repeats": 0,
+      "pairs": 8,
+      "rows": [
+        4,
+        4,
+        4
+      ]
+    }
   },
   {
     "id": "studio-v2-typewriter",
     "name": "Freche Zeilen",
-    "oldBlack": 10,
-    "newBlack": 6,
-    "oldDistinct": 2,
-    "newDistinct": 3,
-    "jobs": 70,
-    "tiny": 1
+    "before": {
+      "repeats": 8,
+      "pairs": 8,
+      "rows": [
+        3,
+        3,
+        3
+      ]
+    },
+    "after": {
+      "repeats": 0,
+      "pairs": 8,
+      "rows": [
+        3,
+        4,
+        3
+      ]
+    }
   },
   {
     "id": "studio-v2-spaceship",
     "name": "Ab ins Blaue",
-    "oldBlack": 8,
-    "newBlack": 6,
-    "oldDistinct": 2,
-    "newDistinct": 3,
-    "jobs": 52,
-    "tiny": 4
+    "before": {
+      "repeats": 8,
+      "pairs": 8,
+      "rows": [
+        3,
+        3,
+        3
+      ]
+    },
+    "after": {
+      "repeats": 0,
+      "pairs": 8,
+      "rows": [
+        4,
+        4,
+        4
+      ]
+    }
   },
   {
     "id": "studio-v2-taco",
     "name": "Knuspriger Charakter",
-    "oldBlack": 12,
-    "newBlack": 3,
-    "oldDistinct": 1,
-    "newDistinct": 4,
-    "jobs": 62,
-    "tiny": 4
+    "before": {
+      "repeats": 8,
+      "pairs": 8,
+      "rows": [
+        4,
+        4,
+        4
+      ]
+    },
+    "after": {
+      "repeats": 1,
+      "pairs": 8,
+      "rows": [
+        4,
+        4,
+        4
+      ]
+    }
   },
   {
     "id": "studio-v2-ramen",
     "name": "Heiße Schüssel",
-    "oldBlack": 9,
-    "newBlack": 6,
-    "oldDistinct": 2,
-    "newDistinct": 3,
-    "jobs": 68,
-    "tiny": 3
+    "before": {
+      "repeats": 8,
+      "pairs": 8,
+      "rows": [
+        3,
+        3,
+        3
+      ]
+    },
+    "after": {
+      "repeats": 0,
+      "pairs": 8,
+      "rows": [
+        4,
+        4,
+        4
+      ]
+    }
   },
   {
     "id": "studio-v2-croissant",
     "name": "Bonjour Knusper",
-    "oldBlack": 9,
-    "newBlack": 3,
-    "oldDistinct": 2,
-    "newDistinct": 4,
-    "jobs": 64,
-    "tiny": 5
+    "before": {
+      "repeats": 8,
+      "pairs": 8,
+      "rows": [
+        4,
+        4,
+        4
+      ]
+    },
+    "after": {
+      "repeats": 1,
+      "pairs": 8,
+      "rows": [
+        3,
+        2,
+        4
+      ]
+    }
   },
   {
     "id": "studio-v2-sushi",
     "name": "Sushi mit Stil",
-    "oldBlack": 12,
-    "newBlack": 3,
-    "oldDistinct": 1,
-    "newDistinct": 4,
-    "jobs": 65,
-    "tiny": 2
+    "before": {
+      "repeats": 8,
+      "pairs": 8,
+      "rows": [
+        4,
+        4,
+        4
+      ]
+    },
+    "after": {
+      "repeats": 0,
+      "pairs": 8,
+      "rows": [
+        3,
+        4,
+        4
+      ]
+    }
   },
   {
     "id": "studio-v2-pancakes",
     "name": "Sonntagsstapel",
-    "oldBlack": 9,
-    "newBlack": 3,
-    "oldDistinct": 2,
-    "newDistinct": 4,
-    "jobs": 66,
-    "tiny": 2
+    "before": {
+      "repeats": 8,
+      "pairs": 8,
+      "rows": [
+        4,
+        4,
+        4
+      ]
+    },
+    "after": {
+      "repeats": 1,
+      "pairs": 8,
+      "rows": [
+        2,
+        4,
+        4
+      ]
+    }
   },
   {
     "id": "studio-v2-pear",
     "name": "Freches Früchtchen",
-    "oldBlack": 9,
-    "newBlack": 3,
-    "oldDistinct": 2,
-    "newDistinct": 4,
-    "jobs": 52,
-    "tiny": 2
+    "before": {
+      "repeats": 8,
+      "pairs": 8,
+      "rows": [
+        4,
+        4,
+        4
+      ]
+    },
+    "after": {
+      "repeats": 0,
+      "pairs": 8,
+      "rows": [
+        3,
+        4,
+        4
+      ]
+    }
   },
   {
     "id": "studio-v2-icepop",
     "name": "Sommerlaune",
-    "oldBlack": 7,
-    "newBlack": 6,
-    "oldDistinct": 2,
-    "newDistinct": 3,
-    "jobs": 44,
-    "tiny": 2
+    "before": {
+      "repeats": 8,
+      "pairs": 8,
+      "rows": [
+        3,
+        3,
+        3
+      ]
+    },
+    "after": {
+      "repeats": 0,
+      "pairs": 8,
+      "rows": [
+        4,
+        4,
+        4
+      ]
+    }
   },
   {
     "id": "studio-v2-pizza",
     "name": "Nur noch ein Stück",
-    "oldBlack": 7,
-    "newBlack": 3,
-    "oldDistinct": 2,
-    "newDistinct": 4,
-    "jobs": 54,
-    "tiny": 2
+    "before": {
+      "repeats": 8,
+      "pairs": 8,
+      "rows": [
+        4,
+        4,
+        4
+      ]
+    },
+    "after": {
+      "repeats": 0,
+      "pairs": 8,
+      "rows": [
+        4,
+        4,
+        4
+      ]
+    }
   },
   {
     "id": "studio-v2-cherries",
     "name": "Doppelt frech",
-    "oldBlack": 12,
-    "newBlack": 3,
-    "oldDistinct": 1,
-    "newDistinct": 4,
-    "jobs": 64,
-    "tiny": 2
+    "before": {
+      "repeats": 8,
+      "pairs": 8,
+      "rows": [
+        4,
+        4,
+        4
+      ]
+    },
+    "after": {
+      "repeats": 0,
+      "pairs": 8,
+      "rows": [
+        4,
+        4,
+        4
+      ]
+    }
   },
   {
     "id": "studio-v2-cupcake",
     "name": "Kleine Krönung",
-    "oldBlack": 7,
-    "newBlack": 3,
-    "oldDistinct": 2,
-    "newDistinct": 4,
-    "jobs": 51,
-    "tiny": 3
+    "before": {
+      "repeats": 8,
+      "pairs": 8,
+      "rows": [
+        4,
+        4,
+        4
+      ]
+    },
+    "after": {
+      "repeats": 0,
+      "pairs": 8,
+      "rows": [
+        3,
+        4,
+        4
+      ]
+    }
   },
   {
     "id": "studio-v2-koi",
     "name": "Tanz der Farben",
-    "oldBlack": 7,
-    "newBlack": 3,
-    "oldDistinct": 2,
-    "newDistinct": 4,
-    "jobs": 72,
-    "tiny": 5
+    "before": {
+      "repeats": 8,
+      "pairs": 8,
+      "rows": [
+        4,
+        4,
+        4
+      ]
+    },
+    "after": {
+      "repeats": 1,
+      "pairs": 8,
+      "rows": [
+        4,
+        4,
+        4
+      ]
+    }
   },
   {
     "id": "studio-v2-sunmoon",
     "name": "Tag trifft Nacht",
-    "oldBlack": 9,
-    "newBlack": 3,
-    "oldDistinct": 2,
-    "newDistinct": 4,
-    "jobs": 69,
-    "tiny": 1
+    "before": {
+      "repeats": 8,
+      "pairs": 8,
+      "rows": [
+        4,
+        4,
+        4
+      ]
+    },
+    "after": {
+      "repeats": 1,
+      "pairs": 8,
+      "rows": [
+        4,
+        4,
+        4
+      ]
+    }
   },
   {
     "id": "studio-v2-flowerwheel",
     "name": "Blütenwirbel",
-    "oldBlack": 12,
-    "newBlack": 3,
-    "oldDistinct": 1,
-    "newDistinct": 4,
-    "jobs": 55,
-    "tiny": 1
+    "before": {
+      "repeats": 8,
+      "pairs": 8,
+      "rows": [
+        4,
+        4,
+        4
+      ]
+    },
+    "after": {
+      "repeats": 0,
+      "pairs": 8,
+      "rows": [
+        4,
+        4,
+        4
+      ]
+    }
   },
   {
     "id": "studio-v2-mountain",
     "name": "Bergsommer",
-    "oldBlack": 10,
-    "newBlack": 3,
-    "oldDistinct": 2,
-    "newDistinct": 4,
-    "jobs": 71,
-    "tiny": 1
+    "before": {
+      "repeats": 8,
+      "pairs": 8,
+      "rows": [
+        4,
+        4,
+        4
+      ]
+    },
+    "after": {
+      "repeats": 0,
+      "pairs": 8,
+      "rows": [
+        4,
+        4,
+        4
+      ]
+    }
   },
   {
     "id": "studio-v2-wavefish",
     "name": "Wellenfänger",
-    "oldBlack": 11,
-    "newBlack": 3,
-    "oldDistinct": 2,
-    "newDistinct": 4,
-    "jobs": 66,
-    "tiny": 4
+    "before": {
+      "repeats": 8,
+      "pairs": 8,
+      "rows": [
+        4,
+        4,
+        4
+      ]
+    },
+    "after": {
+      "repeats": 0,
+      "pairs": 8,
+      "rows": [
+        4,
+        4,
+        4
+      ]
+    }
   },
   {
     "id": "studio-v2-rainboots",
     "name": "Pfützenglück",
-    "oldBlack": 10,
-    "newBlack": 3,
-    "oldDistinct": 2,
-    "newDistinct": 4,
-    "jobs": 52,
-    "tiny": 3
+    "before": {
+      "repeats": 8,
+      "pairs": 8,
+      "rows": [
+        4,
+        4,
+        4
+      ]
+    },
+    "after": {
+      "repeats": 0,
+      "pairs": 8,
+      "rows": [
+        4,
+        4,
+        4
+      ]
+    }
   },
   {
     "id": "studio-v2-mushroomhouse",
     "name": "Pilzadresse",
-    "oldBlack": 10,
-    "newBlack": 3,
-    "oldDistinct": 2,
-    "newDistinct": 4,
-    "jobs": 70,
-    "tiny": 0
+    "before": {
+      "repeats": 8,
+      "pairs": 8,
+      "rows": [
+        4,
+        4,
+        4
+      ]
+    },
+    "after": {
+      "repeats": 0,
+      "pairs": 8,
+      "rows": [
+        4,
+        4,
+        4
+      ]
+    }
   },
   {
     "id": "studio-v2-snail",
     "name": "Mit eigenem Tempo",
-    "oldBlack": 9,
-    "newBlack": 3,
-    "oldDistinct": 2,
-    "newDistinct": 4,
-    "jobs": 65,
-    "tiny": 1
+    "before": {
+      "repeats": 8,
+      "pairs": 8,
+      "rows": [
+        4,
+        4,
+        4
+      ]
+    },
+    "after": {
+      "repeats": 0,
+      "pairs": 8,
+      "rows": [
+        4,
+        4,
+        4
+      ]
+    }
   },
   {
     "id": "studio-v2-rhino",
     "name": "Sanfter Riese",
-    "oldBlack": 10,
-    "newBlack": 3,
-    "oldDistinct": 2,
-    "newDistinct": 4,
-    "jobs": 59,
-    "tiny": 3
+    "before": {
+      "repeats": 8,
+      "pairs": 8,
+      "rows": [
+        4,
+        4,
+        4
+      ]
+    },
+    "after": {
+      "repeats": 1,
+      "pairs": 8,
+      "rows": [
+        3,
+        4,
+        3
+      ]
+    }
   },
   {
     "id": "studio-v2-cactus",
     "name": "Stachelig charmant",
-    "oldBlack": 11,
-    "newBlack": 3,
-    "oldDistinct": 2,
-    "newDistinct": 4,
-    "jobs": 58,
-    "tiny": 2
+    "before": {
+      "repeats": 8,
+      "pairs": 8,
+      "rows": [
+        4,
+        4,
+        4
+      ]
+    },
+    "after": {
+      "repeats": 0,
+      "pairs": 8,
+      "rows": [
+        3,
+        4,
+        4
+      ]
+    }
   },
   {
     "id": "studio-v3-fox",
     "name": "Nachtwache",
-    "oldBlack": 6,
-    "newBlack": 6,
-    "oldDistinct": 3,
-    "newDistinct": 3,
-    "jobs": 71,
-    "tiny": 2
+    "before": {
+      "repeats": 8,
+      "pairs": 8,
+      "rows": [
+        3,
+        3,
+        3
+      ]
+    },
+    "after": {
+      "repeats": 1,
+      "pairs": 8,
+      "rows": [
+        4,
+        4,
+        4
+      ]
+    }
   },
   {
     "id": "studio-v3-bee",
     "name": "Blütenpilot",
-    "oldBlack": 3,
-    "newBlack": 3,
-    "oldDistinct": 4,
-    "newDistinct": 4,
-    "jobs": 56,
-    "tiny": 3
+    "before": {
+      "repeats": 8,
+      "pairs": 8,
+      "rows": [
+        4,
+        4,
+        4
+      ]
+    },
+    "after": {
+      "repeats": 2,
+      "pairs": 8,
+      "rows": [
+        3,
+        4,
+        4
+      ]
+    }
   },
   {
     "id": "studio-v3-turtle",
     "name": "Panzerparty",
-    "oldBlack": 3,
-    "newBlack": 3,
-    "oldDistinct": 4,
-    "newDistinct": 4,
-    "jobs": 60,
-    "tiny": 5
+    "before": {
+      "repeats": 8,
+      "pairs": 8,
+      "rows": [
+        4,
+        4,
+        4
+      ]
+    },
+    "after": {
+      "repeats": 0,
+      "pairs": 8,
+      "rows": [
+        4,
+        4,
+        4
+      ]
+    }
   },
   {
     "id": "studio-v3-hippo",
     "name": "Badespaß",
-    "oldBlack": 6,
-    "newBlack": 6,
-    "oldDistinct": 3,
-    "newDistinct": 3,
-    "jobs": 68,
-    "tiny": 7
+    "before": {
+      "repeats": 8,
+      "pairs": 8,
+      "rows": [
+        3,
+        3,
+        3
+      ]
+    },
+    "after": {
+      "repeats": 0,
+      "pairs": 8,
+      "rows": [
+        4,
+        4,
+        4
+      ]
+    }
   },
   {
     "id": "studio-v3-toucan",
     "name": "Fruchtalarm",
-    "oldBlack": 3,
-    "newBlack": 3,
-    "oldDistinct": 4,
-    "newDistinct": 4,
-    "jobs": 47,
-    "tiny": 3
+    "before": {
+      "repeats": 8,
+      "pairs": 8,
+      "rows": [
+        4,
+        4,
+        4
+      ]
+    },
+    "after": {
+      "repeats": 0,
+      "pairs": 8,
+      "rows": [
+        3,
+        4,
+        4
+      ]
+    }
   },
   {
     "id": "studio-v3-seal",
     "name": "Applaus bitte",
-    "oldBlack": 6,
-    "newBlack": 6,
-    "oldDistinct": 3,
-    "newDistinct": 3,
-    "jobs": 48,
-    "tiny": 6
+    "before": {
+      "repeats": 8,
+      "pairs": 8,
+      "rows": [
+        3,
+        3,
+        3
+      ]
+    },
+    "after": {
+      "repeats": 1,
+      "pairs": 8,
+      "rows": [
+        3,
+        4,
+        4
+      ]
+    }
   },
   {
     "id": "studio-v3-raccoon",
     "name": "Mitternachtssnack",
-    "oldBlack": 3,
-    "newBlack": 3,
-    "oldDistinct": 4,
-    "newDistinct": 4,
-    "jobs": 68,
-    "tiny": 2
+    "before": {
+      "repeats": 8,
+      "pairs": 8,
+      "rows": [
+        4,
+        4,
+        4
+      ]
+    },
+    "after": {
+      "repeats": 0,
+      "pairs": 8,
+      "rows": [
+        4,
+        3,
+        4
+      ]
+    }
   },
   {
     "id": "studio-v3-bat",
     "name": "Nachtschicht",
-    "oldBlack": 6,
-    "newBlack": 6,
-    "oldDistinct": 3,
-    "newDistinct": 3,
-    "jobs": 39,
-    "tiny": 3
+    "before": {
+      "repeats": 8,
+      "pairs": 8,
+      "rows": [
+        3,
+        3,
+        3
+      ]
+    },
+    "after": {
+      "repeats": 0,
+      "pairs": 8,
+      "rows": [
+        4,
+        4,
+        4
+      ]
+    }
   },
   {
     "id": "studio-v3-hedgehog",
     "name": "Herbstsammler",
-    "oldBlack": 3,
-    "newBlack": 3,
-    "oldDistinct": 4,
-    "newDistinct": 4,
-    "jobs": 64,
-    "tiny": 0
+    "before": {
+      "repeats": 8,
+      "pairs": 8,
+      "rows": [
+        4,
+        4,
+        4
+      ]
+    },
+    "after": {
+      "repeats": 1,
+      "pairs": 8,
+      "rows": [
+        3,
+        4,
+        4
+      ]
+    }
   },
   {
     "id": "studio-v3-flamingo",
     "name": "Rosa Pause",
-    "oldBlack": 3,
-    "newBlack": 3,
-    "oldDistinct": 4,
-    "newDistinct": 4,
-    "jobs": 55,
-    "tiny": 3
+    "before": {
+      "repeats": 8,
+      "pairs": 8,
+      "rows": [
+        4,
+        4,
+        4
+      ]
+    },
+    "after": {
+      "repeats": 0,
+      "pairs": 8,
+      "rows": [
+        4,
+        4,
+        4
+      ]
+    }
   },
   {
     "id": "studio-v3-barista",
     "name": "Doppelt wach",
-    "oldBlack": 6,
-    "newBlack": 6,
-    "oldDistinct": 3,
-    "newDistinct": 3,
-    "jobs": 59,
-    "tiny": 7
+    "before": {
+      "repeats": 8,
+      "pairs": 8,
+      "rows": [
+        3,
+        3,
+        3
+      ]
+    },
+    "after": {
+      "repeats": 0,
+      "pairs": 8,
+      "rows": [
+        3,
+        4,
+        4
+      ]
+    }
   },
   {
     "id": "studio-v3-skater",
     "name": "Rollbereit",
-    "oldBlack": 6,
-    "newBlack": 6,
-    "oldDistinct": 3,
-    "newDistinct": 3,
-    "jobs": 46,
-    "tiny": 3
+    "before": {
+      "repeats": 8,
+      "pairs": 8,
+      "rows": [
+        3,
+        3,
+        3
+      ]
+    },
+    "after": {
+      "repeats": 0,
+      "pairs": 8,
+      "rows": [
+        3,
+        4,
+        4
+      ]
+    }
   },
   {
     "id": "studio-v3-pirate",
     "name": "Kleine Beute",
-    "oldBlack": 6,
-    "newBlack": 6,
-    "oldDistinct": 3,
-    "newDistinct": 3,
-    "jobs": 68,
-    "tiny": 4
+    "before": {
+      "repeats": 8,
+      "pairs": 8,
+      "rows": [
+        3,
+        3,
+        3
+      ]
+    },
+    "after": {
+      "repeats": 0,
+      "pairs": 8,
+      "rows": [
+        4,
+        4,
+        4
+      ]
+    }
   },
   {
     "id": "studio-v3-baker",
     "name": "Frisch verliebt",
-    "oldBlack": 6,
-    "newBlack": 6,
-    "oldDistinct": 3,
-    "newDistinct": 3,
-    "jobs": 52,
-    "tiny": 4
+    "before": {
+      "repeats": 8,
+      "pairs": 8,
+      "rows": [
+        3,
+        3,
+        3
+      ]
+    },
+    "after": {
+      "repeats": 0,
+      "pairs": 8,
+      "rows": [
+        4,
+        4,
+        4
+      ]
+    }
   },
   {
     "id": "studio-v3-robot",
     "name": "Schraubenglück",
-    "oldBlack": 6,
-    "newBlack": 6,
-    "oldDistinct": 3,
-    "newDistinct": 3,
-    "jobs": 48,
-    "tiny": 2
+    "before": {
+      "repeats": 8,
+      "pairs": 8,
+      "rows": [
+        3,
+        3,
+        3
+      ]
+    },
+    "after": {
+      "repeats": 0,
+      "pairs": 8,
+      "rows": [
+        3,
+        4,
+        4
+      ]
+    }
   },
   {
     "id": "studio-v3-umbrella",
     "name": "Regen? Egal!",
-    "oldBlack": 6,
-    "newBlack": 6,
-    "oldDistinct": 3,
-    "newDistinct": 3,
-    "jobs": 49,
-    "tiny": 0
+    "before": {
+      "repeats": 8,
+      "pairs": 8,
+      "rows": [
+        3,
+        3,
+        3
+      ]
+    },
+    "after": {
+      "repeats": 1,
+      "pairs": 8,
+      "rows": [
+        3,
+        4,
+        4
+      ]
+    }
   },
   {
     "id": "studio-v3-alarm",
     "name": "Noch fünf Minuten",
-    "oldBlack": 6,
-    "newBlack": 6,
-    "oldDistinct": 3,
-    "newDistinct": 3,
-    "jobs": 62,
-    "tiny": 3
+    "before": {
+      "repeats": 8,
+      "pairs": 8,
+      "rows": [
+        3,
+        3,
+        3
+      ]
+    },
+    "after": {
+      "repeats": 1,
+      "pairs": 8,
+      "rows": [
+        3,
+        4,
+        4
+      ]
+    }
   },
   {
     "id": "studio-v3-boot",
     "name": "Gute Wanderung",
-    "oldBlack": 3,
-    "newBlack": 3,
-    "oldDistinct": 4,
-    "newDistinct": 4,
-    "jobs": 58,
-    "tiny": 2
+    "before": {
+      "repeats": 8,
+      "pairs": 8,
+      "rows": [
+        4,
+        4,
+        4
+      ]
+    },
+    "after": {
+      "repeats": 0,
+      "pairs": 8,
+      "rows": [
+        3,
+        4,
+        4
+      ]
+    }
   },
   {
     "id": "studio-v3-teacup",
     "name": "Wolkenkaffee",
-    "oldBlack": 6,
-    "newBlack": 6,
-    "oldDistinct": 3,
-    "newDistinct": 3,
-    "jobs": 74,
-    "tiny": 3
+    "before": {
+      "repeats": 8,
+      "pairs": 8,
+      "rows": [
+        3,
+        3,
+        3
+      ]
+    },
+    "after": {
+      "repeats": 0,
+      "pairs": 8,
+      "rows": [
+        3,
+        4,
+        4
+      ]
+    }
   },
   {
     "id": "studio-v3-backpack",
     "name": "Abenteuer wartet",
-    "oldBlack": 6,
-    "newBlack": 6,
-    "oldDistinct": 3,
-    "newDistinct": 3,
-    "jobs": 71,
-    "tiny": 2
+    "before": {
+      "repeats": 8,
+      "pairs": 8,
+      "rows": [
+        3,
+        3,
+        3
+      ]
+    },
+    "after": {
+      "repeats": 0,
+      "pairs": 8,
+      "rows": [
+        4,
+        4,
+        4
+      ]
+    }
   },
   {
     "id": "studio-v3-donut",
     "name": "Zuckerschock",
-    "oldBlack": 6,
-    "newBlack": 6,
-    "oldDistinct": 3,
-    "newDistinct": 3,
-    "jobs": 78,
-    "tiny": 3
+    "before": {
+      "repeats": 8,
+      "pairs": 8,
+      "rows": [
+        3,
+        3,
+        3
+      ]
+    },
+    "after": {
+      "repeats": 0,
+      "pairs": 8,
+      "rows": [
+        3,
+        3,
+        3
+      ]
+    }
   },
   {
     "id": "studio-v3-avocado",
     "name": "Kernkompetenz",
-    "oldBlack": 3,
-    "newBlack": 3,
-    "oldDistinct": 4,
-    "newDistinct": 4,
-    "jobs": 63,
-    "tiny": 2
+    "before": {
+      "repeats": 8,
+      "pairs": 8,
+      "rows": [
+        4,
+        4,
+        4
+      ]
+    },
+    "after": {
+      "repeats": 0,
+      "pairs": 8,
+      "rows": [
+        4,
+        3,
+        4
+      ]
+    }
   },
   {
     "id": "studio-v3-burger",
     "name": "Hoch gestapelt",
-    "oldBlack": 6,
-    "newBlack": 6,
-    "oldDistinct": 3,
-    "newDistinct": 3,
-    "jobs": 74,
-    "tiny": 5
+    "before": {
+      "repeats": 8,
+      "pairs": 8,
+      "rows": [
+        3,
+        3,
+        3
+      ]
+    },
+    "after": {
+      "repeats": 0,
+      "pairs": 8,
+      "rows": [
+        3,
+        3,
+        3
+      ]
+    }
   },
   {
     "id": "studio-v3-lemon",
     "name": "Sauer macht lustig",
-    "oldBlack": 6,
-    "newBlack": 6,
-    "oldDistinct": 3,
-    "newDistinct": 3,
-    "jobs": 62,
-    "tiny": 2
+    "before": {
+      "repeats": 8,
+      "pairs": 8,
+      "rows": [
+        3,
+        3,
+        3
+      ]
+    },
+    "after": {
+      "repeats": 1,
+      "pairs": 8,
+      "rows": [
+        3,
+        4,
+        4
+      ]
+    }
   },
   {
     "id": "studio-v3-popcorn",
     "name": "Großes Kino",
-    "oldBlack": 3,
-    "newBlack": 3,
-    "oldDistinct": 4,
-    "newDistinct": 4,
-    "jobs": 69,
-    "tiny": 4
+    "before": {
+      "repeats": 8,
+      "pairs": 8,
+      "rows": [
+        4,
+        4,
+        4
+      ]
+    },
+    "after": {
+      "repeats": 1,
+      "pairs": 8,
+      "rows": [
+        4,
+        4,
+        4
+      ]
+    }
   },
   {
     "id": "studio-v3-orbit",
     "name": "Sonnenbahnen",
-    "oldBlack": 6,
-    "newBlack": 6,
-    "oldDistinct": 3,
-    "newDistinct": 3,
-    "jobs": 64,
-    "tiny": 4
+    "before": {
+      "repeats": 8,
+      "pairs": 8,
+      "rows": [
+        3,
+        3,
+        3
+      ]
+    },
+    "after": {
+      "repeats": 0,
+      "pairs": 8,
+      "rows": [
+        3,
+        3,
+        3
+      ]
+    }
   },
   {
     "id": "studio-v3-lotus",
     "name": "Leuchtende Ruhe",
-    "oldBlack": 6,
-    "newBlack": 6,
-    "oldDistinct": 3,
-    "newDistinct": 3,
-    "jobs": 59,
-    "tiny": 3
+    "before": {
+      "repeats": 8,
+      "pairs": 8,
+      "rows": [
+        3,
+        3,
+        3
+      ]
+    },
+    "after": {
+      "repeats": 1,
+      "pairs": 8,
+      "rows": [
+        4,
+        4,
+        4
+      ]
+    }
   },
   {
     "id": "studio-v3-comet",
     "name": "Sternenpost",
-    "oldBlack": 6,
-    "newBlack": 6,
-    "oldDistinct": 3,
-    "newDistinct": 3,
-    "jobs": 62,
-    "tiny": 3
+    "before": {
+      "repeats": 8,
+      "pairs": 8,
+      "rows": [
+        3,
+        3,
+        3
+      ]
+    },
+    "after": {
+      "repeats": 0,
+      "pairs": 8,
+      "rows": [
+        4,
+        4,
+        4
+      ]
+    }
   },
   {
     "id": "studio-v3-arches",
     "name": "Bunte Balance",
-    "oldBlack": 3,
-    "newBlack": 3,
-    "oldDistinct": 4,
-    "newDistinct": 4,
-    "jobs": 77,
-    "tiny": 5
+    "before": {
+      "repeats": 8,
+      "pairs": 8,
+      "rows": [
+        4,
+        4,
+        4
+      ]
+    },
+    "after": {
+      "repeats": 0,
+      "pairs": 8,
+      "rows": [
+        4,
+        4,
+        4
+      ]
+    }
   },
   {
     "id": "studio-v3-island",
     "name": "Kleine Auszeit",
-    "oldBlack": 3,
-    "newBlack": 3,
-    "oldDistinct": 4,
-    "newDistinct": 4,
-    "jobs": 78,
-    "tiny": 3
+    "before": {
+      "repeats": 8,
+      "pairs": 8,
+      "rows": [
+        4,
+        4,
+        4
+      ]
+    },
+    "after": {
+      "repeats": 1,
+      "pairs": 8,
+      "rows": [
+        4,
+        4,
+        4
+      ]
+    }
   }
 ]
