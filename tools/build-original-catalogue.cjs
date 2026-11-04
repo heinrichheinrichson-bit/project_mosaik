@@ -1,5 +1,5 @@
 const fs=require('fs'),path=require('path'),vm=require('vm'),root=path.resolve(__dirname,'..'),src=path.join(root,'editor-src'),read=f=>fs.readFileSync(path.join(src,f),'utf8');
-const scripts=[read('core.js'),read('play-options.js'),read('board-cache.js'),read('play-core.js'),'const ORIGINAL_CATALOGUE_SEEDS='+read('seeds.json').replace(/</g,'\\u003c')+';'];
+const scripts=[read('core.js'),'globalThis.MOSAIC_QUEUE_LEGACY='+read('queue-legacy-plans.json')+';',read('play-options.js'),read('board-cache.js'),read('play-core.js'),'const ORIGINAL_CATALOGUE_SEEDS='+read('seeds.json').replace(/</g,'\\u003c')+';'];
 // Reuse the tested transport visuals without replacing the original screen.
 const helpers=['playFollower','playVisualOffset','playEntryOffset','drawPlayLoadCue','drawPlayFrames','playTint','playFigurePitch','playProjectedTrail','playEntryPath','playGradient','drawPlayGarage'].map(name=>{const line=read('play-app.js').split(/\r?\n/).find(l=>l.startsWith('function '+name+'('));if(!line)throw Error(name);return line;}).join('\n');
 const fields=read('play-app.js').match(/const LAB_FIELDS=([\s\S]*?);\r?\nfunction savePlayLab/)[1];
