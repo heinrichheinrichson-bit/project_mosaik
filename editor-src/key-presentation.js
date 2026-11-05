@@ -1,32 +1,8 @@
-const keyIcon='<svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="10" cy="10" r="6"/><path d="m14 14 13 13m-6-6 4-4m-1 7 4-4"/></svg>';
-const lockIcon='<svg viewBox="0 0 32 32" aria-hidden="true"><path d="M9 15V10a7 7 0 0 1 14 0v5"/><rect x="5" y="14" width="22" height="16" rx="4"/><path d="M16 20v5"/></svg>';
-const keyStyle=document.createElement('style');keyStyle.textContent=`
-.queuearea:has(.key-objective){position:relative}
-.key-objective{position:absolute;left:0;right:0;top:-32px;display:flex;align-items:center;justify-content:center;gap:7px;min-height:25px;margin:0;color:#f4deb0;font-size:11px;text-align:center}
-.key-objective svg,.key-lock svg,.key-flight svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:2.7;stroke-linecap:round;stroke-linejoin:round}
-#queues .lane.key-locked{position:relative}
-#queues .key-locked>.jar{filter:grayscale(.85) brightness(.65);opacity:.55!important}
-.key-lock{position:absolute;inset:-7px -5px 12px;z-index:3;border:1px solid #ddbd7970;border-radius:12px;background:linear-gradient(90deg,#12233370,#172a3eaa,#12233370);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;color:#f6d68b;pointer-events:none}
-.key-lock .lock-medal{display:grid;place-items:center;width:40px;height:44px;border:1px solid #f6d68b;border-radius:11px;background:linear-gradient(#40505b,#243542);box-shadow:0 3px 7px #0005}
-.key-lock small{font-size:9px;line-height:1.4;text-align:center;color:#fff0ce;background:#182b3de8;padding:4px 5px;border-radius:5px}
-.key-lock b{font-size:10px}.key-flight{position:fixed;z-index:9999;pointer-events:none;color:#ffe39a;background:#263b4b;border:1px solid #ffe39a;border-radius:50%;padding:7px;width:38px;height:38px;box-shadow:0 0 16px #f4cf8055;display:grid;place-items:center}
-@keyframes key-open-glow{0%{outline:3px solid #ffe39a;outline-offset:5px}100%{outline:3px solid transparent;outline-offset:10px}}
-#queues .lane.key-just-opened{animation:key-open-glow 1.2s ease-out;border-radius:10px}
-`;document.head.append(keyStyle);
-const keyViews=new WeakMap();
-function presentKeyQueues(){
- const g=puzzle.session,keys=g.doc.mechanics?.keys||[],queues=D('queues');
- let objective=document.querySelector('.key-objective');
- if(!keys.length){objective?.remove();return;}
- if(!objective){objective=document.createElement('div');objective.className='key-objective';objective.setAttribute('role','status');objective.setAttribute('aria-live','polite');queues.before(objective);}
- const closed=keys.filter(k=>g.isLaneLocked(k.lane));
- objective.hidden=!closed.length;objective.style.display=closed.length?'flex':'none';
- objective.innerHTML=closed.length?keyIcon+'<span>Hole den Schlüsselstein, um die gesperrte Reihe zu öffnen.</span>':'';
- for(const k of closed){const col=queues.children[k.lane];if(!col)continue;col.classList.add('key-locked');for(const b of col.querySelectorAll('button')){b.disabled=true;b.setAttribute('aria-label','Gesperrt. Passenden Schlüsselstein im Bild abholen.');}
- const overlay=document.createElement('div');overlay.className='key-lock';overlay.innerHTML='<span class="lock-medal">'+lockIcon+'</span><small>Mit Schlüssel<br>öffnen</small>';
- if(keys.length>1){const n=document.createElement('b');n.textContent='Schlüssel '+(keys.indexOf(k)+1);overlay.append(n);}
- col.append(overlay);}
-}
+let keyIcon='';
+function keyLockArtwork(){const m=playMechanicPalette();let links='';for(const sign of [-1,1])for(let i=0;i<=14;i++){const t=i/14,x=sign<0?10+80*t:90-80*t,y=12+190*t,angle=sign<0?67:113;links+='<ellipse cx="'+x+'" cy="'+y+'" rx="7" ry="4.5" transform="rotate('+angle+' '+x+' '+y+')" fill="'+m.dark+'" stroke="'+m.light+'" stroke-width="2"/>';}return '<svg viewBox="0 0 100 220" preserveAspectRatio="none" aria-hidden="true">'+links+'<path d="M35 105V88a15 17 0 0 1 30 0v17" fill="none" stroke="'+m.dark+'" stroke-width="9"/><path d="M35 105V88a15 17 0 0 1 30 0v17" fill="none" stroke="'+m.light+'" stroke-width="5"/><rect x="26" y="100" width="48" height="45" rx="8" fill="'+m.mid+'" stroke="'+m.dark+'" stroke-width="2"/><path d="M31 108H69" stroke="'+m.light+'" stroke-width="2"/><circle cx="50" cy="120" r="5" fill="'+m.dark+'"/><path d="M48 121 46 133H54L52 121" fill="'+m.dark+'"/></svg>';}
+function mechanicKeyIcon(){const m=playMechanicPalette();return '<svg viewBox="0 0 72 32" aria-hidden="true"><path d="M26 12H67V20H66V26H60V20H57V26H51V20H26" fill="'+m.mid+'" stroke="'+m.dark+'" stroke-width="2"/><circle cx="16" cy="16" r="11" fill="'+m.mid+'" stroke="'+m.dark+'" stroke-width="2"/><circle cx="16" cy="16" r="5" fill="#223b48" stroke="'+m.light+'"/><path d="M29 14H63" stroke="'+m.light+'"/></svg>';}
+const keyStyle=document.createElement('style');keyStyle.textContent='.queuearea:has(.key-objective){position:relative}.key-objective{position:absolute;left:0;right:0;top:-32px;display:flex;align-items:center;justify-content:center;gap:7px;min-height:25px;margin:0;color:#f4deb0;font-size:11px}.key-objective svg{width:28px;height:18px}#queues .lane.key-locked{position:relative}#queues .key-locked>.jar{filter:grayscale(.85) brightness(.65);opacity:.55!important}.key-lock{position:absolute;inset:-8px -4px 12px;z-index:3;pointer-events:none;filter:drop-shadow(0 2px 2px #0008)}.key-lock svg{width:100%;height:100%;display:block}.key-flight{position:fixed;z-index:9999;pointer-events:none;background:#263b4b;border:1px solid #ffe39a;border-radius:50%;padding:5px;width:38px;height:38px;display:grid;place-items:center}.key-flight svg{width:28px;height:20px}@keyframes key-open-glow{from{outline:3px solid #ffe39a;outline-offset:5px}to{outline:3px solid transparent;outline-offset:10px}}#queues .lane.key-just-opened{animation:key-open-glow 1.2s ease-out;border-radius:10px}';document.head.append(keyStyle);const keyViews=new WeakMap();
+function presentKeyQueues(){const g=puzzle.session,keys=g.doc.mechanics?.keys||[],queues=D('queues');keyIcon=mechanicKeyIcon();let objective=document.querySelector('.key-objective');if(!keys.length||keys.every(k=>k.kind==='ground')){objective?.remove();objective=null;}else{if(!objective){objective=document.createElement('div');objective.className='key-objective';objective.setAttribute('role','status');queues.before(objective);}const closed=keys.some(k=>g.isLaneLocked(k.lane));objective.hidden=!closed;objective.style.display=closed?'flex':'none';objective.innerHTML=closed?keyIcon+'<span>Hole den Schlüsselstein, um die gesperrte Reihe zu öffnen.</span>':'';}for(const k of keys){if(!g.isLaneLocked(k.lane))continue;const col=queues.children[k.lane];if(!col)continue;col.classList.add('key-locked');for(const b of col.querySelectorAll('button')){b.disabled=true;b.setAttribute('aria-label','Gesperrt: Schlüssel finden und abliefern.');}const overlay=document.createElement('div');overlay.className='key-lock';overlay.innerHTML=keyLockArtwork();col.append(overlay);}}
 function animateKeyUnlocks(){
  const g=playGame,keys=g.doc.mechanics?.keys||[];
  if(!keys.length)return;
@@ -40,9 +16,9 @@ function presentKeyQueuesAfterUnlock(k){
  // Rebuild from the actual state before targeting the unlocked column.
  renderUI();const lane=D('queues').children[k.lane];if(!lane)return;
  const reduced=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
- lane.classList.add('key-just-opened');
+ lane.classList.add('key-just-opened');const opening=document.createElement('div');opening.className='key-lock opening-lock';opening.innerHTML=keyLockArtwork();lane.style.position='relative';lane.append(opening);opening.animate([{opacity:1,transform:'scale(1)'},{opacity:0,transform:'scale(1.08) translateY(5px)'}],{duration:650,easing:'ease-out'}).onfinish=()=>opening.remove();setTimeout(()=>opening.remove(),800);
  if(reduced)return;
- const point=playProject(playGame.point(playGame.key(k.x+2,k.y+2))),r=canvas.getBoundingClientRect(),target=lane.getBoundingClientRect(),scale=r.width/420;
+ const point=playProject(playGame.point(k.kind==='ground'?playGame.sink():playGame.key(k.x+2,k.y+2))),r=canvas.getBoundingClientRect(),target=lane.getBoundingClientRect(),scale=r.width/420;
  const flying=document.createElement('div');flying.className='key-flight';flying.innerHTML=keyIcon;flying.style.left=(r.left+point.x*scale-19)+'px';flying.style.top=(r.top+point.y*scale-19)+'px';document.body.append(flying);
  const dx=target.left+target.width/2-(r.left+point.x*scale),dy=target.top+22-(r.top+point.y*scale);
  const animation=flying.animate([{transform:'translate(0,0) scale(1)',opacity:1},{transform:'translate('+dx*.5+'px,'+(dy*.5-35)+'px) scale(1.15)',opacity:1},{transform:'translate('+dx+'px,'+dy+'px) scale(.65)',opacity:0}],{duration:700,easing:'ease-in-out'});

@@ -1,6 +1,6 @@
 # Spielkonzept und verbindlicher Arbeitsplan
 
-Stand: 5. November 2026 · Version 1
+Stand: 5. November 2026 · Version 2
 
 ## Arbeitsgrundlage und Rückkehrpunkt
 
@@ -23,6 +23,12 @@ Das bevorzugte Originaldesign bleibt Grundlage: dunkler Hintergrund, sandfarbene
 - Teamgrenze und Gesamtgrenze sind Testparameter, keine festgelegten endgültigen Spielregeln. Ausgangsvergleich ohne zusätzliche Gesamtbegrenzung; kein künstliches Limit als angeblich bewährte Konkurrenzregel darstellen.
 - Arbeitsplatzfreigabe und Pfade verwenden die vorhandenen Einstellungen. Mechaniktests verändern sie nicht stillschweigend.
 - Rückgängig, Hinweis, Neustart und Vorspulen bleiben erhalten. Automatischer Solver ist Testhilfe.
+
+## Aktuelle Weiterentwicklung nach Nutzerentscheidung
+
+Die neue bevorzugte Schlüsselstudie verwendet einen eigenständigen Gegenstand auf freiem Boden. Er wird zunächst durch Mosaiksteine eingeschlossen. Nach Freilegen eines Zugangs startet ein neutraler Bot automatisch, ohne farbige Schatulle oder Stellplatzverbrauch, holt den Schlüssel und bringt ihn zur Abgabe. Erst nach vollständiger Einfahrt/Lieferung öffnen Schloss und gekreuzte Ketten. Der Schlüssel zählt nicht als Stein. Die bisherige Schlüsselstein-Studie mit Freigabe bei Aufnahme bleibt als Legacyvergleich erhalten; ihre Regel ist nicht die neue Boden-Schlüsselregel.
+
+Die Schlüssellänge wird unabhängig vom Steinraster mit 1,5/2/2,5 mal normaler Botlänge (Basis13Bildpunkte) verglichen, am Boden und im Transport. Material und Formensprache von Schlüssel, Schloss, Kette und Klammer sind gemeinsam einstellbar. Verbundene Partner dürfen in unterschiedlichen Tiefen stehen; gemeinsame Auswahl erst, wenn beide vorne und zwei Stellplätze frei sind.
 
 ## Erste Mechanikfassung
 
@@ -135,3 +141,15 @@ Teamlimit/Gesamtlimit zählen weiterhin Bots; offene Mengen, Ausgang, Lieferung 
 Vergleich in gemeinsamer Simulation:130px/s, Team12, Gesamt0, Abstand0,16s je Box, Öffnen0,35s, Aufnahme0,18s, paralleler Solver, gleicher Rahmenmodus. Einzeltransport:1573Fahrten,294,4s. Bonus:1002Fahrten,201,4s. Rund32%kürzere Simulationsdauer in diesem einen Motiv, kein allgemeiner Zeitgewinn und kein Mobilperformancewert. Tests: ungeradeMenge5 mit genau3Fahrten; alle3Platzfreigabemodi; Schlüssel am zweiten Stein; Nachbarschaft und eindeutige Reservierungen; Schema; Rückgängig; vollständige Vergleichslösungen. Browser:12Auswahlmarkierungen, gezeichnete doppelte Ladung, richtige Restmengen. Paar- und Schlüsselstudie lösen weiterhin vollständig. Nutzerbewertung offen; als Nächstes K1 Schlüssel + Bonus nach Einzelbewertung.
 
 - Bonuskennzeichnung nach Nutzerfeedback: farbige Würfelsymbole durch neutrales weißes ×2 auf dunklem Schild ersetzt, in Auswahl und aktiver Schatulle. Keine Farbbedeutung; Transportregel unverändert. Browserdarstellung und Mengenparität geprüft.
+
+### Designstudien und Boden-Schlüssel · fertig zum Vergleichen
+
+- [x] D1: Eigenständiger Boden-Schlüssel, neutraler Kurier und Freigabe erst bei Lieferung; snapshotfähiger Zustand waiting/outbound/carried/delivered.
+- [x] D2: Gekreuzte Kettenglieder und gestaltetes Schloss; Materialien Messing, Stahl, Emaille. Drei echte Verbindungsformen: gerundete Klammer, Gliederkette, eckiger Bügel. Passender Schlüssel mit drei rasterunabhängigen Größen.
+- [x] D3: Sichtbare Verbindung zu Partnern in Reihe2/3; beide Tiefen als eigene lösbare Studien.
+- [x] D4: Auswählbare Studien im Originalscreen und gemeinsame Regler im Editor. PC-Werkzeug für Boden-Schlüssel auf leerem Feld.
+- [ ] D5: Nutzerbewertung der Varianten und bevorzugte Gestaltung festhalten; danach K1 fortsetzen.
+
+NeueIDs: study-key-courier (1538Steine, anfangs eingeschlossen), study-key-courier-open (1528Steine, direkter Transportvergleich mit offenem Zugang), study-pair-depth2 und study-pair-depth3 (je1573Steine). Alle vier vollständig im gemeinsamen Kern gelöst, keine Mobile-FPS-Aussage. Alle160vorhandenen Seeds inhaltlich unverändert. Unter Mechaniken · Designstudie können Szenen, Materialien, Klammerform und Größen gewählt werden; Änderungen starten die Studie neu. Keine Erfolgstexte über Spielmodulen. Die Ketten lösen sich nach Lieferung visuell; die lange Schlüsselladung wird bei der verdeckten Einfahrtstiefe berücksichtigt.
+
+Tests: keine Kurierfahrt bei eingeschlossenem Schlüssel, genau ein neutraler Bot nach freiem Zugang, Sperre bei Aufnahme weiterhin aktiv, Entsperren erst nach kompletter Abgabe, exakte Steinmenge, Rückgängig restauriert Gegenstand und Sperre. Browser: echte gekreuzte Kettenglieder, Material-/Größenwahl, 55Regler verfügbar, tiefer Partner sichtbar und noch nicht startbar, großer Schlüssel im Transport. Schlüssel-, Paar-, Bonus- und Einfahrtregressionen bestehen.
