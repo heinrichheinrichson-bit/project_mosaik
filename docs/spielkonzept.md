@@ -78,8 +78,8 @@ Studien erhalten eigene IDs und Kategorie; bestehende Motive werden nicht ersetz
 - [x] M1a: Datenformat, Schlüsselzustand und Spaltensperre im gemeinsamen Kern.
 - [x] M1b: Original-UI, Editor, Hinweis/Solver, Import/Export und eigene Vergleichsstudie.
 - [ ] M1c: Regeltests und vollständiger Spieldurchlauf; Nutzerbewertung festhalten.
-- [ ] M2a: Paar-Daten und atomarer Doppelstart mit Rückgängig.
-- [ ] M2b: Sichtbare Verknüpfung, Editor und vollständige Vergleichsstudie.
+- [x] M2a: Paar-Daten und atomarer Doppelstart mit Rückgängig.
+- [x] M2b: Sichtbare Verknüpfung, Editor und vollständige Vergleichsstudie.
 - [ ] M3a: Doppelreservierung, legale zweite Aufnahme und exakte Mengenabrechnung.
 - [ ] M3b: Lesbare Darstellung, Editor und Zeitvergleich.
 - [ ] K1: Nach Einzelprüfungen Schlüssel + Bonus in einem gestalteten Rätsel kombinieren.
@@ -121,3 +121,7 @@ Die Bildschirmprojektion verzerrte die im Raster geglättete Anfahrt bis in Park
 Unter Aufnahme und Einfahrt stehen Mittig, 2 Spuren und 3 Spuren zur Auswahl. Drei ist die neue Vorgabe für diesen Vergleich; explizit gespeicherte Auswahl bleibt erhalten. Die Anfahrtsseite bestimmt den Versatz, der pro Bot beim Planen festgelegt und bei Rückweg-Neuberechnung beibehalten wird. Einfahrt hinter der Abdeckung bleibt auf derselben Spur, ohne erneutes Zentrieren. Verfügbarer Versatz aus schmalster Fahrbahnbreite abzüglich Bot-/Würfelausdehnung und Sicherheitsrand; bei zu wenig Breite Zusammenfallen zur Mitte. Optische Spuren, keine neue gegenseitige Bot-Kollisionsregel. Gemeinsame Einstellung und Transportlogik für Editor und Originalspiel. Browser: alle drei Varianten, Links/Mitte/Rechts, Wandabstand, feste Spur bei Neuplanung, kein Zentrieren bei Einfahrt; bisherige Geschwindigkeits-/Parkplatz-/Ausrichtungsprüfung besteht. Alle52 Optionen im Originalscreen vorhanden.
 
 - Nutzerbewertung M1: Schlüssel funktioniert. Dauerhafte Erfolgsmeldung über den Modulen abgelehnt und entfernt. Animation und offene Auswahl zeigen den Erfolg; nach Freigabe kein Hinweistext. Nächster geplanter Baustein M2: verbundene Schatullen.
+
+### Umsetzung M2: Verbundene Schatullen
+
+Studien `study-pair-on` und `study-pair-off`, identisches Eichelmotiv mit identischen Warteschlangen, mittlere vordere Boxen15/grün und23/braun verbunden. Klammer mit 2-Plätze-Kennzeichnung statt Dauerhinweis. Entweder Box wählt atomar beide; Platzmangel zeigt kurzes Rütteln. Beide Teams arbeiten danach unabhängig, ein Rückgängig-Schritt stellt beide wieder her. Daten: optionales `pair` an genau zwei Jobs in unterschiedlichen Spalten, Validierung bei Import. Partner müssen zum Start beide vorne liegen. Editor kann Positionen verbinden und Verbindungen entfernen; Queue-Neugenerierung/Rasterwechsel fordert vorheriges Entfernen. Automatischer Test verlangt erreichbare Mengen für beide Partner, damit vorzeitige Auswahl nicht die geplanten Farbabschnitte stört. Hinweise beachten beide freien Plätze. Vollständiger Durchlauf1573Steine; Browserprüfung für Klammer, beide Klickrichtungen, Platzmangel und Rückgängig. Getrennte Stellplatzfreigabe separat geprüft. Nutzerbewertung noch offen. Nächster Mechanikbaustein M3: Bonus-Doppeltransport.
