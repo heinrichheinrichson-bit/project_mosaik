@@ -75,8 +75,8 @@ Studien erhalten eigene IDs und Kategorie; bestehende Motive werden nicht ersetz
 - [x] B1: Konzept, Regeln, Prüfkriterien und zurückgestellte Ideen dokumentieren.
 - [x] B2: Testauswertung für Simulationsdauer, Fortschritt und aktive Bots implementieren und prüfen.
 - [ ] B3: Sechs feste Referenzmotive und identische Vergleichseinstellungen dokumentieren; kleine/mittlere/große und offene/geschlossene Formen.
-- [ ] M1a: Datenformat, Schlüsselzustand und Spaltensperre im gemeinsamen Kern.
-- [ ] M1b: Original-UI, Editor, Hinweis/Solver, Import/Export und eigene Vergleichsstudie.
+- [x] M1a: Datenformat, Schlüsselzustand und Spaltensperre im gemeinsamen Kern.
+- [x] M1b: Original-UI, Editor, Hinweis/Solver, Import/Export und eigene Vergleichsstudie.
 - [ ] M1c: Regeltests und vollständiger Spieldurchlauf; Nutzerbewertung festhalten.
 - [ ] M2a: Paar-Daten und atomarer Doppelstart mit Rückgängig.
 - [ ] M2b: Sichtbare Verknüpfung, Editor und vollständige Vergleichsstudie.
@@ -103,3 +103,7 @@ Vergleich immer mit identischen Motiven, Mengen, Startbedingungen und Bewegungse
 ## Nächster konkreter Schritt
 
 B2 abgeschlossen: aufklappbare Testauswertung im Originalscreen, gemeinsamer Telemetrie-Kern und Tests für Fortschritt, aktive Bots und Rückgängig. B3 und danach M1a beginnen. Offene Gestaltungsdetails innerhalb der oben festgelegten Studien ausarbeiten und protokollieren.
+
+### Umsetzung M1 am 5. November
+
+Spielbare Studien `study-key-on` und `study-key-off` ergänzt, vorhandenes Eichelmotiv als identischer Bildaufbau. Schlossspalte2, markierter schwarzer Stein am linken Fuß; Start mit schwarzer Box. Sperre, Hinweisfilter und automatischer Test verwenden dieselbe Regel. Schlüssel öffnet bei Aufnahme. Eigener Rückgängig-Zustand, validierte optionale Motivdaten. PC-Editor: Schlüsselkoordinaten und Zielspalte setzen/entfernen, JSON erhalten; Rasterwechsel mit Markierungen wird abgelehnt. Nutzerbewertung M1c bleibt offen. Vollständiger Test 1573 Steine sowie Browser-Sperre, Aufnahme vor Lieferung und Rückgängig bestanden. Noch keine verbundenen oder Bonus-Schatullen implementiert.
