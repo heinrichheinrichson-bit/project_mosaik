@@ -73,7 +73,7 @@ Studien erhalten eigene IDs und Kategorie; bestehende Motive werden nicht ersetz
 
 - [x] B0: Ausgangsstand `afa492a` festhalten und Entwicklungszweig erstellen.
 - [x] B1: Konzept, Regeln, Prüfkriterien und zurückgestellte Ideen dokumentieren.
-- [ ] B2: Testauswertung für Simulationsdauer, Fortschritt und aktive Bots implementieren und prüfen.
+- [x] B2: Testauswertung für Simulationsdauer, Fortschritt und aktive Bots implementieren und prüfen.
 - [ ] B3: Sechs feste Referenzmotive und identische Vergleichseinstellungen dokumentieren; kleine/mittlere/große und offene/geschlossene Formen.
 - [ ] M1a: Datenformat, Schlüsselzustand und Spaltensperre im gemeinsamen Kern.
 - [ ] M1b: Original-UI, Editor, Hinweis/Solver, Import/Export und eigene Vergleichsstudie.
@@ -102,4 +102,4 @@ Vergleich immer mit identischen Motiven, Mengen, Startbedingungen und Bewegungse
 
 ## Nächster konkreter Schritt
 
-B2 im vorhandenen Originalspiel sichtbar machen, ohne Spielregeln oder Nutzereinstellungen zu verändern. Danach M1a beginnen. Offene Gestaltungsdetails innerhalb der oben festgelegten Studien ausarbeiten und protokollieren.
+B2 abgeschlossen: aufklappbare Testauswertung im Originalscreen, gemeinsamer Telemetrie-Kern und Tests für Fortschritt, aktive Bots und Rückgängig. B3 und danach M1a beginnen. Offene Gestaltungsdetails innerhalb der oben festgelegten Studien ausarbeiten und protokollieren.
