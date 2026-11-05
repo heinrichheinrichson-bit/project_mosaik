@@ -1285,7 +1285,8 @@ function presentKeyQueues(){
  if(!keys.length){objective?.remove();return;}
  if(!objective){objective=document.createElement('div');objective.className='key-objective';objective.setAttribute('role','status');objective.setAttribute('aria-live','polite');queues.before(objective);}
  const closed=keys.filter(k=>g.isLaneLocked(k.lane));
- objective.innerHTML=closed.length?keyIcon+'<span>Hole den Schlüsselstein, um die gesperrte Reihe zu öffnen.</span>':'<span>✓ Die Reihe ist offen – neue Schatullen sind verfügbar.</span>';
+ objective.hidden=!closed.length;objective.style.display=closed.length?'flex':'none';
+ objective.innerHTML=closed.length?keyIcon+'<span>Hole den Schlüsselstein, um die gesperrte Reihe zu öffnen.</span>':'';
  for(const k of closed){const col=queues.children[k.lane];if(!col)continue;col.classList.add('key-locked');for(const b of col.querySelectorAll('button')){b.disabled=true;b.setAttribute('aria-label','Gesperrt. Passenden Schlüsselstein im Bild abholen.');}
  const overlay=document.createElement('div');overlay.className='key-lock';overlay.innerHTML='<span class="lock-medal">'+lockIcon+'</span><small>Mit Schlüssel<br>öffnen</small>';
  if(keys.length>1){const n=document.createElement('b');n.textContent='Schlüssel '+(keys.indexOf(k)+1);overlay.append(n);}
