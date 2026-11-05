@@ -1,0 +1,642 @@
+[
+  {
+    "id": "koala",
+    "name": "Astpause",
+    "cat": "Tiere",
+    "subject": "a relaxed round koala hugging a thick turquoise eucalyptus branch with three large emerald leaves, cream muzzle, purple body, coral inner ears",
+    "palette": [
+      "#000000",
+      "#fff2cf",
+      "#12bed0",
+      "#ffcf35",
+      "#ef4b55",
+      "#7842b8",
+      "#258d54",
+      "#935035"
+    ]
+  },
+  {
+    "id": "sloth",
+    "name": "Langsam glücklich",
+    "cat": "Tiere",
+    "subject": "a plump smiling sloth curled over a thick crescent tree branch, cream eye patches, chestnut body, one large emerald leaf",
+    "palette": [
+      "#000000",
+      "#fff2cf",
+      "#12bed0",
+      "#ffcf35",
+      "#ef4b55",
+      "#7842b8",
+      "#258d54",
+      "#935035"
+    ]
+  },
+  {
+    "id": "platypus",
+    "name": "Schnabelsache",
+    "cat": "Tiere",
+    "subject": "a cheeky round platypus reclining on its broad turquoise paddle tail, huge golden duck bill, chestnut body and cream belly",
+    "palette": [
+      "#000000",
+      "#fff2cf",
+      "#12bed0",
+      "#ffcf35",
+      "#ef4b55",
+      "#7842b8",
+      "#258d54",
+      "#935035"
+    ]
+  },
+  {
+    "id": "axolotl",
+    "name": "Wasserlächeln",
+    "cat": "Tiere",
+    "subject": "a cheerful coral axolotl sitting compactly, three broad rounded purple gill lobes on each side, turquoise belly and stubby mitten limbs",
+    "palette": [
+      "#000000",
+      "#fff2cf",
+      "#12bed0",
+      "#ffcf35",
+      "#ef4b55",
+      "#7842b8",
+      "#258d54",
+      "#935035"
+    ]
+  },
+  {
+    "id": "orca",
+    "name": "Wellenreiter",
+    "cat": "Tiere",
+    "subject": "a bold black and ivory orca arcing over one broad turquoise wave, golden sun disk tucked behind its tail, compact circular silhouette",
+    "palette": [
+      "#000000",
+      "#fff2cf",
+      "#12bed0",
+      "#ffcf35",
+      "#ef4b55",
+      "#7842b8",
+      "#258d54",
+      "#935035"
+    ]
+  },
+  {
+    "id": "pelican",
+    "name": "Großer Fang",
+    "cat": "Tiere",
+    "subject": "a proud cream pelican with an oversized golden beak pouch holding a single plump turquoise fish, broad coral folded wing",
+    "palette": [
+      "#000000",
+      "#fff2cf",
+      "#12bed0",
+      "#ffcf35",
+      "#ef4b55",
+      "#7842b8",
+      "#258d54",
+      "#935035"
+    ]
+  },
+  {
+    "id": "puffer",
+    "name": "Kugelblitz",
+    "cat": "Tiere",
+    "subject": "a round golden pufferfish with inflated cheeks, six short broad triangular spines, turquoise fins and mischievous sideways eyes",
+    "palette": [
+      "#000000",
+      "#fff2cf",
+      "#12bed0",
+      "#ffcf35",
+      "#ef4b55",
+      "#7842b8",
+      "#258d54",
+      "#935035"
+    ]
+  },
+  {
+    "id": "ram",
+    "name": "Wolliger Dickkopf",
+    "cat": "Tiere",
+    "subject": "a stout ivory ram with two enormous chestnut spiral horns, purple scarf and coral nose, simple broad hooves",
+    "palette": [
+      "#000000",
+      "#fff2cf",
+      "#12bed0",
+      "#ffcf35",
+      "#ef4b55",
+      "#7842b8",
+      "#258d54",
+      "#935035"
+    ]
+  },
+  {
+    "id": "bull",
+    "name": "Stierisch gut",
+    "cat": "Tiere",
+    "subject": "a compact chestnut bull seated proudly with broad ivory horns, a golden nose ring and a bright turquoise bandana, cheeky raised eyebrow",
+    "palette": [
+      "#000000",
+      "#fff2cf",
+      "#12bed0",
+      "#ffcf35",
+      "#ef4b55",
+      "#7842b8",
+      "#258d54",
+      "#935035"
+    ]
+  },
+  {
+    "id": "llama",
+    "name": "Spuckfein",
+    "cat": "Tiere",
+    "subject": "a stylish fluffy ivory llama bust with a broad emerald poncho, coral and golden geometric bands, purple sunglasses and confident smile",
+    "palette": [
+      "#000000",
+      "#fff2cf",
+      "#12bed0",
+      "#ffcf35",
+      "#ef4b55",
+      "#7842b8",
+      "#258d54",
+      "#935035"
+    ]
+  },
+  {
+    "id": "beaver",
+    "name": "Biberbande",
+    "cat": "Tiere",
+    "subject": "a plump chestnut beaver hugging one thick golden log, two broad ivory front teeth, large flat turquoise paddle tail",
+    "palette": [
+      "#000000",
+      "#fff2cf",
+      "#12bed0",
+      "#ffcf35",
+      "#ef4b55",
+      "#7842b8",
+      "#258d54",
+      "#935035"
+    ]
+  },
+  {
+    "id": "mole",
+    "name": "Unter Tage",
+    "cat": "Tiere",
+    "subject": "a compact purple mole popping from one broad mound of chestnut soil, golden mining helmet and turquoise lamp, cream mitten paws",
+    "palette": [
+      "#000000",
+      "#fff2cf",
+      "#12bed0",
+      "#ffcf35",
+      "#ef4b55",
+      "#7842b8",
+      "#258d54",
+      "#935035"
+    ]
+  },
+  {
+    "id": "crab",
+    "name": "Seitwärts bitte",
+    "cat": "Tiere",
+    "subject": "a cheeky coral crab with two oversized rounded claws, three thick simple leg shapes on each side, golden belly and turquoise sunglasses",
+    "palette": [
+      "#000000",
+      "#fff2cf",
+      "#12bed0",
+      "#ffcf35",
+      "#ef4b55",
+      "#7842b8",
+      "#258d54",
+      "#935035"
+    ]
+  },
+  {
+    "id": "manta",
+    "name": "Sanfter Gleiter",
+    "cat": "Tiere",
+    "subject": "a graceful broad turquoise manta ray curled into a compact diamond silhouette, ivory underside and one bold purple shadow shape, friendly eyes",
+    "palette": [
+      "#000000",
+      "#fff2cf",
+      "#12bed0",
+      "#ffcf35",
+      "#ef4b55",
+      "#7842b8",
+      "#258d54",
+      "#935035"
+    ]
+  },
+  {
+    "id": "parrot",
+    "name": "Papageplapper",
+    "cat": "Tiere",
+    "subject": "a plump coral parrot with a huge golden beak, turquoise folded wings, emerald tail feathers in two broad shapes, mischievous expression",
+    "palette": [
+      "#000000",
+      "#fff2cf",
+      "#12bed0",
+      "#ffcf35",
+      "#ef4b55",
+      "#7842b8",
+      "#258d54",
+      "#935035"
+    ]
+  },
+  {
+    "id": "elephant",
+    "name": "Rüsselgruß",
+    "cat": "Tiere",
+    "subject": "a round purple baby elephant with broad coral inner ears, trunk curled around one large golden flower, ivory tusk shapes and turquoise neck scarf",
+    "palette": [
+      "#000000",
+      "#fff2cf",
+      "#12bed0",
+      "#ffcf35",
+      "#ef4b55",
+      "#7842b8",
+      "#258d54",
+      "#935035"
+    ]
+  },
+  {
+    "id": "acorn",
+    "name": "Eichelhut",
+    "cat": "Figuren",
+    "subject": "a cheerful stout woodland acorn mascot with an enormous chestnut acorn cap, golden oval face, turquoise bow tie and chunky emerald boots, broad simple mitten hands",
+    "palette": [
+      "#000000",
+      "#fff2cf",
+      "#12bed0",
+      "#ffcf35",
+      "#ef4b55",
+      "#7842b8",
+      "#258d54",
+      "#935035"
+    ]
+  },
+  {
+    "id": "postman",
+    "name": "Sonderzustellung",
+    "cat": "Figuren",
+    "subject": "a stout cheerful postal carrier with turquoise cap and coat, clutching one enormous ivory envelope sealed with a coral heart, simple mitt hands",
+    "palette": [
+      "#000000",
+      "#fff2cf",
+      "#12bed0",
+      "#ffcf35",
+      "#ef4b55",
+      "#7842b8",
+      "#258d54",
+      "#935035"
+    ]
+  },
+  {
+    "id": "drummer",
+    "name": "Taktgefühl",
+    "cat": "Figuren",
+    "subject": "a compact joyful drummer with purple curly hair and golden shirt, hugging a broad coral marching drum with ivory drumhead, two short thick turquoise sticks",
+    "palette": [
+      "#000000",
+      "#fff2cf",
+      "#12bed0",
+      "#ffcf35",
+      "#ef4b55",
+      "#7842b8",
+      "#258d54",
+      "#935035"
+    ]
+  },
+  {
+    "id": "explorer",
+    "name": "Gipfelglück",
+    "cat": "Figuren",
+    "subject": "a stout mountain explorer with golden cap and chestnut beard, coral jacket, turquoise backpack, holding a broad ivory folded map, mitten hands",
+    "palette": [
+      "#000000",
+      "#fff2cf",
+      "#12bed0",
+      "#ffcf35",
+      "#ef4b55",
+      "#7842b8",
+      "#258d54",
+      "#935035"
+    ]
+  },
+  {
+    "id": "mermaid",
+    "name": "Muschelmelodie",
+    "cat": "Figuren",
+    "subject": "a smiling compact mermaid with flowing coral hair in three broad curls, turquoise curled fish tail and one enormous golden shell held at chest",
+    "palette": [
+      "#000000",
+      "#fff2cf",
+      "#12bed0",
+      "#ffcf35",
+      "#ef4b55",
+      "#7842b8",
+      "#258d54",
+      "#935035"
+    ]
+  },
+  {
+    "id": "genie",
+    "name": "Wunschkonzert",
+    "cat": "Figuren",
+    "subject": "a cheerful round turquoise genie emerging from a broad golden oil lamp, coral turban and purple moustache, cloud-like compact lower body",
+    "palette": [
+      "#000000",
+      "#fff2cf",
+      "#12bed0",
+      "#ffcf35",
+      "#ef4b55",
+      "#7842b8",
+      "#258d54",
+      "#935035"
+    ]
+  },
+  {
+    "id": "sumo",
+    "name": "Standfest",
+    "cat": "Figuren",
+    "subject": "a proud friendly stout sumo wrestler with chestnut topknot, golden skin and a turquoise belt, broad simple arms folded over a round belly",
+    "palette": [
+      "#000000",
+      "#fff2cf",
+      "#12bed0",
+      "#ffcf35",
+      "#ef4b55",
+      "#7842b8",
+      "#258d54",
+      "#935035"
+    ]
+  },
+  {
+    "id": "superhero",
+    "name": "Alltagsheld",
+    "cat": "Figuren",
+    "subject": "a compact confident superhero with a broad coral cape, turquoise suit, golden star chest badge and ivory mask, hands on hips as simple mitt shapes",
+    "palette": [
+      "#000000",
+      "#fff2cf",
+      "#12bed0",
+      "#ffcf35",
+      "#ef4b55",
+      "#7842b8",
+      "#258d54",
+      "#935035"
+    ]
+  },
+  {
+    "id": "cassette",
+    "name": "Band läuft",
+    "cat": "Gegenstände",
+    "subject": "a bold turquoise retro cassette tape with two large ivory reel windows, coral label and golden stripe, tiny expressive eyes integrated in reel hubs",
+    "palette": [
+      "#000000",
+      "#fff2cf",
+      "#12bed0",
+      "#ffcf35",
+      "#ef4b55",
+      "#7842b8",
+      "#258d54",
+      "#935035"
+    ]
+  },
+  {
+    "id": "controller",
+    "name": "Spieltrieb",
+    "cat": "Gegenstände",
+    "subject": "a chunky purple game controller with ivory face panels, a broad black direction cross and three large coral golden turquoise buttons, cheeky smile",
+    "palette": [
+      "#000000",
+      "#fff2cf",
+      "#12bed0",
+      "#ffcf35",
+      "#ef4b55",
+      "#7842b8",
+      "#258d54",
+      "#935035"
+    ]
+  },
+  {
+    "id": "washer",
+    "name": "Schleudergang",
+    "cat": "Gegenstände",
+    "subject": "a compact turquoise washing machine with a huge round ivory door rim, coral sock and golden shirt swirling inside one purple window, two large simple controls",
+    "palette": [
+      "#000000",
+      "#fff2cf",
+      "#12bed0",
+      "#ffcf35",
+      "#ef4b55",
+      "#7842b8",
+      "#258d54",
+      "#935035"
+    ]
+  },
+  {
+    "id": "lantern",
+    "name": "Lichtblick",
+    "cat": "Gegenstände",
+    "subject": "a stout golden camping lantern with a broad black handle, glowing ivory central panel, turquoise base and coral cap, friendly face in the glass",
+    "palette": [
+      "#000000",
+      "#fff2cf",
+      "#12bed0",
+      "#ffcf35",
+      "#ef4b55",
+      "#7842b8",
+      "#258d54",
+      "#935035"
+    ]
+  },
+  {
+    "id": "sewing",
+    "name": "Fadenfreude",
+    "cat": "Gegenstände",
+    "subject": "a charming compact coral vintage sewing machine with ivory body panels, large golden hand wheel, turquoise thread spool and a broad emerald fabric swatch",
+    "palette": [
+      "#000000",
+      "#fff2cf",
+      "#12bed0",
+      "#ffcf35",
+      "#ef4b55",
+      "#7842b8",
+      "#258d54",
+      "#935035"
+    ]
+  },
+  {
+    "id": "scooter",
+    "name": "Stadtflitzer",
+    "cat": "Gegenstände",
+    "subject": "a chunky coral retro motor scooter in side view with two broad black wheels, ivory front panel, turquoise seat and one large golden headlight",
+    "palette": [
+      "#000000",
+      "#fff2cf",
+      "#12bed0",
+      "#ffcf35",
+      "#ef4b55",
+      "#7842b8",
+      "#258d54",
+      "#935035"
+    ]
+  },
+  {
+    "id": "balloon",
+    "name": "Wolkenfahrt",
+    "cat": "Gegenstände",
+    "subject": "a bold hot air balloon with broad alternating coral turquoise and golden panels, compact chestnut basket connected by two thick black supports, ivory highlight patch",
+    "palette": [
+      "#000000",
+      "#fff2cf",
+      "#12bed0",
+      "#ffcf35",
+      "#ef4b55",
+      "#7842b8",
+      "#258d54",
+      "#935035"
+    ]
+  },
+  {
+    "id": "snowglobe",
+    "name": "Winter im Glas",
+    "cat": "Gegenstände",
+    "subject": "a rounded snow globe containing one broad turquoise fir tree and a tiny coral cabin on ivory snow, purple glass field, broad golden base",
+    "palette": [
+      "#000000",
+      "#fff2cf",
+      "#12bed0",
+      "#ffcf35",
+      "#ef4b55",
+      "#7842b8",
+      "#258d54",
+      "#935035"
+    ]
+  },
+  {
+    "id": "garlic",
+    "name": "Knoblauchkönig",
+    "cat": "Freche Küche",
+    "subject": "a plump ivory garlic bulb with four broad clove lobes, purple shadow patch, emerald sprout crown and a cheeky confident grin",
+    "palette": [
+      "#000000",
+      "#fff2cf",
+      "#12bed0",
+      "#ffcf35",
+      "#ef4b55",
+      "#7842b8",
+      "#258d54",
+      "#935035"
+    ]
+  },
+  {
+    "id": "pretzel",
+    "name": "Brezelglück",
+    "cat": "Freche Küche",
+    "subject": "a bold golden pretzel with three large open loops, chestnut shadow bands and six chunky ivory salt rectangles, smiling face centered on lower dough arc",
+    "palette": [
+      "#000000",
+      "#fff2cf",
+      "#12bed0",
+      "#ffcf35",
+      "#ef4b55",
+      "#7842b8",
+      "#258d54",
+      "#935035"
+    ]
+  },
+  {
+    "id": "dragonfruit",
+    "name": "Drachenfrucht",
+    "cat": "Freche Küche",
+    "subject": "one whole coral dragonfruit with broad emerald scale tips beside one large cut half with ivory flesh and just six bold black seeds, compact overlapping silhouette",
+    "palette": [
+      "#000000",
+      "#fff2cf",
+      "#12bed0",
+      "#ffcf35",
+      "#ef4b55",
+      "#7842b8",
+      "#258d54",
+      "#935035"
+    ]
+  },
+  {
+    "id": "pudding",
+    "name": "Wackelkandidat",
+    "cat": "Freche Küche",
+    "subject": "a plump golden caramel pudding on a broad turquoise saucer, chestnut caramel cap, ivory cream swirl and one coral cherry, cheeky wobbling expression",
+    "palette": [
+      "#000000",
+      "#fff2cf",
+      "#12bed0",
+      "#ffcf35",
+      "#ef4b55",
+      "#7842b8",
+      "#258d54",
+      "#935035"
+    ]
+  },
+  {
+    "id": "eclipse",
+    "name": "Sonnenkuss",
+    "cat": "Abstrakt",
+    "subject": "a striking abstract golden sun disk overlapping a purple crescent moon, two broad coral and turquoise arcs, crisp balanced circular emblem without tiny stars",
+    "palette": [
+      "#000000",
+      "#fff2cf",
+      "#12bed0",
+      "#ffcf35",
+      "#ef4b55",
+      "#7842b8",
+      "#258d54",
+      "#935035"
+    ]
+  },
+  {
+    "id": "shell",
+    "name": "Meereswirbel",
+    "cat": "Abstrakt",
+    "subject": "a bold elegant spiral seashell formed from three broad interlocking coral golden and turquoise bands, continuous black separators, compact organic silhouette",
+    "palette": [
+      "#000000",
+      "#fff2cf",
+      "#12bed0",
+      "#ffcf35",
+      "#ef4b55",
+      "#7842b8",
+      "#258d54",
+      "#935035"
+    ]
+  },
+  {
+    "id": "hearts",
+    "name": "Herzverbindung",
+    "cat": "Abstrakt",
+    "subject": "two large interlocking hearts formed from broad coral and turquoise ribbon bands, golden diamond center and ivory negative-space opening, elegant balanced silhouette",
+    "palette": [
+      "#000000",
+      "#fff2cf",
+      "#12bed0",
+      "#ffcf35",
+      "#ef4b55",
+      "#7842b8",
+      "#258d54",
+      "#935035"
+    ]
+  },
+  {
+    "id": "window",
+    "name": "Farbenfenster",
+    "cat": "Abstrakt",
+    "subject": "a refined arched stained-glass emblem with a large golden sun, broad coral sky panels and turquoise emerald curved hills, thick continuous black leading, simple bold geometry",
+    "palette": [
+      "#000000",
+      "#fff2cf",
+      "#12bed0",
+      "#ffcf35",
+      "#ef4b55",
+      "#7842b8",
+      "#258d54",
+      "#935035"
+    ]
+  }
+]

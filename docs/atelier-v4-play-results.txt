@@ -1,0 +1,44 @@
+40 new standard56 motifs; shared current PlaySession; frame paths; six workers/team; parallel automatic teams; travel600; zero launch/open/pickup delays.
+studio-v4-koala: 1474 delivered PASS
+studio-v4-sloth: 1598 delivered PASS
+studio-v4-platypus: 1729 delivered PASS
+studio-v4-axolotl: 1785 delivered PASS
+studio-v4-orca: 1579 delivered PASS
+studio-v4-pelican: 1434 delivered PASS
+studio-v4-puffer: 1431 delivered PASS
+studio-v4-ram: 1881 delivered PASS
+studio-v4-bull: 1696 delivered PASS
+studio-v4-llama: 1440 delivered PASS
+studio-v4-beaver: 1739 delivered PASS
+studio-v4-mole: 1701 delivered PASS
+studio-v4-crab: 1712 delivered PASS
+studio-v4-manta: 1167 delivered PASS
+studio-v4-parrot: 1717 delivered PASS
+studio-v4-elephant: 1888 delivered PASS
+studio-v4-acorn: 1573 delivered PASS
+studio-v4-postman: 1495 delivered PASS
+studio-v4-drummer: 1439 delivered PASS
+studio-v4-explorer: 1459 delivered PASS
+20 catalogue motifs: 31937 stones delivered PASS
+
+studio-v4-mermaid: 1444 delivered PASS
+studio-v4-genie: 1095 delivered PASS
+studio-v4-sumo: 1359 delivered PASS
+studio-v4-superhero: 1362 delivered PASS
+studio-v4-cassette: 1451 delivered PASS
+studio-v4-controller: 1613 delivered PASS
+studio-v4-washer: 1786 delivered PASS
+studio-v4-lantern: 1626 delivered PASS
+studio-v4-sewing: 1736 delivered PASS
+studio-v4-scooter: 1416 delivered PASS
+studio-v4-balloon: 1422 delivered PASS
+studio-v4-snowglobe: 1868 delivered PASS
+studio-v4-garlic: 1387 delivered PASS
+studio-v4-pretzel: 2012 delivered PASS
+studio-v4-dragonfruit: 1583 delivered PASS
+studio-v4-pudding: 1720 delivered PASS
+studio-v4-eclipse: 1829 delivered PASS
+studio-v4-shell: 1908 delivered PASS
+studio-v4-hearts: 1853 delivered PASS
+studio-v4-window: 1982 delivered PASS
+20 catalogue motifs: 32452 stones delivered PASS
