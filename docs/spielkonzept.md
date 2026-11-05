@@ -80,8 +80,8 @@ Studien erhalten eigene IDs und Kategorie; bestehende Motive werden nicht ersetz
 - [ ] M1c: Regeltests und vollständiger Spieldurchlauf; Nutzerbewertung festhalten.
 - [x] M2a: Paar-Daten und atomarer Doppelstart mit Rückgängig.
 - [x] M2b: Sichtbare Verknüpfung, Editor und vollständige Vergleichsstudie.
-- [ ] M3a: Doppelreservierung, legale zweite Aufnahme und exakte Mengenabrechnung.
-- [ ] M3b: Lesbare Darstellung, Editor und Zeitvergleich.
+- [x] M3a: Doppelreservierung, legale zweite Aufnahme und exakte Mengenabrechnung.
+- [x] M3b: Lesbare Darstellung, Editor und Zeitvergleich.
 - [ ] K1: Nach Einzelprüfungen Schlüssel + Bonus in einem gestalteten Rätsel kombinieren.
 - [ ] K2: Abwechslungsreiche kurze Testfolge; Regeln einzeln einführen und menschlich spielen.
 - [ ] K3: Ergebnisse mit Nutzer bewerten; anschließend M4–M6 ausdrücklich wieder aufgreifen oder begründet streichen.
@@ -125,3 +125,11 @@ Unter Aufnahme und Einfahrt stehen Mittig, 2 Spuren und 3 Spuren zur Auswahl. Dr
 ### Umsetzung M2: Verbundene Schatullen
 
 Studien `study-pair-on` und `study-pair-off`, identisches Eichelmotiv mit identischen Warteschlangen, mittlere vordere Boxen15/grün und23/braun verbunden. Klammer mit 2-Plätze-Kennzeichnung statt Dauerhinweis. Entweder Box wählt atomar beide; Platzmangel zeigt kurzes Rütteln. Beide Teams arbeiten danach unabhängig, ein Rückgängig-Schritt stellt beide wieder her. Daten: optionales `pair` an genau zwei Jobs in unterschiedlichen Spalten, Validierung bei Import. Partner müssen zum Start beide vorne liegen. Editor kann Positionen verbinden und Verbindungen entfernen; Queue-Neugenerierung/Rasterwechsel fordert vorheriges Entfernen. Automatischer Test verlangt erreichbare Mengen für beide Partner, damit vorzeitige Auswahl nicht die geplanten Farbabschnitte stört. Hinweise beachten beide freien Plätze. Vollständiger Durchlauf1573Steine; Browserprüfung für Klammer, beide Klickrichtungen, Platzmangel und Rückgängig. Getrennte Stellplatzfreigabe separat geprüft. Nutzerbewertung noch offen. Nächster Mechanikbaustein M3: Bonus-Doppeltransport.
+
+### Umsetzung M3: Bonus-Doppeltransport
+
+Studien `study-bonus-on` und `study-bonus-off` verwenden identische1573Steine und identische Schatullenfolgen. Für den isolierten Vergleich sind in der Bonusstudie alle Schatullen markiert; normale Katalogmotive bleiben unverändert. Optionales Jobfeld `capacity:2`; fehlt es, bleibt Kapazität1. Zwei kleine Würfel markieren Auswahl und aktive Box; doppelte Ladung wird kompakt mit einzeln eingefassten Steinen dargestellt. Beide Nachbarsteine bewegen sich bei Aufnahme sichtbar zur Ladung. Zweiter Stein muss gleichfarbig, orthogonal benachbart und unreserviert sein; nach Entfernung des ersten besteht der Zugang über dessen freie Zelle. Keine fremde Farbe wird übersprungen. Vorfahrt eindeutige Reservierung beider Zellen und Begrenzung durch offene Steinmenge. Geplante Farbregionen werden dabei eingehalten. Restmenge1 oder fehlender geeigneter Nachbar ergibt Einzeltransport.
+
+Teamlimit/Gesamtlimit zählen weiterhin Bots; offene Mengen, Ausgang, Lieferung und Gewinn zählen Steine. Separate Anzahl transportierter Steine je Team ergänzt. Alle Reservierungs-/Verfügbarkeitsprüfungen berücksichtigen beide Ziele. Rückgängig restauriert beide Zellen und Mengen. PC-Editor setzt Bonus je Spalte/Position und entfernt Bonusmarkierungen; Queue-Neugenerierung/Rasterwechsel fordert vorherige Entfernung von Sonderboxen.
+
+Vergleich in gemeinsamer Simulation:130px/s, Team12, Gesamt0, Abstand0,16s je Box, Öffnen0,35s, Aufnahme0,18s, paralleler Solver, gleicher Rahmenmodus. Einzeltransport:1573Fahrten,294,4s. Bonus:1002Fahrten,201,4s. Rund32%kürzere Simulationsdauer in diesem einen Motiv, kein allgemeiner Zeitgewinn und kein Mobilperformancewert. Tests: ungeradeMenge5 mit genau3Fahrten; alle3Platzfreigabemodi; Schlüssel am zweiten Stein; Nachbarschaft und eindeutige Reservierungen; Schema; Rückgängig; vollständige Vergleichslösungen. Browser:12Auswahlmarkierungen, gezeichnete doppelte Ladung, richtige Restmengen. Paar- und Schlüsselstudie lösen weiterhin vollständig. Nutzerbewertung offen; als Nächstes K1 Schlüssel + Bonus nach Einzelbewertung.
