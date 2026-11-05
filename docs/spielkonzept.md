@@ -153,3 +153,16 @@ Vergleich in gemeinsamer Simulation:130px/s, Team12, Gesamt0, Abstand0,16s je Bo
 NeueIDs: study-key-courier (1538Steine, anfangs eingeschlossen), study-key-courier-open (1528Steine, direkter Transportvergleich mit offenem Zugang), study-pair-depth2 und study-pair-depth3 (je1573Steine). Alle vier vollständig im gemeinsamen Kern gelöst, keine Mobile-FPS-Aussage. Alle160vorhandenen Seeds inhaltlich unverändert. Unter Mechaniken · Designstudie können Szenen, Materialien, Klammerform und Größen gewählt werden; Änderungen starten die Studie neu. Keine Erfolgstexte über Spielmodulen. Die Ketten lösen sich nach Lieferung visuell; die lange Schlüsselladung wird bei der verdeckten Einfahrtstiefe berücksichtigt.
 
 Tests: keine Kurierfahrt bei eingeschlossenem Schlüssel, genau ein neutraler Bot nach freiem Zugang, Sperre bei Aufnahme weiterhin aktiv, Entsperren erst nach kompletter Abgabe, exakte Steinmenge, Rückgängig restauriert Gegenstand und Sperre. Browser: echte gekreuzte Kettenglieder, Material-/Größenwahl, 55Regler verfügbar, tiefer Partner sichtbar und noch nicht startbar, großer Schlüssel im Transport. Schlüssel-, Paar-, Bonus- und Einfahrtregressionen bestehen.
+
+### Designkorrektur nach Ablehnung der ersten Studie
+
+Die erste Studie wurde vom Nutzer als unbrauchbar bewertet: Klammer wirkte wie Verbindungslinie, bei Schlüssel/Schloss gab es nur Materialvarianten. Diese Entwürfe gelten nicht als freigegeben. Neue Formstudie mit sechs gleichzeitig sichtbaren, auswählbaren Karten statt bloßer Farbwahl:
+
+- Schatzschloss: gewölbter Schildkörper, Zierrand, Rundschlüssel und ovale Kettenglieder.
+- Sicherheitsblock: breiter achteckiger Korpus, Schrauben und rechteckige Panzerkettenglieder; kantiger Schlüsselkopf.
+- Rundsiegel: gezackte runde Rosette mit Bändern und Rautenschlüssel.
+- Doppelmanschette: beide Boxen umfassende Metallrahmen, massive Verbindung und Befestigungsnieten.
+- Gelenkklammer: offene Klemmbacken, mehrere Gelenkplatten und Drehpunkte.
+- Spannband: breite braune Bandmanschetten mit Naht und zentraler Metallschnalle.
+
+Alle Klammerformen werden ausdrücklich mit Partnern in verschiedenen Reihen gezeigt. Farben bleiben eine zusätzliche, unabhängige Auswahl. Gemeinsame Vektorpfade für Schlüsselvorschau, Boden und Transport; keine unterschiedlichen Symbole zwischen Vorschau und Spiel. Klick auf Formkarte setzt den Entwurf in der passenden Spielstudie ein. Neue gemeinsame Einstellung lockLook, insgesamt56Regler. Browser prüft sechs Karten, verschiedene SVG-Silhouetten, Auswahl in tatsächlicher Runde, transportierten Schlüssel und tiefe Paarverbindung. Vorschauen visuell geprüft. Nutzerbewertung weiterhin offen.
