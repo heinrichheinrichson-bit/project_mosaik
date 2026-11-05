@@ -170,3 +170,11 @@ Alle Klammerformen werden ausdrücklich mit Partnern in verschiedenen Reihen gez
 ### Leichtere Formstudie nach erneutem Nutzerfeedback
 
 Massive Manschetten/Gelenke verworfen. Neue, schlanke Varianten Federklammer, Doppel-Drahtbügel und Schmalband mit kleinen Befestigungslaschen, ohne zusätzliche Boxrahmen. Jede Vorschau zeigt vorne und versetzt nebeneinander in größerer Darstellung. Schlosskörper mit Bügel auf62%der bisherigen Größe reduziert. Ketten neu als vier gebogene Abschnitte von sichtbaren Ecklaschen zum Bügel geroutet; untere Abschnitte laufen seitlich am Korpus vorbei. Endglieder liegen vor dem Bügel, Ketten dahinter. Dadurch keine durch den Korpus gezeichneten Geraden. Gemeinsame Spielregeln unverändert; sechs Formkarten und Paarstart im Browser geprüft, Vorschauen visuell kontrolliert. Gestalterische Nutzerbewertung weiterhin offen.
+
+### Erweiterte eckige Formstudie
+
+Nutzer lehnt geschwungene Paarverbindungen weiterhin ab; Ketten zu filigran, Schlüssellöcher von Sicherheitsblock/Rundsiegel unpassend. Neue Auswahl: Stufenklammer, Winkelklammer, Doppelbügel, Profilschiene, Teleskopsteg, Gelenkbügel, Nietlaschen, Flachband. Alle acht mit geraden Segmenten/rechtwinkligen Übergängen, je vorne und versetzt. Bisherige gespeicherte Werte brace/links/clip werden auf step/double/ribbon abgebildet.
+
+Sechs Schlossformen: Schatzschloss, Sicherheitsblock, Rundsiegel, Bogenschloss, Kofferschloss, Schildschloss. Jede mit klarer Schlüsselöffnung und Bartkanal statt waagerechter Balken/Rautenausschnitt. Passende sechs Schlüsselkonturen am Boden und im Transport. Drei unabhängig wählbare Kettenbauarten oval/square/curb: kräftige Rundglieder, Rechteckglieder, Flachglieder. Größere Glieder mit kräftigerem Querschnitt, vier Eckbefestigungen und eingehängten Endgliedern beibehalten. 18 Schloss-/Kettenkombinationen tatsächlich im Spiel auswählbar, Farben zusätzlich unabhängig.
+
+Neue gemeinsame Einstellung chainLook; alle57Felder im Originalscreen geprüft. Browser prüft 18 verschiedene angewandte Schloss-/Kettenansichten, acht auswählbare eckige Verbindungen ohne Bézierpfade, Boden-Schlüsseltransport, Paarstart und Rückgängig. Vorschau visuell kontrolliert. Spielregeln und Katalogdaten unverändert. Die Entwürfe sind weiter Studien und nicht gestalterisch freigegeben.
