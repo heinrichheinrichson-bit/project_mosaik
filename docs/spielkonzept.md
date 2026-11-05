@@ -107,3 +107,7 @@ B2 abgeschlossen: aufklappbare Testauswertung im Originalscreen, gemeinsamer Tel
 ### Umsetzung M1 am 5. November
 
 Spielbare Studien `study-key-on` und `study-key-off` ergänzt, vorhandenes Eichelmotiv als identischer Bildaufbau. Schlossspalte2, markierter schwarzer Stein am linken Fuß; Start mit schwarzer Box. Sperre, Hinweisfilter und automatischer Test verwenden dieselbe Regel. Schlüssel öffnet bei Aufnahme. Eigener Rückgängig-Zustand, validierte optionale Motivdaten. PC-Editor: Schlüsselkoordinaten und Zielspalte setzen/entfernen, JSON erhalten; Rasterwechsel mit Markierungen wird abgelehnt. Nutzerbewertung M1c bleibt offen. Vollständiger Test 1573 Steine sowie Browser-Sperre, Aufnahme vor Lieferung und Rückgängig bestanden. Noch keine verbundenen oder Bonus-Schatullen implementiert.
+
+### Spielerverständlichkeit M1
+
+Goldener Schlüsselmarker mit Zeiger auf den Zielstein; einheitliches gezeichnetes Schloss statt Emoji und technischer Spaltennummer. Gesperrter Nachschub als zusammenhängender Bereich, kurzer Spielhinweis ohne zusätzliche Bildschirmhöhe. Bei Aufnahme fliegt ein Schlüssel zum Schloss; Bereich wird sofort nutzbar und kurz hervorgehoben. Animation blockiert keinen Verkehr; reduzierte Bewegung wird berücksichtigt. Browserprüfung: Sperre, freigegebene Auswahl, Rückmeldung, Fluganimation und Rückgängig. Titel im Spiel: Der goldene Schlüssel.
