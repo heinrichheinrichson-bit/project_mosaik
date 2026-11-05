@@ -166,3 +166,7 @@ Die erste Studie wurde vom Nutzer als unbrauchbar bewertet: Klammer wirkte wie V
 - Spannband: breite braune Bandmanschetten mit Naht und zentraler Metallschnalle.
 
 Alle Klammerformen werden ausdrücklich mit Partnern in verschiedenen Reihen gezeigt. Farben bleiben eine zusätzliche, unabhängige Auswahl. Gemeinsame Vektorpfade für Schlüsselvorschau, Boden und Transport; keine unterschiedlichen Symbole zwischen Vorschau und Spiel. Klick auf Formkarte setzt den Entwurf in der passenden Spielstudie ein. Neue gemeinsame Einstellung lockLook, insgesamt56Regler. Browser prüft sechs Karten, verschiedene SVG-Silhouetten, Auswahl in tatsächlicher Runde, transportierten Schlüssel und tiefe Paarverbindung. Vorschauen visuell geprüft. Nutzerbewertung weiterhin offen.
+
+### Leichtere Formstudie nach erneutem Nutzerfeedback
+
+Massive Manschetten/Gelenke verworfen. Neue, schlanke Varianten Federklammer, Doppel-Drahtbügel und Schmalband mit kleinen Befestigungslaschen, ohne zusätzliche Boxrahmen. Jede Vorschau zeigt vorne und versetzt nebeneinander in größerer Darstellung. Schlosskörper mit Bügel auf62%der bisherigen Größe reduziert. Ketten neu als vier gebogene Abschnitte von sichtbaren Ecklaschen zum Bügel geroutet; untere Abschnitte laufen seitlich am Korpus vorbei. Endglieder liegen vor dem Bügel, Ketten dahinter. Dadurch keine durch den Korpus gezeichneten Geraden. Gemeinsame Spielregeln unverändert; sechs Formkarten und Paarstart im Browser geprüft, Vorschauen visuell kontrolliert. Gestalterische Nutzerbewertung weiterhin offen.
