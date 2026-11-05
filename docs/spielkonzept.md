@@ -111,3 +111,7 @@ Spielbare Studien `study-key-on` und `study-key-off` ergänzt, vorhandenes Eiche
 ### Spielerverständlichkeit M1
 
 Goldener Schlüsselmarker mit Zeiger auf den Zielstein; einheitliches gezeichnetes Schloss statt Emoji und technischer Spaltennummer. Gesperrter Nachschub als zusammenhängender Bereich, kurzer Spielhinweis ohne zusätzliche Bildschirmhöhe. Bei Aufnahme fliegt ein Schlüssel zum Schloss; Bereich wird sofort nutzbar und kurz hervorgehoben. Animation blockiert keinen Verkehr; reduzierte Bewegung wird berücksichtigt. Browserprüfung: Sperre, freigegebene Auswahl, Rückmeldung, Fluganimation und Rückgängig. Titel im Spiel: Der goldene Schlüssel.
+
+### Korrektur Abgabeanfahrt und Ausrichtung
+
+Die Bildschirmprojektion verzerrte die im Raster geglättete Anfahrt bis in Parkplätze und Seitenwände. Gemeinsamer Editor-/Original-Connector richtet die Rückfahrt jetzt oberhalb von Parkplatzoberkanten und Garagenmund mittig aus. Die letzte Strecke liegt gerade auf der Fahrbahnmitte. Die Figur folgt der gemessenen Rückkurve mit konstantem Projektionsabstand statt einer Frame-Historie und richtet sich nach ihrer lokalen Kurventangente statt zur Ladung aus. Kein zusätzlicher Stopp. Browserregression: sieben Richtungen, 1407 Positionsproben mit Hindernisabstand, 184 Tangenten-/Wiederholungsproben, 89,50–90,46 px/s bei Vorgabe90. Normale Originalgrößen geprüft; extrem vergrößerte Figuren können weiterhin breiter als die physische Fahrbahn sein. Ausfahrt aller vier Slots in fünf Pfadmodi und Spielübergabe bestehen.
