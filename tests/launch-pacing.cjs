@@ -1,0 +1,2 @@
+const assert=require('assert'),Play=require('../editor-src/play-core.js'),O=require('../editor-src/play-options.js'),d=require('../editor-src/seeds.json').find(d=>d.id==='studio-v3-arches');
+for(const launchScope of ['global','box']){const g=new Play(d,'frame',{...O.recommended({},d),maxPerTeam:128,maxActive:0,launchScope});g.demo=true;let peak=0;for(let i=0;i<20000&&!g.won&&!g.lost;i++){g.tick(.1);peak=Math.max(peak,g.workers.length);}assert(g.won);console.log(JSON.stringify({name:d.name,launchScope,seconds:+g.time.toFixed(1),stones:g.done,peak}));}
