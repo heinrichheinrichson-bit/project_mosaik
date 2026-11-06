@@ -1,12 +1,20 @@
 # Spielkonzept und verbindlicher Arbeitsplan
 
-Stand: 5. November 2026 · Version 2
+Stand: 6. November 2026 · Version 3
 
 ## Arbeitsgrundlage und Rückkehrpunkt
 
 Der Nutzer hat die Ausarbeitung dieses Plans und anschließend die Umsetzung auf einem neuen Zweig autorisiert. Grundlage ist `master` bei Commit `afa492a`. Die Entwicklung erfolgt auf `feature/spielmechaniken`; master bleibt für die Rückkehr zum bisherigen Spiel erhalten. Kein Merge und keine neue APK sind Bestandteil dieser Freigabe.
 
 Dieses Dokument ist die maßgebliche Planung. Der frühere Entwurf `spielkonzept-fluss-und-tempo.md` ist historische Vorarbeit, keine parallele Aufgabenliste. Neue Erkenntnisse werden hier eingetragen. Aufgaben werden erst nach Umsetzung und Prüfung abgehakt. Vorschläge sind keine bereits vorhandenen Funktionen.
+
+Die [Vergleichsspiele-Recherche vom 6. November](vergleichsspiele-recherche.md) ergänzt die Begründung und die offenen Nachweise. Sie trennt Entwicklerregeln, unabhängige Levelberichte und eigene Vorschläge. Die vorhandenen Studien bleiben erhalten. Schlüssel, Paar und Doppeltransport sind weiterhin die geplanten Untersuchungen; eine technisch funktionierende Studie ist noch kein gut abgestimmtes Rätsel.
+
+Verbindlich für neue Mechanikrätsel: erkennbares Zwischenziel, nachvollziehbare Auswahlentscheidung, spürbarer Nutzen der Freigabe, unverletztes Motiv und kein bloßes Verlängern durch Warten. Frühester Zugang und tatsächlicher Freigabezeitpunkt müssen im Spieldurchlauf gemessen werden. „Erstes Drittel“ ist ein eigener Vergleichswert, keine belegte Konkurrenzregel.
+
+Recherchekorrektur: Die Boden-Schlüsselregel mit neutralem Lieferbot ist unsere eigene Variante, keine belegte identische Food-Hunt-Regel. Ein konkreter Food-Hunt-Levelbericht beschreibt stattdessen einen Schlüssel an einer nachrückenden Schatulle. Diese Auswahlvariante ist als nächster Vergleich zu untersuchen, ohne die vorhandene Bodenvariante zu entfernen. Genauer Auslösemoment und Paarverhalten bei versetzten Partnern bleiben ohne direkte Beobachtung offen.
+
+Recherche zum Spielfluss: Pixel Flow dokumentiert einen während des Spielens aufladbaren großen Abräumbonus. Deshalb bei der weiteren Planung Fortschrittsschübe ebenso berücksichtigen wie Sperren. Eine entsprechende neue Funktion ist damit noch nicht beschlossen oder implementiert. Doppeltransport bleibt eine eigene Umsetzung; ein belegtes Vorbild mit identischer Nutzlastregel fehlt bisher. Begrenzte Auswahlplätze und Botobergrenzen weiterhin getrennt behandeln.
 
 ## Leitbild
 
