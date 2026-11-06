@@ -110,7 +110,7 @@ Aktueller Iststand als Anlass: Wal460Steine/27Boxen, Eichelhut1573/81, Schleife1
 
 130 Bildpunkte/s, 1×, Startabstand 0,16s **je Box**, Öffnung 0,35s, Aufnahme 0,18s, zwölf Bots gleichzeitig je Box, keine zusätzliche globale Botgrenze, Freigabe nach letzter Ausfahrt. Bestehende Bewegungs- und Größenprofile werden als vollständiger benannter Vergleich gespeichert, nicht still über Nutzereinstellungen geschrieben. Dieses Profil ist ein Messstart, keine erwiesene optimale Veröffentlichungseinstellung.
 
-Ruhigeres Profil und freie Botzahl bleiben im Testeditor verfügbar. Ein Botlimit dient der Darstellung/Leistung, nicht dem Erzwingen einer schlechten Wartephase. Endgültige S22-Werte brauchen echte Gerätemessung und eine korrekt zur vergangenen Zeit laufende Simulation.
+Ruhigeres Profil und freie Botzahl bleiben im Testeditor verfügbar. Ein Botlimit dient der Darstellung/Leistung, nicht dem Erzwingen einer schlechten Wartephase. Die aktuelle Entwicklung und Prüfung findet ausschließlich im PC-Browser statt; keine APK und keine Smartphone-Prüfung. Eine korrekt zur vergangenen Zeit laufende Simulation bleibt erforderlich.
 
 ### Eigene Zielkorridore bei 1×
 
@@ -160,11 +160,11 @@ Diese Einordnung ist verbindlich für die erste Fassung: kein fortlaufendes Hinz
 
 | Referenz | Was wird geprüft? | Status |
 | --- | --- | --- |
-| Wal · kompakte Formen | kurzes Grundspiel, zugänglicher Einstieg, Mengen überarbeiten | vorhandenes Motiv; neue Folge auszuarbeiten |
-| Eichelhut | Grundspiel mit klarer Kontur; Schlüssel-Schatulle gegen identische Folge ohne Schloss | Motiv vorhanden; Schlüsselbox noch nicht implementiert |
+| Wal · kompakte Formen | kurzes Grundspiel, zugänglicher Einstieg, Mengen überarbeiten | neue Folge mit18statt27Boxen spielbar |
+| Eichelhut | Grundspiel mit klarer Kontur; Schlüssel-Schatulle gegen identische Folge ohne Schloss | beide neuen47Boxen-Fassungen spielbar |
 | Unmögliche Schleife | Design-/Transportvergleich des Boden-Schlüssels | spielbar, als taktisches Schlüssellevel verworfen |
-| Tag trifft Nacht | ein vorn liegendes Paar; erreichbare Folgefarbe | Levelentwurf und neue Folge auszuarbeiten |
-| Bunte Balance | ×2 auf sinnvoller zusammenhängender Farbfläche, Vergleich ohne Bonus | Levelentwurf und neue Folge auszuarbeiten |
+| Tag trifft Nacht | ein vorn liegendes Paar; erreichbare Folgefarbe | beide54Boxen-Fassungen spielbar |
+| Bunte Balance | ×2 auf sinnvoller zusammenhängender Farbfläche, Vergleich ohne Bonus | beide56Boxen-Fassungen spielbar; Bonus rot60nach Positionsvergleich |
 | Eichelhut, zweite getrennte Variante | Schlüssel öffnet nützliche Bonusbox; Gesamtzeit und früher Nutzen | erst nach Einzelabnahme |
 
 Die Motivnamen legen die Testbasis fest, behaupten aber keine bereits geprüfte neue Schatullenfolge. Reicht ein Motiv für die beabsichtigte Entscheidung nicht, wird ein geeigneteres unverändertes Motiv gewählt und hier protokolliert.
@@ -174,7 +174,7 @@ Abnahme pro Level:
 - Exakte Farben/Mengen, keine doppelten Reservierungen, keine verlorenen Schlüssel und korrekte Rücknahme.
 - Vollständige Lösung ohne Booster; zusätzlich mehrere abweichende legale Auswahlfolgen prüfen. Erkennbare Sackgassen erklären sich durch sichtbare Regeln.
 - Früher tatsächlicher Schlüsselnutzen; keine Endspiel-Sperre aus Versehen. Freigabezeitpunkt relativ zu Abtrag und Gesamtzeit dokumentieren.
-- Sonderregel, Zahl und Paarzuordnung in tatsächlicher Smartphonegröße lesbar. Motiv nicht beschädigt oder überlagert.
+- Sonderregel, Zahl und Paarzuordnung im gewählten Hochformat-Referenzviewport am PC lesbar. Motiv nicht beschädigt oder überlagert.
 - Identische Vergleichsbedingungen; jede Variante ändert nur den untersuchten Baustein.
 - Zeit, Auswahlen, Stillstände und Auslaufphase protokollieren. Botanzahl und Mobil-FPS nicht miteinander verwechseln.
 - Manuell spielen, nicht nur automatisch lösen. Nutzerbewertung ist eine eigene Freigabe; ein Testpass behauptet keinen Spaß.
@@ -185,15 +185,15 @@ Abnahme pro Level:
 - [x] Telemetrie, per-Box-Startabstand, Originalspiel-/Editor-Verknüpfung und erste Mechanikstudien.
 - [x] Erste Quellenrecherche, Nachrecherche zu Paaren/Fairness und zusammenhängende Regeldefinition Version4.
 - [ ] Referenzprofil vollständig speichern; Istwerte der Referenzmotive messen. Keine Nutzerprofile überschreiben.
-- [ ] Standard-Schlüsselbox mit klarer Zuordnung und atomarem Auslösezeitpunkt ergänzen; Bodenstudien behalten.
-- [ ] Wal und Eichelhut mit bewusst geplanten Folgen ausarbeiten; normal/Schlüssel A/B prüfen.
-- [ ] Paar- und einzelne Bonuslevel mit den definierten Regeln ausarbeiten und prüfen.
+- [x] Standard-Schlüsselbox mit klarer Zuordnung und atomarem Auslösezeitpunkt ergänzen; Bodenstudien behalten.
+- [x] Wal und Eichelhut mit neuen Folgen ausarbeiten; normal/Schlüssel A/B technisch prüfen. Spielerbewertung bleibt separat offen.
+- [x] Paar- und einzelne Bonuslevel mit den definierten Regeln als Vergleichsfassungen ausarbeiten und technisch prüfen. Spielerbewertung offen.
 - [ ] Erste Kombination und kurze Einführung zusammenstellen.
-- [ ] S22-Leistung und Simulationszeit prüfen; danach finale Tempowerte bestimmen.
+- [ ] PC-Browserleistung und Simulationszeit prüfen; danach Tempowerte vergleichen. Aktuell keine APK und keine Smartphone-Tests: Nutzerkorrektur vom 6. November.
 - [ ] Nutzerbewertung des Pakets; abweichende Ergebnisse hier als konkrete Änderung dokumentieren.
 - [ ] Danach Abräumbonus-Konzeptstufe aufgreifen. Weitere Regeln bleiben zurückgestellt.
 
-Technischer Bestand und diese Zielregel sind nicht gleichzusetzen: Die bisherigen Boden-/Steinschlüssel, Paar- und Bonusstudien sind implementiert; die neue Schlüsselbox und die neuen gestalteten Folgen noch nicht. Technische Details der vorhandenen Implementierung stehen im historischen Protokoll.
+Technischer Bestand: Die bisherigen Boden-/Steinschlüssel, Paar- und Bonusstudien bleiben erhalten. Die neue Schlüsselbox und sieben neue Vergleichsfassungen sind implementiert und in23vollständigen Durchläufen geprüft. Technische Abnahme ist keine Spielerbewertung. Messwerte und Grenzen stehen im [Spielpaket V1](spielpaket-v1.md); frühere technische Details bleiben im historischen Protokoll.
 
 ## 13. Warum das Konzept jetzt diese Form hat
 
