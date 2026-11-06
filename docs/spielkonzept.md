@@ -1,197 +1,202 @@
-# Spielkonzept und verbindlicher Arbeitsplan
+# Spielkonzept und Arbeitsplan
 
-Stand: 6. November 2026 · Version 3
+Stand: 6. November 2026 · Version 4 · ausgearbeitete Designentscheidung, noch keine behauptete Spielfreigabe
 
-## Arbeitsgrundlage und Rückkehrpunkt
+## 1. Geltung und Ziel
 
-Der Nutzer hat die Ausarbeitung dieses Plans und anschließend die Umsetzung auf einem neuen Zweig autorisiert. Grundlage ist `master` bei Commit `afa492a`. Die Entwicklung erfolgt auf `feature/spielmechaniken`; master bleibt für die Rückkehr zum bisherigen Spiel erhalten. Kein Merge und keine neue APK sind Bestandteil dieser Freigabe.
+Dieses Dokument definiert eine zusammenhängende erste Spielfassung. Es ersetzt die widersprüchlich gewordenen Zwischenstände, ohne deren Inhalte zu löschen: [Historie bis Version 3](archiv/spielkonzept-bis-v3.md). Die [Recherche](vergleichsspiele-recherche.md) bleibt die Quellen- und Evidenzsammlung. Beobachtete Konkurrenzregeln, unsere bewussten Abweichungen und noch nicht umgesetzte Funktionen werden getrennt behandelt.
 
-Dieses Dokument ist die maßgebliche Planung. Der frühere Entwurf `spielkonzept-fluss-und-tempo.md` ist historische Vorarbeit, keine parallele Aufgabenliste. Neue Erkenntnisse werden hier eingetragen. Aufgaben werden erst nach Umsetzung und Prüfung abgehakt. Vorschläge sind keine bereits vorhandenen Funktionen.
+Der Spieler betrachtet ein schönes Mosaik, erkennt erreichbare Farben, entscheidet sich für Schatullen und sieht seine Planung durch flüssig arbeitende Bots aufgehen. Das Bild ist der Hauptinhalt. Die Schwierigkeit entsteht durch Zugänge, Mengen und die Reihenfolge des Nachschubs. Warten, lange Laufwege oder schlecht erkennbare Zustände sind keine Rätselschwierigkeit.
 
-Die [Vergleichsspiele-Recherche vom 6. November](vergleichsspiele-recherche.md) ergänzt die Begründung und die offenen Nachweise. Sie trennt Entwicklerregeln, unabhängige Levelberichte und eigene Vorschläge. Die vorhandenen Studien bleiben erhalten. Schlüssel, Paar und Doppeltransport sind weiterhin die geplanten Untersuchungen; eine technisch funktionierende Studie ist noch kein gut abgestimmtes Rätsel.
+Die erste Fassung umfasst **Grundspiel, Schlüssel-Schatulle, verbundene Paare und einzelne Doppeltransport-Schatullen**. Diese vier Bausteine werden zu konkreten Leveln ausgearbeitet. Sie werden nicht nach jedem misslungenen Designversuch grundsätzlich infrage gestellt. Aus Beobachtungen dürfen spätere begründete Änderungen entstehen; sie müssen hier dokumentiert werden.
 
-Verbindlich für neue Mechanikrätsel: erkennbares Zwischenziel, nachvollziehbare Auswahlentscheidung, spürbarer Nutzen der Freigabe, unverletztes Motiv und kein bloßes Verlängern durch Warten. Frühester Zugang und tatsächlicher Freigabezeitpunkt müssen im Spieldurchlauf gemessen werden. „Erstes Drittel“ ist ein eigener Vergleichswert, keine belegte Konkurrenzregel.
+Ein Konzept kann eindeutig sein, bevor endgültige Tempowerte und Spielspaß auf dem Gerät bestätigt sind. Die unten genannten Zahlen sind ausdrücklich unsere Ausgangsziele. Sie sind weder Konkurrenzwerte noch bereits erreichte Messwerte.
 
-Recherchekorrektur: Die Boden-Schlüsselregel mit neutralem Lieferbot ist unsere eigene Variante, keine belegte identische Food-Hunt-Regel. Ein konkreter Food-Hunt-Levelbericht beschreibt stattdessen einen Schlüssel an einer nachrückenden Schatulle. Diese Auswahlvariante ist als nächster Vergleich zu untersuchen, ohne die vorhandene Bodenvariante zu entfernen. Genauer Auslösemoment und Paarverhalten bei versetzten Partnern bleiben ohne direkte Beobachtung offen.
+## 2. Unveränderte Grundlage
 
-Recherche zum Spielfluss: Pixel Flow dokumentiert einen während des Spielens aufladbaren großen Abräumbonus. Deshalb bei der weiteren Planung Fortschrittsschübe ebenso berücksichtigen wie Sperren. Eine entsprechende neue Funktion ist damit noch nicht beschlossen oder implementiert. Doppeltransport bleibt eine eigene Umsetzung; ein belegtes Vorbild mit identischer Nutzlastregel fehlt bisher. Begrenzte Auswahlplätze und Botobergrenzen weiterhin getrennt behandeln.
+- Originaldesign: dunkler Hintergrund, sandfarbenes großes Brett, zwei klare flache Stufen, bestehende Schatullen, vier Stellplätze und mittige Tunnelbucht.
+- Vier Auswahlspalten; drei sichtbare Schatullen pro Spalte und Zahl des weiteren Nachschubs. Nur die vorderste freie Schatulle ist wählbar. Folgepositionen bleiben leicht ausgegraut, aber ihre Farben und Mengen erkennbar.
+- Kein PC-Editor auf dem Smartphone. Dort nur Spiel, Katalog und separat zugängliche Testeinstellungen. Editor, Export und Originalspiel verwenden dieselben Motive und Regeln.
+- Alle Motive und persönlichen Bearbeitungen erhalten. Neue Varianten haben eigene IDs. Alte Studien werden als Studien eingeordnet, nicht still zu fertigen Levels erklärt.
+- Entwicklung auf `feature/spielmechaniken`; Ausgangsstand `master` bei `afa492a`. Kein Merge und keine APK durch diese Konzeptarbeit.
 
-## Leitbild
+## 3. Exakte Grundregeln
 
-Schöne Mosaike durch verständliche Farbentscheidungen abtragen. Richtige Entscheidungen öffnen Zugänge, schaffen Platz und ermöglichen sichtbaren Fortschritt. Geordnete, natürliche Bewegung bleibt wesentlich. Reines Warten zählt nicht als Schwierigkeit. Kleine schnelle Motive wechseln mit größeren Planungsrätseln ab.
+### Auswahl und Arbeit
 
-Das bevorzugte Originaldesign bleibt Grundlage: dunkler Hintergrund, sandfarbenes Spielfeld, zwei flache klare Treppenstufen, vorhandene Schatullen und Tunnelbucht. Keine neue alternative Spieloberfläche. Editor und Gestaltung auf dem PC; Smartphone nur Spiel, Katalog und separat erreichbare Testeinstellungen. Bestehende Motive und Nutzerdaten bleiben erhalten.
+1. Eine ausgewählte Schatulle belegt einen freien Stellplatz. Die Auswahlspalte rückt sofort nach; die neue vordere Schatulle kann gewählt werden, sobald ein Stellplatz frei ist.
+2. Ihre Zahl ist eine **Steinmenge**, nicht eine Botanzahl. Pro Fahrt transportiert ein normaler Bot einen Stein derselben Farbe. Für jeden transportierten Stein gibt es genau eine Reservierung.
+3. Ein Stein ist erreichbar, wenn ein freier Weg von außen bis zu einer orthogonal angrenzenden Zelle besteht. Freigeräumte Innenwege sind erlaubt. Keine diagonalen Durchgänge durch berührende Ecken und kein Durchfahren verbleibender Steine.
+4. Eine Farbe darf gewählt werden, obwohl nur ein Teil ihrer Menge zugänglich ist. Sie wartet auf neue Zugänge. Die Auswahl ist eine Verpflichtung; das Spiel korrigiert die Entscheidung nicht heimlich.
+5. Neue Zugänge aktivieren wartende passende Teams ohne weiteren Tap. Es gibt keine angehängte Wartezeit.
+6. Der Stellplatz wird frei, sobald der letzte Bot dieser Schatulle die Box verlassen hat. Solange noch nicht gestartete Steine offen sind, bleibt sie dort. Rückkehrende Bots benötigen keinen Stellplatz. Diese Regel übernimmt die schnelle vorhandene Ausfahrtfreigabe als unsere bewusste Festlegung; sie ist keine behauptete identische Regel aller Vorbilder.
+7. Der kleine aktive Zähler zeigt die noch nicht ausgerückte Steinmenge. Fortschritt oben zählt erst tatsächlich gelieferte Steine. Bei Freigabe verschwindet die aktive Box, auch wenn ihre letzten Bots noch zurückkehren.
 
-## Bestehende Grundregeln
+### Gewinn, Stillstand und Hilfe
 
-- Ein normaler Bot holt einen Stein seiner Farbe über einen freien Zugang und liefert ihn ab.
-- Vier aktive Stellplätze; davor vier Schatullenspalten mit verdeckten Folgepositionen.
-- Schatullenmenge zählt Steine. Reservierungen dürfen keine Doppelabholung erlauben.
-- Unabhängiger Startabstand pro Box. Globaler Abstand bleibt Vergleichsoption.
-- Teamgrenze und Gesamtgrenze sind Testparameter, keine festgelegten endgültigen Spielregeln. Ausgangsvergleich ohne zusätzliche Gesamtbegrenzung; kein künstliches Limit als angeblich bewährte Konkurrenzregel darstellen.
-- Arbeitsplatzfreigabe und Pfade verwenden die vorhandenen Einstellungen. Mechaniktests verändern sie nicht stillschweigend.
-- Rückgängig, Hinweis, Neustart und Vorspulen bleiben erhalten. Automatischer Solver ist Testhilfe.
+Gewonnen ist erst nach Lieferung aller Steine und eventuell vorhandener Boden-Schlüssel. Keine zusätzliche Nacharbeit oder lange Erfolgspause. Keine automatische Auswahl weiterer Schatullen im normalen Spiel; Automatik bleibt ein Testwerkzeug.
 
-## Aktuelle Weiterentwicklung nach Nutzerentscheidung
+Ein unbewegter Bot oder eine wartende Box bedeutet nicht sofort Niederlage. Solange ein Bot arbeitet, eine Lieferung aussteht, ein Schlüsselereignis bevorsteht oder eine erreichbare Farbkette normal weiterarbeiten kann, ist es kein endgültiger Stillstand. Endgültig blockiert ist der Zustand erst, wenn kein solcher Fortschritt mehr möglich ist und keine legale Auswahl Fortschritt eröffnen kann. Ein nicht startbares Paar allein ist kein Niederlagengrund.
 
-Die neue bevorzugte Schlüsselstudie verwendet einen eigenständigen Gegenstand auf freiem Boden. Er wird zunächst durch Mosaiksteine eingeschlossen. Nach Freilegen eines Zugangs startet ein neutraler Bot automatisch, ohne farbige Schatulle oder Stellplatzverbrauch, holt den Schlüssel und bringt ihn zur Abgabe. Erst nach vollständiger Einfahrt/Lieferung öffnen Schloss und gekreuzte Ketten. Der Schlüssel zählt nicht als Stein. Die bisherige Schlüsselstein-Studie mit Freigabe bei Aufnahme bleibt als Legacyvergleich erhalten; ihre Regel ist nicht die neue Boden-Schlüsselregel.
+Rückgängig nimmt eine ganze Auswahl einschließlich ihrer Folgewirkungen zurück. Ein Paar ist ein Schritt. Schlüssel und Lieferzustände werden mit restauriert. Hinweis zeigt eine sinnvolle legale Auswahl; er darf nicht nur einem versteckten ursprünglichen Plan folgen und alternative erreichbare Steine ignorieren. Kein Timer, keine Leben und kein Pflichtbooster im Kernkonzept.
 
-Die Schlüssellänge wird unabhängig vom Steinraster mit 1,5/2/2,5 mal normaler Botlänge (Basis13Bildpunkte) verglichen, am Boden und im Transport. Material und Formensprache von Schlüssel, Schloss, Kette und Klammer sind gemeinsam einstellbar. Verbundene Partner dürfen in unterschiedlichen Tiefen stehen; gemeinsame Auswahl erst, wenn beide vorne und zwei Stellplätze frei sind.
+### Bewegung
 
-## Erste Mechanikfassung
+Vorhandene natürliche Nordausfahrt, abgerundete Übergänge, geordnete adaptive Hin-/Rückwege und feste Einfahrtsspur pro Bot bleiben Grundlage. Eine begonnene Strecke springt nicht wegen anderer Abholungen nach innen. Nur die blaue Fahrbahn des Einfahrtmoduls ist befahrbar; Ladung verschwindet vor dem Bot hinter der Abdeckung. Kameraruck, Schwenken oder Pfadfehler werden nicht als Regel kaschiert.
 
-### M1: Schlüsselstein und verschlossene Auswahlspalte
+## 4. Schlüssel-Schatulle: ein Ziel in der Auswahlfolge
 
-Ein bestehender Stein trägt ein klar erkennbares Schlüsselsymbol. Seine erste erfolgreiche Aufnahme öffnet eine bezeichnete Auswahlspalte sofort, ohne zusätzliche Wartezeit oder zweite Fahrt. Steinfarbe, Steinmenge und normale Abholregeln bleiben bestehen. Gesperrte Spalte und zugehöriger Schlüssel erhalten dieselbe Kennzeichnung; Farbe allein genügt nicht.
+### Standardregel der ersten Fassung
 
-Die erste Studie verwendet eine verschlossene der vier vorhandenen Spalten, keine zusätzliche fünfte Spalte. Freie Stellplätze bleiben vier. Der Schlüssel muss über die anfangs verfügbaren Farben erreichbar sein. Keine Zufallsplatzierung in bestehenden Motiven. Referenzversion desselben Testmotivs ohne Sperre zum Vergleich.
+- Eine normale Farbschatulle trägt zusätzlich einen gut erkennbaren Schlüssel. Eine konkret zugeordnete Auswahlspalte ist an ihrer vordersten Position mit Kette und Schloss blockiert. Die Sperre verbraucht keinen Stellplatz.
+- Der Schlüssel gehört zu genau diesem Schloss. Keine Zufallszuordnung oder unsichtbare Links-nach-rechts-Priorität. Form/Kennzeichnung erklären die Zuordnung zusätzlich zur Farbe.
+- Die Schlüssel-Schatulle kann in Reihe 2 oder 3 beginnen. Man muss die Schatullen davor sinnvoll wählen, damit sie nachrückt.
+- **Die erfolgreiche Auswahl der Schlüssel-Schatulle löst die Freigabe aus.** Es muss ein Stellplatz frei sein; ein abgewiesener Tap öffnet nichts. Der Schlüssel fliegt kurz zum Schloss, die Sperre verschwindet sofort logisch, die Animation blockiert die Auswahl nicht.
+- Die Farbschatulle arbeitet danach normal weiter. Ihr Schlüssel ist keine zusätzliche Steinmenge, erzeugt keinen weiteren Bot und verlangt keinen zweiten Bestätigungstap.
+- Bei einem Paar mit Schlüssel werden erst beide Stellplätze atomar zugeteilt, dann wird entsperrt. Die Freigabe darf nicht rückwirkend einen illegalen Paarstart ermöglichen. In den ersten Referenzlevels werden Paar und Schlüssel jedoch getrennt eingeführt.
 
-Prüfung: Spalte vorher nicht wählbar; Aufnahme öffnet genau einmal; Lieferung nicht erforderlich; kein falscher Schlüssel; Rückgängig stellt Sperre und Schlüsselzustand wieder her; Speichern/Export/Import/Spielübergabe erhalten Daten; ein vollständiger Lösungsweg vorhanden. Hinweis und Solver berücksichtigen Sperren.
+### Warum diese Festlegung
 
-### M2: Verbundene Schatullen
+Ein Food-Hunt-Levelbericht beschreibt einen Schlüssel an einer nachrückenden Schatulle; Knit Out bestätigt Schlüssel-Sperren grundsätzlich. Unser genauer Auslöser ist eine Designentscheidung: sichtbar, leicht erklärbar und ohne zusätzliche Fahrt. Das Originalmotiv bleibt unversehrt. Die Entscheidung lautet: „Welche vorderen Boxen wähle ich, um an den Schlüssel zu kommen, und halte ich dafür Platz frei?“
 
-Zwei konkret verknüpfte Schatullen werden gemeinsam gewählt und belegen atomar zwei freie Stellplätze. Bei nur einem freien Platz startet keine von beiden. Danach arbeiten und schließen beide unabhängig ab. Mengen und Farben können verschieden sein. Eine sichtbare Verbindung erklärt das Paar vor der Auswahl.
+### Levelgestaltung
 
-Erste Studie: beide Partner gleichzeitig vorn in zwei Spalten; keine versteckte Partnersuche tief in einer Warteschlange. Eine Auswahl und ein Rückgängig-Schritt für das gesamte Paar. Partner dürfen nicht einzeln durch Hinweis oder automatischen Test gestartet werden.
+Die Schlüsselroute muss mit den offenen Spalten funktionieren. Mindestens eine bald nützliche Farbe hinter dem Schloss macht das Öffnen lohnend. Der Schlüssel darf nicht alle nötigen Farben zum eigenen Öffnen einsperren. Vor Auswahl sind Schlüssel und Nutzen der gesperrten Spalte sichtbar.
 
-Prüfung: null/ein/zwei freie Plätze; unterschiedliche Mengen; unabhängige Freigabe; Wartezustand einer Farbe; Rückgängig; Serialisierung; vollständige Lösbarkeit.
+Für die ersten Beispiele wird eine Freigabe bei ungefähr 15–35% abgetragenen Steinen angestrebt. **Das ist ein Gestaltungsziel, kein prozentgesteuerter Spielauslöser.** Gemessen wird der tatsächliche Zeitpunkt im vollständigen Durchlauf. Bei Einführung höchstens eine Sperre. Eine fast vollständige Lösung mit drei Spalten wie in der Schleifenstudie gilt nicht als gelungenes Schlüssellevel.
 
-### M3: Bonus-Schatulle mit Doppeltransport
+### Erhaltene Bodenvariante
 
-Besonders markierte Schatulle: maximal zwei gleichfarbige Steine pro Fahrt. Normale Schatullen bleiben bei einem. Die zweite Aufnahme ist nur erlaubt, wenn sie nach der ersten über die normalen Zugangsregeln erreichbar ist; keine fremden Farben durchdringen und keine entfernten Steine überspringen. Nur unmittelbar benachbarte Steine bilden das erste Testpaket. Restmenge eins ergibt Einzeltransport.
+Der vom Nutzer gewünschte Boden-Schlüssel bleibt als alternative Studie erhalten: Gegenstand in natürlicher Freifläche, neutraler Bot nach freiem Zugang, Öffnung erst nach Lieferung. Keine nachträglich ausgeschnittenen Gesichter und keine überdeckten Motivdetails. Er ist kein zufällig zwischen Varianten wechselnder Standard. Beide Regeln erhalten getrennte Studientitel. Ein späterer Einsatz dieser Variante benötigt einen ausdrücklich dafür gebauten Levelentwurf mit frühem Zugang.
 
-Beide Zielsteine müssen vor Start eindeutig reserviert werden. Mengen, Fortschritt und Gewinn zählen Steine, nicht Fahrten. Optisch kompaktes Doppelpaket ohne Verdoppelung der Figurengröße. Kein Geschwindigkeitsbonus zusätzlich. Erste Studie getrennt vom Schlüssel; Kombination erst nach bestandenem Einzeltest.
+## 5. Verbundene Paare: zwei Plätze bewusst einsetzen
 
-Prüfung: ungerade Mengen, fehlender zweiter Stein, konkurrierende Teams, tatsächliche Erreichbarkeit, keine Doppelreservierung, exakte Mengen, Lieferung beider Steine, Rückgängig, gleicher Levelvergleich mit Einzeltransport. Erst danach als mögliche Schlüsselbelohnung kombinieren.
+- Genau zwei markierte Schatullen in unterschiedlichen Auswahlspalten gehören zusammen. Beide können in verschiedener Tiefe liegen.
+- Start erst, wenn beide vorne und beide Spalten frei sind sowie zwei Stellplätze verfügbar sind. Auswahl einer startet beide atomar. Sonst keine Teilbewegung.
+- Danach arbeiten sie unabhängig. Jede gibt ihren eigenen Stellplatz nach der normalen Ausfahrtregel frei. Kein gemeinsames Warten auf den langsameren Partner.
+- Die eckige Verbindung erklärt das Paar in der Auswahl. Nach gemeinsamer Auswahl ist sie gelöst; sie verspricht keine physische Verbindung der fahrenden Bots.
+- Farben und Mengen dürfen verschieden sein. Alle Steinmengen bleiben exakt erhalten.
 
-## Später wieder aufgreifen
+Die Entscheidung lautet: „Sind zwei Plätze für diese Farbkombination sinnvoll, und wann öffne ich den Zugang zum tieferen Partner?“ Gute frühe Paare verbinden eine sofort nützliche Farbe mit einer nach deren Abtrag zugänglichen kleinen Folgefarbe. Kein Paar aus zwei unzugänglichen Farben ohne erkennbare Möglichkeit, daneben weiterzuarbeiten. Versetzte Partner erst nach einem verständlichen Beispiel mit beiden vorne.
 
-| ID | Idee | Status und Bedingung |
+Knit Out belegt gekoppelte Auswahl. Ein unabhängiger Pixel-Flow-Bericht beschreibt zusätzlich gemeinsames Belegen bis zum Abschluss beider Partner. Diese stärkere Bremse übernehmen wir ausdrücklich nicht. Das ist eine begründete Abweichung für unseren Spielfluss.
+
+## 6. Doppeltransport: eine lokale Belohnung
+
+- Nur ausgewählte Schatullen tragen das neutrale ×2-Schild. Eine normale Box bleibt normal. Das Symbol bezeichnet Nutzlast, keine zweite Farbe und keine doppelte Botanzahl.
+- Ein Bot reserviert höchstens zwei gleichfarbige, orthogonal benachbarte Steine. Nach Entfernung des ersten muss der zweite über die frei gewordene Zelle erreichbar sein. Keine entfernten Steine zusammenziehen, keine fremde Farbe durchdringen.
+- Ohne legalen zweiten Stein oder bei Restmenge eins wird ein Stein geholt. Kein Warten auf ein perfektes Zweierpaket.
+- Zahl und Fortschritt zählen Steine; beide Reservierungen, Aufnahmen, Lieferungen und Rückgängig sind korrekt abzurechnen. Kein zusätzlicher Geschwindigkeitsmultiplikator.
+
+Die Box belohnt das Erreichen einer nützlichen Farbe mit weniger Fahrten und sichtbarem Abräumen. Nicht jedes Auftreten muss eine eigene schwere Denksportaufgabe sein. Sie dient auch der Entlastung zwischen Entscheidungen. Gelegentlich steckt sie hinter dem Schlüssel und ist Teil dessen Belohnung. Alle-Boxen-×2 bleibt ein technischer Vergleich, kein endgültiges Levelrezept.
+
+Diese genaue Regel ist unsere Umsetzung, kein nachgewiesener identischer Konkurrenzstandard. Ihr Zeitnutzen wurde bisher an einem Motiv gemessen; allgemeiner Spielspaß ist noch zu prüfen.
+
+## 7. Schatullenfolge ist Leveldesign
+
+Motiv, Farben, Mengen, Zugänge und Auswahlreihenfolge werden gemeinsam geprüft. Ein automatischer Generator liefert einen Entwurf, kein fertiges Rätsel. Schwarze Umrisse bleiben schwarz; die Gestaltung wird nicht für eine buntere Startauswahl beschädigt.
+
+Vorrangige Füllmengen für neue Entwürfe: 10/20/30/40/50/60. Mengen 5 und kleine Restmengen sind erlaubt, wenn ein kurzer Zugang oder ein echter Restabschnitt sie begründet. Keine Mengen erzwingen, die blockieren; keine bloße Zufallsvariation von 19/21/34 als Ersatz für Gestaltung. Die Summe jeder Farbe entspricht exakt dem Mosaik. Keine überschüssigen Pflichtboxen nach vollständigem Abtrag.
+
+Größere zusammenhängende Farbflächen bekommen weniger, sinnvoll größere Boxen. Kleine Boxen dienen als schnelle Brücken zu neuen Möglichkeiten. Eine große Box darf warten, aber daneben muss eine verständliche weiterführende Auswahl möglich sein.
+
+Die vordere Auswahl soll in normalen Levels mindestens zwei ernsthaft nutzbare Optionen anbieten. Gleiche Farbe in einer Spalte drei Positionen hintereinander nur mit nachvollziehbarer Abräumfunktion; keine flächendeckenden schwarzen Dauerspalten aus Bequemlichkeit des Generators. Wenn die Bildstruktur nur eine Anfangsfarbe erlaubt, wird das als gezielte kurze Einführung gestaltet und nicht durch eine unlösbare Farbmischung verdeckt.
+
+Aktueller Iststand als Anlass: Wal460Steine/27Boxen, Eichelhut1573/81, Schleife1640/84, Tag trifft Nacht1831/95, Bunte Balance1999/100. Diese Werte wurden am 6.11. aus dem Katalog gelesen. Sehr viele kleine Boxen erzeugen sehr viele Auswahlen. Neue Folgen werden deshalb zusätzlich nach Eingabezahl und Fortschritt pro Auswahl bewertet. Bestehende Folgen bleiben bis zur geprüften neuen Variante erhalten.
+
+## 8. Tempo und Spielfluss
+
+### Ausgangsprofil für reproduzierbare Vergleiche
+
+130 Bildpunkte/s, 1×, Startabstand 0,16s **je Box**, Öffnung 0,35s, Aufnahme 0,18s, zwölf Bots gleichzeitig je Box, keine zusätzliche globale Botgrenze, Freigabe nach letzter Ausfahrt. Bestehende Bewegungs- und Größenprofile werden als vollständiger benannter Vergleich gespeichert, nicht still über Nutzereinstellungen geschrieben. Dieses Profil ist ein Messstart, keine erwiesene optimale Veröffentlichungseinstellung.
+
+Ruhigeres Profil und freie Botzahl bleiben im Testeditor verfügbar. Ein Botlimit dient der Darstellung/Leistung, nicht dem Erzwingen einer schlechten Wartephase. Endgültige S22-Werte brauchen echte Gerätemessung und eine korrekt zur vergangenen Zeit laufende Simulation.
+
+### Eigene Zielkorridore bei 1×
+
+| Typ | Ziel für flüssige Lösung ohne lange Denkpausen | Richtwert bewusster Auswahlen |
 | --- | --- | --- |
-| M4 | Verdeckte Schatullen | Zurückgestellt. Nur Folgepositionen verborgen; vor unmittelbarer Auswahl sichtbar. Fairness und Hinweise prüfen. |
-| M5 | Versiegelter Motivbereich mit Werkzeugstein | Zurückgestellt bis M1–M3 bewertet. Muss neue Zugänge belohnen; keine bloße Wartebarriere. |
-| M6 | Kleine zusätzliche Bildebene | Zurückgestellt. Vorankündigung nötig; zusätzliche Steinmenge ins Zeitbudget rechnen. |
-| M7 | Pakete mit drei/vier Steinen | Offener Versuch erst nach M3; nicht automatisch auf alle normalen Bots übertragen. |
-| P1 | Abschlussanimation und nächstes Rätsel | Nach Mechanikprüfung: kurze klare letzte Lieferung, kein langer zusätzlicher Warteabschluss. |
-| P2 | Motivsammlung/Themenfortschritt | Spätere Produktphase; keine Monetarisierungs- oder Freischaltpflicht derzeit. |
+| Einführung / kleines Motiv | 30–60 Sekunden | etwa 10–20 |
+| Normales Rätsel | 60–120 Sekunden | etwa 20–40 |
+| Größeres Anspruchsrätsel | 120–180 Sekunden | etwa 35–60 |
 
-Vorerst ausgeschlossen: Timer, reine Wartezeitsperren und mehrfach zu treffende Standardsteine. Keine Kombination mehrerer unbekannter Sonderregeln im ersten Testlevel.
+Das sind Entwicklungsziele, keine bewiesenen Marktstandards und keine Spielerzeitlimits. Ein umfangreiches Motiv darf diese Ziele nicht durch unlesbar rasende Bots erzwingen. Zuerst unnötige Boxaufteilungen, Unterbeschäftigung und Wege prüfen, danach erlaubte Mengen/Bonusanteile/Rastervarianten. Ein hochwertiges großes Sondermotiv kann bewusst länger sein, muss dann als solches eingeordnet werden.
 
-## Technische Umsetzung
+Messbar sind: Gesamtzeit, Zeitpunkt letzter Auswahl, reine Auslaufphase, beschäftigte/wartende Plätze und Zeiträume ohne mögliche nützliche Eingabe. Mehr als zehn Sekunden reine Auslaufphase nach der letzten Auswahl wird geprüft. Ein geschlossener Wartezustand mit voll belegten Plätzen und mehr als fünf Sekunden ohne Abtrag trotz laufender Simulation wird untersucht; weder diese Prüfgrenzen noch Denkpausen sind automatische Niederlagen.
 
-Gemeinsamer PlaySession-Kern für Originalspiel und Editor. Optionale versionierte Mechanikdaten im Motivdokument; alte Dokumente ohne diese Daten spielen unverändert. Mechanikzustand gehört in Spielstände und Rückgängig-Snapshots. Import validiert Koordinaten, IDs, Verknüpfungen und Mengen. Automatische Warteschlangen dürfen keine Mechanikdaten still löschen. Rasterwechsel mit markierten Steinen benötigt eine explizite Behandlung, keine ungeprüfte Koordinatenübernahme.
+## 9. Levelaufbau und Einführung
 
-Studien erhalten eigene IDs und Kategorie; bestehende Motive werden nicht ersetzt. Auswahl, Hinweise, automatische Lösung und Spielübergabe müssen dieselben Regeln verwenden. Der Editor erhält passende Kennzeichnungen und Bearbeitungsmöglichkeiten pro eingeführter Mechanik. Erst nach Übergabeprüfung gilt eine Mechanik als fertig.
+Jedes neue Level bekommt vor seiner Umsetzung einen kurzen Entwurf mit einer benannten Entscheidung, ihrem sichtbaren Hinweis, einer absichtlichen hilfreichen Folge und einer vermeidbaren schlechten Folge. Mindestens ein vollständiger Lösungsweg und bewusst abweichende Auswahlen werden getestet. Der bekannte Solverweg allein beweist keine Fairness.
 
-## Reihenfolge und Aufgaben
+Aufbau: kurze verständliche Eröffnung → erste neue Möglichkeit → Entscheidung um Platz/Farbe oder Sonderregel → größerer sichtbarer Abtrag → kurze Auflösung. Nicht jede Phase benötigt eine Sonderfunktion.
 
-- [x] B0: Ausgangsstand `afa492a` festhalten und Entwicklungszweig erstellen.
-- [x] B1: Konzept, Regeln, Prüfkriterien und zurückgestellte Ideen dokumentieren.
-- [x] B2: Testauswertung für Simulationsdauer, Fortschritt und aktive Bots implementieren und prüfen.
-- [ ] B3: Sechs feste Referenzmotive und identische Vergleichseinstellungen dokumentieren; kleine/mittlere/große und offene/geschlossene Formen.
-- [x] M1a: Datenformat, Schlüsselzustand und Spaltensperre im gemeinsamen Kern.
-- [x] M1b: Original-UI, Editor, Hinweis/Solver, Import/Export und eigene Vergleichsstudie.
-- [ ] M1c: Regeltests und vollständiger Spieldurchlauf; Nutzerbewertung festhalten.
-- [x] M2a: Paar-Daten und atomarer Doppelstart mit Rückgängig.
-- [x] M2b: Sichtbare Verknüpfung, Editor und vollständige Vergleichsstudie.
-- [x] M3a: Doppelreservierung, legale zweite Aufnahme und exakte Mengenabrechnung.
-- [x] M3b: Lesbare Darstellung, Editor und Zeitvergleich.
-- [ ] K1: Nach Einzelprüfungen Schlüssel + Bonus in einem gestalteten Rätsel kombinieren.
-- [ ] K2: Abwechslungsreiche kurze Testfolge; Regeln einzeln einführen und menschlich spielen.
-- [ ] K3: Ergebnisse mit Nutzer bewerten; anschließend M4–M6 ausdrücklich wieder aufgreifen oder begründet streichen.
+Für die erste neue Folge:
 
-Jeder Baustein erhält einen separaten Commit. Nach Unterbrechung hier und im Arbeitsstand nachsehen; nicht erneut ein alternatives Konzept beginnen. Bei geänderter Reihenfolge den Grund im Entscheidungsprotokoll notieren.
+1. Zwei normale kurze Rätsel zum Lernen von Farbzugang und Arbeitsplatz.
+2. Erstes Schlüssellevel mit sichtbarem Schlüssel in Reihe2; die geöffnete Spalte hilft sofort.
+3. Ein normales Entlastungslevel ohne Sperre.
+4. Erstes Paar mit beiden Partnern vorne; kurze gut erreichbare Partnerfarbe.
+5. Einzelne ×2-Box auf einer gut erreichbaren größeren Fläche.
+6. Vertiefung: Schlüssel in Reihe3 oder ein versetztes Paar; jeweils nur eine bekannte Regel anspruchsvoller machen.
+7. Erste Kombination Schlüssel → nützliche ×2-Box, erst nach bestandenen Einzelvergleichen.
 
-## Test und Bewertung
+Das sind Lehrziele, keine unveränderliche globale Levelnummerierung. Wiederholungen ohne Sonderregel bleiben ein wesentlicher Teil des Katalogs. Anfangs höchstens eine Sonderregelfamilie pro Level. Unterschiedliche Mechaniken werden erst nach ihrer Einführung kombiniert.
 
-Automatische Lösbarkeit und angenehmes menschliches Spielgefühl sind getrennte Kriterien. Erfassen: Simulationsdauer bei 1×, tatsächliche Wallclock/FPS gesondert, abgelieferte Steine, aktive Bots und deren Spitze, Stillstände ohne Fortschritt. Keine Hochgeschwindigkeitssimulation als Mobilperformance ausgeben. Zwei bis drei Minuten für mittlere Rätsel sind eine vorläufige Zielrichtung, kein nachgewiesenes Optimum oder verbindliches Versprechen.
+## 10. Bewusst zurückgestellt und trotzdem festgehalten
 
-Vergleich immer mit identischen Motiven, Mengen, Startbedingungen und Bewegungseinstellungen; je Versuch nur die untersuchte Mechanik ändern. Bestehende manuelle Erreichbarkeit, feste Laufpfade, natürliche Ausfahrt, zwei Stufen und Nutzereinstellungen regressionsprüfen. Smartphoneleistung erst auf Gerät messen. APK erst auf ausdrückliche Anforderung.
+| Baustein | Entscheidung |
+| --- | --- |
+| Aufladbarer großer Abräumbonus | Nächste geplante Konzeptstufe nach dem ersten Levelpaket. Vorbild Pixel Flows Fortschrittsladung ist belegt. Nicht zusätzlich in die erste Fassung drücken. Muss durch normale Arbeit verdient werden; kein Pflichtkauf und keine absichtliche Bremse ohne Bonus. |
+| Verdeckte Folgeboxen | Späterer Informationsvergleich. Vor Auswahl sichtbar; kein Zufallszwang, keine versteckte einzig rettende Farbe. Im ersten Paket bleiben Vorschauen offen. |
+| Versiegelter Bildbereich / Werkzeug | Später, mit klarer sichtbarer Öffnungsaktion. Keine zusätzliche Trefferarbeit an allen Standardsteinen. |
+| Zweite Bildebene | Später, angekündigt und ins Zeitbudget gerechnet. Kein überraschend verdoppeltes langes Level. |
+| Drei-/Vierer-Nutzlast | Erst nach ×2, nicht parallel einführen. |
+| Timer, Bomben, Leben, Warteuhren | Nicht Bestandteil dieses Kernkonzepts. |
+| Shop, Kaufbooster, Siegesserienzwang | Keine Voraussetzung für Balance, Lösung oder Tests. |
 
-## Entscheidungsprotokoll
+Diese Einordnung ist verbindlich für die erste Fassung: kein fortlaufendes Hinzufügen neuer Hindernisse beim Bauen. Die Ideen verschwinden nicht aus der Planung, haben aber keinen Vorrang vor guten Levels mit den vorhandenen Regeln.
 
-- 2026-11-05: Nutzer autorisiert dokumentierten Plan, danach Bau auf neuem GitHub-Zweig. Reihenfolge B2, M1, M2, M3.
-- 2026-11-05: Globaler Startabstand war unbeabsichtigte Bremse, bereits vor diesem Zweig korrigiert. Bunte Balance: 412,8 s global gegen 329,6 s je Box, 1999 Steine, 90 px/s, 0,16 s, Team128/Gesamt0. Ruhige Grenze24: 571,2 s. Einzelvergleich, kein allgemeines Tempoergebnis.
-- 2026-11-05: Keine belastbare Aussage über Bot-Obergrenzen in Food Hunt. Unsere Grenzen sind eigene Testparameter.
+## 11. Referenzpaket und Abnahme
 
-## Nächster konkreter Schritt
+| Referenz | Was wird geprüft? | Status |
+| --- | --- | --- |
+| Wal · kompakte Formen | kurzes Grundspiel, zugänglicher Einstieg, Mengen überarbeiten | vorhandenes Motiv; neue Folge auszuarbeiten |
+| Eichelhut | Grundspiel mit klarer Kontur; Schlüssel-Schatulle gegen identische Folge ohne Schloss | Motiv vorhanden; Schlüsselbox noch nicht implementiert |
+| Unmögliche Schleife | Design-/Transportvergleich des Boden-Schlüssels | spielbar, als taktisches Schlüssellevel verworfen |
+| Tag trifft Nacht | ein vorn liegendes Paar; erreichbare Folgefarbe | Levelentwurf und neue Folge auszuarbeiten |
+| Bunte Balance | ×2 auf sinnvoller zusammenhängender Farbfläche, Vergleich ohne Bonus | Levelentwurf und neue Folge auszuarbeiten |
+| Eichelhut, zweite getrennte Variante | Schlüssel öffnet nützliche Bonusbox; Gesamtzeit und früher Nutzen | erst nach Einzelabnahme |
 
-B2 abgeschlossen: aufklappbare Testauswertung im Originalscreen, gemeinsamer Telemetrie-Kern und Tests für Fortschritt, aktive Bots und Rückgängig. B3 und danach M1a beginnen. Offene Gestaltungsdetails innerhalb der oben festgelegten Studien ausarbeiten und protokollieren.
+Die Motivnamen legen die Testbasis fest, behaupten aber keine bereits geprüfte neue Schatullenfolge. Reicht ein Motiv für die beabsichtigte Entscheidung nicht, wird ein geeigneteres unverändertes Motiv gewählt und hier protokolliert.
 
-### Umsetzung M1 am 5. November
+Abnahme pro Level:
 
-Spielbare Studien `study-key-on` und `study-key-off` ergänzt, vorhandenes Eichelmotiv als identischer Bildaufbau. Schlossspalte2, markierter schwarzer Stein am linken Fuß; Start mit schwarzer Box. Sperre, Hinweisfilter und automatischer Test verwenden dieselbe Regel. Schlüssel öffnet bei Aufnahme. Eigener Rückgängig-Zustand, validierte optionale Motivdaten. PC-Editor: Schlüsselkoordinaten und Zielspalte setzen/entfernen, JSON erhalten; Rasterwechsel mit Markierungen wird abgelehnt. Nutzerbewertung M1c bleibt offen. Vollständiger Test 1573 Steine sowie Browser-Sperre, Aufnahme vor Lieferung und Rückgängig bestanden. Noch keine verbundenen oder Bonus-Schatullen implementiert.
+- Exakte Farben/Mengen, keine doppelten Reservierungen, keine verlorenen Schlüssel und korrekte Rücknahme.
+- Vollständige Lösung ohne Booster; zusätzlich mehrere abweichende legale Auswahlfolgen prüfen. Erkennbare Sackgassen erklären sich durch sichtbare Regeln.
+- Früher tatsächlicher Schlüsselnutzen; keine Endspiel-Sperre aus Versehen. Freigabezeitpunkt relativ zu Abtrag und Gesamtzeit dokumentieren.
+- Sonderregel, Zahl und Paarzuordnung in tatsächlicher Smartphonegröße lesbar. Motiv nicht beschädigt oder überlagert.
+- Identische Vergleichsbedingungen; jede Variante ändert nur den untersuchten Baustein.
+- Zeit, Auswahlen, Stillstände und Auslaufphase protokollieren. Botanzahl und Mobil-FPS nicht miteinander verwechseln.
+- Manuell spielen, nicht nur automatisch lösen. Nutzerbewertung ist eine eigene Freigabe; ein Testpass behauptet keinen Spaß.
 
-### Spielerverständlichkeit M1
+## 12. Umsetzung in festgelegter Reihenfolge
 
-Goldener Schlüsselmarker mit Zeiger auf den Zielstein; einheitliches gezeichnetes Schloss statt Emoji und technischer Spaltennummer. Gesperrter Nachschub als zusammenhängender Bereich, kurzer Spielhinweis ohne zusätzliche Bildschirmhöhe. Bei Aufnahme fliegt ein Schlüssel zum Schloss; Bereich wird sofort nutzbar und kurz hervorgehoben. Animation blockiert keinen Verkehr; reduzierte Bewegung wird berücksichtigt. Browserprüfung: Sperre, freigegebene Auswahl, Rückmeldung, Fluganimation und Rückgängig. Titel im Spiel: Der goldene Schlüssel.
+- [x] Ausgangsstand sichern und Zweig erstellen.
+- [x] Telemetrie, per-Box-Startabstand, Originalspiel-/Editor-Verknüpfung und erste Mechanikstudien.
+- [x] Erste Quellenrecherche, Nachrecherche zu Paaren/Fairness und zusammenhängende Regeldefinition Version4.
+- [ ] Referenzprofil vollständig speichern; Istwerte der Referenzmotive messen. Keine Nutzerprofile überschreiben.
+- [ ] Standard-Schlüsselbox mit klarer Zuordnung und atomarem Auslösezeitpunkt ergänzen; Bodenstudien behalten.
+- [ ] Wal und Eichelhut mit bewusst geplanten Folgen ausarbeiten; normal/Schlüssel A/B prüfen.
+- [ ] Paar- und einzelne Bonuslevel mit den definierten Regeln ausarbeiten und prüfen.
+- [ ] Erste Kombination und kurze Einführung zusammenstellen.
+- [ ] S22-Leistung und Simulationszeit prüfen; danach finale Tempowerte bestimmen.
+- [ ] Nutzerbewertung des Pakets; abweichende Ergebnisse hier als konkrete Änderung dokumentieren.
+- [ ] Danach Abräumbonus-Konzeptstufe aufgreifen. Weitere Regeln bleiben zurückgestellt.
 
-### Korrektur Abgabeanfahrt und Ausrichtung
+Technischer Bestand und diese Zielregel sind nicht gleichzusetzen: Die bisherigen Boden-/Steinschlüssel, Paar- und Bonusstudien sind implementiert; die neue Schlüsselbox und die neuen gestalteten Folgen noch nicht. Technische Details der vorhandenen Implementierung stehen im historischen Protokoll.
 
-Die Bildschirmprojektion verzerrte die im Raster geglättete Anfahrt bis in Parkplätze und Seitenwände. Gemeinsamer Editor-/Original-Connector richtet die Rückfahrt jetzt oberhalb von Parkplatzoberkanten und Garagenmund mittig aus. Die letzte Strecke liegt gerade auf der Fahrbahnmitte. Die Figur folgt der gemessenen Rückkurve mit konstantem Projektionsabstand statt einer Frame-Historie und richtet sich nach ihrer lokalen Kurventangente statt zur Ladung aus. Kein zusätzlicher Stopp. Browserregression: sieben Richtungen, 1407 Positionsproben mit Hindernisabstand, 184 Tangenten-/Wiederholungsproben, 89,50–90,46 px/s bei Vorgabe90. Normale Originalgrößen geprüft; extrem vergrößerte Figuren können weiterhin breiter als die physische Fahrbahn sein. Ausfahrt aller vier Slots in fünf Pfadmodi und Spielübergabe bestehen.
+## 13. Warum das Konzept jetzt diese Form hat
 
-### Einfahrtsspuren
+Die Recherche stützt Reihenfolge und knappe Plätze als Kern, gekoppelte Auswahl als räumliche Entscheidung und Schlüssel als Freigabe von Nachschub. Sie zeigt auch kräftige Abräumaktionen als Gegenpol zu Einschränkungen. Daraus folgt eine begrenzte erste Fassung statt eines Sammelsuriums von Hindernissen. Konkrete Freigabezeitpunkte, Ausfahrtfreigabe, unabhängige Paararbeit und Doppeltransport sind bewusst für unser Spiel festgelegt.
 
-Unter Aufnahme und Einfahrt stehen Mittig, 2 Spuren und 3 Spuren zur Auswahl. Drei ist die neue Vorgabe für diesen Vergleich; explizit gespeicherte Auswahl bleibt erhalten. Die Anfahrtsseite bestimmt den Versatz, der pro Bot beim Planen festgelegt und bei Rückweg-Neuberechnung beibehalten wird. Einfahrt hinter der Abdeckung bleibt auf derselben Spur, ohne erneutes Zentrieren. Verfügbarer Versatz aus schmalster Fahrbahnbreite abzüglich Bot-/Würfelausdehnung und Sicherheitsrand; bei zu wenig Breite Zusammenfallen zur Mitte. Optische Spuren, keine neue gegenseitige Bot-Kollisionsregel. Gemeinsame Einstellung und Transportlogik für Editor und Originalspiel. Browser: alle drei Varianten, Links/Mitte/Rechts, Wandabstand, feste Spur bei Neuplanung, kein Zentrieren bei Einfahrt; bisherige Geschwindigkeits-/Parkplatz-/Ausrichtungsprüfung besteht. Alle52 Optionen im Originalscreen vorhanden.
-
-- Nutzerbewertung M1: Schlüssel funktioniert. Dauerhafte Erfolgsmeldung über den Modulen abgelehnt und entfernt. Animation und offene Auswahl zeigen den Erfolg; nach Freigabe kein Hinweistext. Nächster geplanter Baustein M2: verbundene Schatullen.
-
-### Umsetzung M2: Verbundene Schatullen
-
-Studien `study-pair-on` und `study-pair-off`, identisches Eichelmotiv mit identischen Warteschlangen, mittlere vordere Boxen15/grün und23/braun verbunden. Klammer mit 2-Plätze-Kennzeichnung statt Dauerhinweis. Entweder Box wählt atomar beide; Platzmangel zeigt kurzes Rütteln. Beide Teams arbeiten danach unabhängig, ein Rückgängig-Schritt stellt beide wieder her. Daten: optionales `pair` an genau zwei Jobs in unterschiedlichen Spalten, Validierung bei Import. Partner müssen zum Start beide vorne liegen. Editor kann Positionen verbinden und Verbindungen entfernen; Queue-Neugenerierung/Rasterwechsel fordert vorheriges Entfernen. Automatischer Test verlangt erreichbare Mengen für beide Partner, damit vorzeitige Auswahl nicht die geplanten Farbabschnitte stört. Hinweise beachten beide freien Plätze. Vollständiger Durchlauf1573Steine; Browserprüfung für Klammer, beide Klickrichtungen, Platzmangel und Rückgängig. Getrennte Stellplatzfreigabe separat geprüft. Nutzerbewertung noch offen. Nächster Mechanikbaustein M3: Bonus-Doppeltransport.
-
-### Umsetzung M3: Bonus-Doppeltransport
-
-Studien `study-bonus-on` und `study-bonus-off` verwenden identische1573Steine und identische Schatullenfolgen. Für den isolierten Vergleich sind in der Bonusstudie alle Schatullen markiert; normale Katalogmotive bleiben unverändert. Optionales Jobfeld `capacity:2`; fehlt es, bleibt Kapazität1. Zwei kleine Würfel markieren Auswahl und aktive Box; doppelte Ladung wird kompakt mit einzeln eingefassten Steinen dargestellt. Beide Nachbarsteine bewegen sich bei Aufnahme sichtbar zur Ladung. Zweiter Stein muss gleichfarbig, orthogonal benachbart und unreserviert sein; nach Entfernung des ersten besteht der Zugang über dessen freie Zelle. Keine fremde Farbe wird übersprungen. Vorfahrt eindeutige Reservierung beider Zellen und Begrenzung durch offene Steinmenge. Geplante Farbregionen werden dabei eingehalten. Restmenge1 oder fehlender geeigneter Nachbar ergibt Einzeltransport.
-
-Teamlimit/Gesamtlimit zählen weiterhin Bots; offene Mengen, Ausgang, Lieferung und Gewinn zählen Steine. Separate Anzahl transportierter Steine je Team ergänzt. Alle Reservierungs-/Verfügbarkeitsprüfungen berücksichtigen beide Ziele. Rückgängig restauriert beide Zellen und Mengen. PC-Editor setzt Bonus je Spalte/Position und entfernt Bonusmarkierungen; Queue-Neugenerierung/Rasterwechsel fordert vorherige Entfernung von Sonderboxen.
-
-Vergleich in gemeinsamer Simulation:130px/s, Team12, Gesamt0, Abstand0,16s je Box, Öffnen0,35s, Aufnahme0,18s, paralleler Solver, gleicher Rahmenmodus. Einzeltransport:1573Fahrten,294,4s. Bonus:1002Fahrten,201,4s. Rund32%kürzere Simulationsdauer in diesem einen Motiv, kein allgemeiner Zeitgewinn und kein Mobilperformancewert. Tests: ungeradeMenge5 mit genau3Fahrten; alle3Platzfreigabemodi; Schlüssel am zweiten Stein; Nachbarschaft und eindeutige Reservierungen; Schema; Rückgängig; vollständige Vergleichslösungen. Browser:12Auswahlmarkierungen, gezeichnete doppelte Ladung, richtige Restmengen. Paar- und Schlüsselstudie lösen weiterhin vollständig. Nutzerbewertung offen; als Nächstes K1 Schlüssel + Bonus nach Einzelbewertung.
-
-- Bonuskennzeichnung nach Nutzerfeedback: farbige Würfelsymbole durch neutrales weißes ×2 auf dunklem Schild ersetzt, in Auswahl und aktiver Schatulle. Keine Farbbedeutung; Transportregel unverändert. Browserdarstellung und Mengenparität geprüft.
-
-### Designstudien und Boden-Schlüssel · fertig zum Vergleichen
-
-- [x] D1: Eigenständiger Boden-Schlüssel, neutraler Kurier und Freigabe erst bei Lieferung; snapshotfähiger Zustand waiting/outbound/carried/delivered.
-- [x] D2: Gekreuzte Kettenglieder und gestaltetes Schloss; Materialien Messing, Stahl, Emaille. Drei echte Verbindungsformen: gerundete Klammer, Gliederkette, eckiger Bügel. Passender Schlüssel mit drei rasterunabhängigen Größen.
-- [x] D3: Sichtbare Verbindung zu Partnern in Reihe2/3; beide Tiefen als eigene lösbare Studien.
-- [x] D4: Auswählbare Studien im Originalscreen und gemeinsame Regler im Editor. PC-Werkzeug für Boden-Schlüssel auf leerem Feld.
-- [ ] D5: Nutzerbewertung der Varianten und bevorzugte Gestaltung festhalten; danach K1 fortsetzen.
-
-NeueIDs: study-key-courier (1538Steine, anfangs eingeschlossen), study-key-courier-open (1528Steine, direkter Transportvergleich mit offenem Zugang), study-pair-depth2 und study-pair-depth3 (je1573Steine). Alle vier vollständig im gemeinsamen Kern gelöst, keine Mobile-FPS-Aussage. Alle160vorhandenen Seeds inhaltlich unverändert. Unter Mechaniken · Designstudie können Szenen, Materialien, Klammerform und Größen gewählt werden; Änderungen starten die Studie neu. Keine Erfolgstexte über Spielmodulen. Die Ketten lösen sich nach Lieferung visuell; die lange Schlüsselladung wird bei der verdeckten Einfahrtstiefe berücksichtigt.
-
-Tests: keine Kurierfahrt bei eingeschlossenem Schlüssel, genau ein neutraler Bot nach freiem Zugang, Sperre bei Aufnahme weiterhin aktiv, Entsperren erst nach kompletter Abgabe, exakte Steinmenge, Rückgängig restauriert Gegenstand und Sperre. Browser: echte gekreuzte Kettenglieder, Material-/Größenwahl, 55Regler verfügbar, tiefer Partner sichtbar und noch nicht startbar, großer Schlüssel im Transport. Schlüssel-, Paar-, Bonus- und Einfahrtregressionen bestehen.
-
-### Designkorrektur nach Ablehnung der ersten Studie
-
-Die erste Studie wurde vom Nutzer als unbrauchbar bewertet: Klammer wirkte wie Verbindungslinie, bei Schlüssel/Schloss gab es nur Materialvarianten. Diese Entwürfe gelten nicht als freigegeben. Neue Formstudie mit sechs gleichzeitig sichtbaren, auswählbaren Karten statt bloßer Farbwahl:
-
-- Schatzschloss: gewölbter Schildkörper, Zierrand, Rundschlüssel und ovale Kettenglieder.
-- Sicherheitsblock: breiter achteckiger Korpus, Schrauben und rechteckige Panzerkettenglieder; kantiger Schlüsselkopf.
-- Rundsiegel: gezackte runde Rosette mit Bändern und Rautenschlüssel.
-- Doppelmanschette: beide Boxen umfassende Metallrahmen, massive Verbindung und Befestigungsnieten.
-- Gelenkklammer: offene Klemmbacken, mehrere Gelenkplatten und Drehpunkte.
-- Spannband: breite braune Bandmanschetten mit Naht und zentraler Metallschnalle.
-
-Alle Klammerformen werden ausdrücklich mit Partnern in verschiedenen Reihen gezeigt. Farben bleiben eine zusätzliche, unabhängige Auswahl. Gemeinsame Vektorpfade für Schlüsselvorschau, Boden und Transport; keine unterschiedlichen Symbole zwischen Vorschau und Spiel. Klick auf Formkarte setzt den Entwurf in der passenden Spielstudie ein. Neue gemeinsame Einstellung lockLook, insgesamt56Regler. Browser prüft sechs Karten, verschiedene SVG-Silhouetten, Auswahl in tatsächlicher Runde, transportierten Schlüssel und tiefe Paarverbindung. Vorschauen visuell geprüft. Nutzerbewertung weiterhin offen.
-
-### Leichtere Formstudie nach erneutem Nutzerfeedback
-
-Massive Manschetten/Gelenke verworfen. Neue, schlanke Varianten Federklammer, Doppel-Drahtbügel und Schmalband mit kleinen Befestigungslaschen, ohne zusätzliche Boxrahmen. Jede Vorschau zeigt vorne und versetzt nebeneinander in größerer Darstellung. Schlosskörper mit Bügel auf62%der bisherigen Größe reduziert. Ketten neu als vier gebogene Abschnitte von sichtbaren Ecklaschen zum Bügel geroutet; untere Abschnitte laufen seitlich am Korpus vorbei. Endglieder liegen vor dem Bügel, Ketten dahinter. Dadurch keine durch den Korpus gezeichneten Geraden. Gemeinsame Spielregeln unverändert; sechs Formkarten und Paarstart im Browser geprüft, Vorschauen visuell kontrolliert. Gestalterische Nutzerbewertung weiterhin offen.
-
-### Erweiterte eckige Formstudie
-
-Nutzer lehnt geschwungene Paarverbindungen weiterhin ab; Ketten zu filigran, Schlüssellöcher von Sicherheitsblock/Rundsiegel unpassend. Neue Auswahl: Stufenklammer, Winkelklammer, Doppelbügel, Profilschiene, Teleskopsteg, Gelenkbügel, Nietlaschen, Flachband. Alle acht mit geraden Segmenten/rechtwinkligen Übergängen, je vorne und versetzt. Bisherige gespeicherte Werte brace/links/clip werden auf step/double/ribbon abgebildet.
-
-Sechs Schlossformen: Schatzschloss, Sicherheitsblock, Rundsiegel, Bogenschloss, Kofferschloss, Schildschloss. Jede mit klarer Schlüsselöffnung und Bartkanal statt waagerechter Balken/Rautenausschnitt. Passende sechs Schlüsselkonturen am Boden und im Transport. Drei unabhängig wählbare Kettenbauarten oval/square/curb: kräftige Rundglieder, Rechteckglieder, Flachglieder. Größere Glieder mit kräftigerem Querschnitt, vier Eckbefestigungen und eingehängten Endgliedern beibehalten. 18 Schloss-/Kettenkombinationen tatsächlich im Spiel auswählbar, Farben zusätzlich unabhängig.
-
-Neue gemeinsame Einstellung chainLook; alle57Felder im Originalscreen geprüft. Browser prüft 18 verschiedene angewandte Schloss-/Kettenansichten, acht auswählbare eckige Verbindungen ohne Bézierpfade, Boden-Schlüsseltransport, Paarstart und Rückgängig. Vorschau visuell kontrolliert. Spielregeln und Katalogdaten unverändert. Die Entwürfe sind weiter Studien und nicht gestalterisch freigegeben.
-
-### 2026-11-06 · Schlüsselplatzierung ohne Beschädigung des Motivs
-- Alle Schloss-, Ketten- und Klammerformen bleiben als Auswahl erhalten; keine ästhetische Freigabe vorweggenommen.
-- Die beiden Boden-Schlüsselstudien verwenden jetzt die unveränderte „Unmögliche Schleife“ statt des nachträglich ausgeschnittenen Eichelgesichts. Das ursprüngliche Eichelmotiv bleibt vollständig erhalten.
-- Hauptstudie: Schlüssel in der vorhandenen oberen Innenöffnung (28,24). Kein Motivstein wurde entfernt. Erst die Lieferung öffnet Spalte 4.
-- Vergleich: Schlüssel auf dem freien Vorplatz (28,54), sofort erreichbar. Dient der Darstellung und dem Transportvergleich, nicht als fertiges Rätseldesign.
-- Schatullenfolge der Hauptstudie hält alle zum Freilegen benötigten Aufträge in den drei offenen Spalten. In der seriellen Referenzfolge wird der Zugang nach Auftrag 69 von 84 frei: für eine endgültige Levelplanung eher spät; frühere Schlüsselpositionen / passendere Motive bleiben zu prüfen.
-- Gestaltungsregel: Motivabhängiger Platz in natürlicher Freifläche, wichtige Details nicht verdecken. Schlüsselzugang, Zeitpunkt und Nutzen der gesperrten Spalte gemeinsam planen. Schlüsselmechanik nicht jedem Motiv aufzwingen.
-- Verifiziert: beide Schlüsselstudien vollständig mit je 1640 Steinen lösbar; Neutralbot, Lieferung vor Entriegelung und Rücknahme weiterhin geprüft. Pixel und Palette entsprechen exakt dem Originalmotiv.
+An der klaren Regeldefinition wird gearbeitet und getestet; nicht bei jedem Detail zwischen unverträglichen Regeln gewechselt. Geprüft werden muss weiterhin, ob die damit gestalteten Levels die Ziele erreichen. Forschung kann das Spielkonzept begründen, aber menschliches Spielen nicht ersetzen.

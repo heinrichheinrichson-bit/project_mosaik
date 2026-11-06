@@ -96,3 +96,31 @@ Diese Reihenfolge präzisiert M1–M3 und die bestehenden Referenztests. Sie ers
 - Bleibt das Motiv lesbar und unversehrt?
 - Wie lang ist der Abschnitt nach der letzten Entscheidung?
 - Vollständiger Solverlauf plus manueller Vergleich; subjektiver Spielspaß bleibt zusätzlich zu beurteilen.
+
+## Nachrecherche und Konzeptentscheidung, 6. November
+
+### Paarstart und Paarabschluss sind zwei verschiedene Regeln
+
+Ein weiterer konkreter Food-Hunt-Bericht, Level197, nennt zwei freie Plätze und zwei unversperrte Partner als Bedingung für den gemeinsamen Start. Das stützt unsere bestehende Startregel als sinnvolle Übertragung; es ist weiterhin ein Fanbericht. [Level197](https://levelsensei.com/food-hunt/level/197/)
+
+Ein unabhängiger Pixel-Flow-Analyseartikel beschreibt zusätzlich, dass gekoppelte Einheiten erst nach dem Abschluss aller Partner vom Platz verschwinden. Diese Regel würde eine schnelle Farbe an ihre langsame Partnerfarbe binden. Der Artikel war in der Suche inhaltlich lesbar; der direkte Volltextabruf scheiterte mit HTTP402. Deshalb kein als vollständig geprüfter Entwicklernachweis behandeln. [Analyseartikel](https://www.100user.com/blog/pixel-flow-match3-innovation-success)
+
+**Unsere Entscheidung für Version4:** gemeinsame Auswahl bleibt, Abschluss und Platzfreigabe bleiben unabhängig. Damit erzeugt das Paar eine Verpflichtung zum Start, ohne anschließend zusätzlich die fertig arbeitende Hälfte festzuhalten. Versetzte Partner bleiben erlaubt, beide müssen vor dem Start zugänglich sein. Diese bewusste Abweichung wird nicht als exakte Pixel-Flow-Regel ausgegeben.
+
+### Fairness und eindeutige Regeln
+
+In einem direkten Entwicklerinterview beschreibt Patrick Traynor für Patrick's Parabox die Priorität intuitiver, gut merkbarer Regeln sowie die Wahl von Verhalten, das bessere Rätsel hervorbringt. Der konkrete Inhalt des Schiebespiels wird nicht auf unseren Sammler übertragen; relevant ist die bewusste Entscheidung zwischen möglichen Regeln. [Entwicklerinterview](https://www.gamedeveloper.com/design/patrick-s-parabox-)
+
+Der Überblick zu Clara Fernández-Varas GDC-Vortrag beschreibt Rätsel als Vertrag, der dem Spieler die nötigen Informationen zur Lösung geben muss. Nur die öffentlich verfügbare Zusammenfassung wurde ausgewertet, kein vollständiger Vortrag angesehen. [GDC-Zusammenfassung](https://www.gdcvault.com/play/1013851/puzzle-writing-best)
+
+Knit Outs offizielle Hilfe erklärt ausdrücklich, dass alle Levels ohne Booster oder Kauf lösbar konzipiert sind. Das ist eine Entwickleraussage, keine eigene Überprüfung jedes Levels. [Offizielle Auskunft](https://rollic.helpshift.com/hc/en/28-knit-out/faq/685-can-each-level-be-completed-without-requiring-any-booster-or-purchase/)
+
+**Unsere Entscheidung:** kein versteckter Zufall, kein Pflichtbooster, lesbare Vorschau. Die erste Fassung bleibt bei Grundspiel plus Schlüsselbox, Paar und lokaler ×2-Belohnung. Ein großer Ladebonus wird als nächste Stufe erhalten, nicht während der ersten Umsetzung unbemerkt hineingemischt. Der auf dem Boden liegende Schlüssel bleibt eine getrennte Studienregel.
+
+### Der eigene Katalog als konkrete Tempoursache
+
+Direkte Auswertung von `editor-src/seeds.json`: Wal460Steine/27Aufträge; Eichelhut1573/81; Schleife1640/84; Tag trifft Nacht1831/95; Bunte Balance1999/100. Das sind vorhandene Mengen und Auftragszahlen, keine gemessenen Zeiten. Eine optimierte Bewegungsrate beseitigt die vielen nötigen Auswahlen nicht. Deshalb gehört die Gestaltung größerer sinnvoller Mengen und kurzer Brückenaufträge zum verbindlichen Konzept.
+
+Bei einem festen Startabstand von0,16s pro Box liegt die idealisierte maximale Startrate von vier dauerhaft beschäftigten Boxen bei25Bots/s. Rund2000Einzeltransporte benötigen bereits ungefähr80s allein für diese Starts, zuzüglich Anfang und letzter Rückfahrt; mangelnde Zugänge, Teamlimits und wenig parallele Arbeit verlängern weiter. Bei ×2-Transport ist diese einfache Rechnung entsprechend anders. Das ist eine Näherung zur Größenordnung, keine simulierte Leveldauer. „Einfach alle Bots schneller drehen lassen“ ist deshalb keine hinreichende Balanceplanung.
+
+Die daraus abgeleitete vollständige Regel- und Leveldefinition steht jetzt im Hauptkonzept Version4. Sie ist eindeutig als Baugrundlage; ihre numerischen Zielkorridore und subjektive Qualität müssen an den festgelegten Referenzlevels geprüft werden. Weitere Forschung wird gezielt an einem ungelösten Regelpunkt fortgesetzt, nicht als Anlass, immer weitere Sonderregeln zu sammeln.
