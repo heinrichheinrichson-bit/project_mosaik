@@ -178,3 +178,12 @@ Nutzer lehnt geschwungene Paarverbindungen weiterhin ab; Ketten zu filigran, Sch
 Sechs Schlossformen: Schatzschloss, Sicherheitsblock, Rundsiegel, Bogenschloss, Kofferschloss, Schildschloss. Jede mit klarer Schlüsselöffnung und Bartkanal statt waagerechter Balken/Rautenausschnitt. Passende sechs Schlüsselkonturen am Boden und im Transport. Drei unabhängig wählbare Kettenbauarten oval/square/curb: kräftige Rundglieder, Rechteckglieder, Flachglieder. Größere Glieder mit kräftigerem Querschnitt, vier Eckbefestigungen und eingehängten Endgliedern beibehalten. 18 Schloss-/Kettenkombinationen tatsächlich im Spiel auswählbar, Farben zusätzlich unabhängig.
 
 Neue gemeinsame Einstellung chainLook; alle57Felder im Originalscreen geprüft. Browser prüft 18 verschiedene angewandte Schloss-/Kettenansichten, acht auswählbare eckige Verbindungen ohne Bézierpfade, Boden-Schlüsseltransport, Paarstart und Rückgängig. Vorschau visuell kontrolliert. Spielregeln und Katalogdaten unverändert. Die Entwürfe sind weiter Studien und nicht gestalterisch freigegeben.
+
+### 2026-11-06 · Schlüsselplatzierung ohne Beschädigung des Motivs
+- Alle Schloss-, Ketten- und Klammerformen bleiben als Auswahl erhalten; keine ästhetische Freigabe vorweggenommen.
+- Die beiden Boden-Schlüsselstudien verwenden jetzt die unveränderte „Unmögliche Schleife“ statt des nachträglich ausgeschnittenen Eichelgesichts. Das ursprüngliche Eichelmotiv bleibt vollständig erhalten.
+- Hauptstudie: Schlüssel in der vorhandenen oberen Innenöffnung (28,24). Kein Motivstein wurde entfernt. Erst die Lieferung öffnet Spalte 4.
+- Vergleich: Schlüssel auf dem freien Vorplatz (28,54), sofort erreichbar. Dient der Darstellung und dem Transportvergleich, nicht als fertiges Rätseldesign.
+- Schatullenfolge der Hauptstudie hält alle zum Freilegen benötigten Aufträge in den drei offenen Spalten. In der seriellen Referenzfolge wird der Zugang nach Auftrag 69 von 84 frei: für eine endgültige Levelplanung eher spät; frühere Schlüsselpositionen / passendere Motive bleiben zu prüfen.
+- Gestaltungsregel: Motivabhängiger Platz in natürlicher Freifläche, wichtige Details nicht verdecken. Schlüsselzugang, Zeitpunkt und Nutzen der gesperrten Spalte gemeinsam planen. Schlüsselmechanik nicht jedem Motiv aufzwingen.
+- Verifiziert: beide Schlüsselstudien vollständig mit je 1640 Steinen lösbar; Neutralbot, Lieferung vor Entriegelung und Rücknahme weiterhin geprüft. Pixel und Palette entsprechen exakt dem Originalmotiv.
