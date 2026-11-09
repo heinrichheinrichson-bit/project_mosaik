@@ -1,6 +1,6 @@
 # Spielkonzept und Arbeitsplan
 
-Stand: 9. November 2026 · Version 4.1 · ausgearbeitete Designentscheidung, noch keine behauptete Spielfreigabe
+Stand: 9. November 2026 · Version 4.2 · ausgearbeitete Designentscheidung, noch keine behauptete Spielfreigabe
 
 ## 1. Geltung und Ziel
 
@@ -167,7 +167,7 @@ Diese Einordnung ist verbindlich für die erste Fassung: kein fortlaufendes Hinz
 | Unmögliche Schleife | Design-/Transportvergleich des Boden-Schlüssels | spielbar, als taktisches Schlüssellevel verworfen |
 | Tag trifft Nacht | ein vorn liegendes Paar; erreichbare Folgefarbe | beide54Boxen-Fassungen spielbar |
 | Bunte Balance | ×2 auf sinnvoller zusammenhängender Farbfläche, Vergleich ohne Bonus | beide56Boxen-Fassungen spielbar; Bonus rot60nach Positionsvergleich |
-| Eichelhut, zweite getrennte Variante | Schlüssel öffnet nützliche Bonusbox; Gesamtzeit und früher Nutzen | erst nach Einzelabnahme |
+| Eichelhut, zweite getrennte Variante | Schlüssel öffnet nützliche Bonusbox; Gesamtzeit und früher Nutzen | `flow-v2-acorn-key` als zusätzlicher Vergleich bei B: vier ×2-Konturboxen; sechs vollständige Lösungen geprüft, Spielerbewertung offen |
 
 Die Motivnamen legen die Testbasis fest, behaupten aber keine bereits geprüfte neue Schatullenfolge. Reicht ein Motiv für die beabsichtigte Entscheidung nicht, wird ein geeigneteres unverändertes Motiv gewählt und hier protokolliert.
 
@@ -198,6 +198,8 @@ Abnahme pro Level:
 Technischer Bestand: Die bisherigen Boden-/Steinschlüssel, Paar- und Bonusstudien bleiben erhalten. Die neue Schlüsselbox und sieben neue Vergleichsfassungen sind implementiert und in23vollständigen Durchläufen geprüft. Technische Abnahme ist keine Spielerbewertung. Messwerte und Grenzen stehen im [Spielpaket V1](spielpaket-v1.md); frühere technische Details bleiben im historischen Protokoll.
 
 ## 13. Warum das Konzept jetzt diese Form hat
+
+Aktueller Verkehrsentscheid: B wurde vom Nutzer als passend bewertet und dient als Grundlage weiterer Vergleiche. A bleibt verfügbar; bestehende Nutzerprofile werden nicht überschrieben. Der [Eichelhut-V2-Vergleich](eichelhut-v2.md) dokumentiert gezielte vorhandene ×2-Boxen, Messwerte und verworfene Änderungen. Der Referenzlauf sinkt von 215,7 auf 206,9 Sekunden; bei einer anderen Auswahlfolge beträgt der Gewinn nur 0,6 Sekunden. Das ist eine begrenzte Verbesserung, keine abgeschlossene Lösung des Längenproblems. Schlüsselzeitpunkt und Bild bleiben unverändert. Die kurze Einführung und die Nutzerabnahme der Kombination bleiben offen.
 
 Die Recherche stützt Reihenfolge und knappe Plätze als Kern, gekoppelte Auswahl als räumliche Entscheidung und Schlüssel als Freigabe von Nachschub. Sie zeigt auch kräftige Abräumaktionen als Gegenpol zu Einschränkungen. Daraus folgt eine begrenzte erste Fassung statt eines Sammelsuriums von Hindernissen. Konkrete Freigabezeitpunkte, Ausfahrtfreigabe, unabhängige Paararbeit und Doppeltransport sind bewusst für unser Spiel festgelegt.
 
