@@ -1,6 +1,6 @@
 # Spielkonzept und Arbeitsplan
 
-Stand: 9. November 2026 · Version 4.2 · ausgearbeitete Designentscheidung, noch keine behauptete Spielfreigabe
+Stand: 9. November 2026 · Version 4.3 · ausgearbeitete Designentscheidung, noch keine behauptete Spielfreigabe
 
 ## 1. Geltung und Ziel
 
@@ -167,7 +167,8 @@ Diese Einordnung ist verbindlich für die erste Fassung: kein fortlaufendes Hinz
 | Unmögliche Schleife | Design-/Transportvergleich des Boden-Schlüssels | spielbar, als taktisches Schlüssellevel verworfen |
 | Tag trifft Nacht | ein vorn liegendes Paar; erreichbare Folgefarbe | beide54Boxen-Fassungen spielbar |
 | Bunte Balance | ×2 auf sinnvoller zusammenhängender Farbfläche, Vergleich ohne Bonus | beide56Boxen-Fassungen spielbar; Bonus rot60nach Positionsvergleich |
-| Eichelhut, zweite getrennte Variante | Schlüssel öffnet nützliche Bonusbox; Gesamtzeit und früher Nutzen | `flow-v2-acorn-key` als zusätzlicher Vergleich bei B: vier ×2-Konturboxen; sechs vollständige Lösungen geprüft, Spielerbewertung offen |
+| Eichelhut, zweite getrennte Variante | Schlüssel öffnet nützliche Bonusbox; Gesamtzeit und früher Nutzen | `flow-v2-acorn-key`: vier ×2-Konturboxen; Nutzerbewertung „V2 ist gut“, bevorzugte Eichelhut-Fassung bei B; V1 bleibt erhalten |
+| Tag trifft Nacht, versetztes Paar | Ein Partner in Reihe zwei, erst Vorgänger wählen; zwei Plätze für atomaren Start | zusätzliche Variante `flow-v2-sunmoon-pair-depth` im Referenzkapitel; bisheriges Paar bleibt erhalten |
 
 Die Motivnamen legen die Testbasis fest, behaupten aber keine bereits geprüfte neue Schatullenfolge. Reicht ein Motiv für die beabsichtigte Entscheidung nicht, wird ein geeigneteres unverändertes Motiv gewählt und hier protokolliert.
 
@@ -190,7 +191,7 @@ Abnahme pro Level:
 - [x] Standard-Schlüsselbox mit klarer Zuordnung und atomarem Auslösezeitpunkt ergänzen; Bodenstudien behalten.
 - [x] Wal und Eichelhut mit neuen Folgen ausarbeiten; normal/Schlüssel A/B technisch prüfen. Spielerbewertung bleibt separat offen.
 - [x] Paar- und einzelne Bonuslevel mit den definierten Regeln als Vergleichsfassungen ausarbeiten und technisch prüfen. Spielerbewertung offen.
-- [ ] Erste Kombination und kurze Einführung zusammenstellen.
+- [ ] Erste Kombination und kurze Einführung zusammenstellen. Teilstand: [Spielrunde V1](spielrunde-v1.md) verbindet sechs Referenzen mit einmaligen Erklärungen, Weiter-Schalten und lokalem Abschlussfortschritt. Kürzere tatsächliche Anfangslevels und Entlastungslevels bleiben auszuarbeiten.
 - [ ] PC-Browserleistung und Simulationszeit prüfen; danach Tempowerte vergleichen. Aktuell keine APK und keine Smartphone-Tests: Nutzerkorrektur vom 6. November.
 - [ ] Nutzerbewertung des Pakets; abweichende Ergebnisse hier als konkrete Änderung dokumentieren.
 - [ ] Danach Abräumbonus-Konzeptstufe aufgreifen. Weitere Regeln bleiben zurückgestellt.
@@ -199,7 +200,9 @@ Technischer Bestand: Die bisherigen Boden-/Steinschlüssel, Paar- und Bonusstudi
 
 ## 13. Warum das Konzept jetzt diese Form hat
 
-Aktueller Verkehrsentscheid: B wurde vom Nutzer als passend bewertet und dient als Grundlage weiterer Vergleiche. A bleibt verfügbar; bestehende Nutzerprofile werden nicht überschrieben. Der [Eichelhut-V2-Vergleich](eichelhut-v2.md) dokumentiert gezielte vorhandene ×2-Boxen, Messwerte und verworfene Änderungen. Der Referenzlauf sinkt von 215,7 auf 206,9 Sekunden; bei einer anderen Auswahlfolge beträgt der Gewinn nur 0,6 Sekunden. Das ist eine begrenzte Verbesserung, keine abgeschlossene Lösung des Längenproblems. Schlüsselzeitpunkt und Bild bleiben unverändert. Die kurze Einführung und die Nutzerabnahme der Kombination bleiben offen.
+Aktueller Verkehrsentscheid: B wurde vom Nutzer als passend bewertet und dient als Grundlage weiterer Vergleiche. A bleibt verfügbar; bestehende Nutzerprofile werden nicht überschrieben. Der [Eichelhut-V2-Vergleich](eichelhut-v2.md) dokumentiert gezielte vorhandene ×2-Boxen, Messwerte und verworfene Änderungen. Der Referenzlauf sinkt von 215,7 auf 206,9 Sekunden; bei einer anderen Auswahlfolge beträgt der Gewinn nur 0,6 Sekunden. Das ist eine begrenzte Verbesserung, keine abgeschlossene Lösung des Längenproblems. Schlüsselzeitpunkt und Bild bleiben unverändert. Anschließendes Nutzerfeedback: „V2 ist gut“. Damit ist diese Eichelhut-Fassung bevorzugt. Das neue Referenzkapitel wird separat beurteilt; die fertige Anfangslevel-Balance bleibt offen.
+
+Der Store-Rahmen bleibt Teil der Planung: PC-Editor und ein gemeinsamer Spielkern, anschließend eine eigenständige Spieloberfläche ohne Entwicklungsregler, verständlicher Einstieg, gespeicherter Fortschritt, kurze Sieges-/Weiterführung und später Geräteprüfung. Das Referenzkapitel setzt erste Teile davon im bestehenden Design um. Es ist weder ein fertiger Veröffentlichungsbuild noch Anlass, Klammern oder die übrigen festgehaltenen Mechaniken aus der Planung zu verlieren.
 
 Die Recherche stützt Reihenfolge und knappe Plätze als Kern, gekoppelte Auswahl als räumliche Entscheidung und Schlüssel als Freigabe von Nachschub. Sie zeigt auch kräftige Abräumaktionen als Gegenpol zu Einschränkungen. Daraus folgt eine begrenzte erste Fassung statt eines Sammelsuriums von Hindernissen. Konkrete Freigabezeitpunkte, Ausfahrtfreigabe, unabhängige Paararbeit und Doppeltransport sind bewusst für unser Spiel festgelegt.
 

@@ -1,0 +1,66 @@
+[
+  {
+    "id": "flow-v1-whale",
+    "strategy": "planned",
+    "seconds": 76.8,
+    "stones": 460,
+    "choices": 18,
+    "pairedStarts": 0
+  },
+  {
+    "id": "flow-v1-acorn-key",
+    "strategy": "planned",
+    "seconds": 215.7,
+    "stones": 1573,
+    "choices": 47,
+    "pairedStarts": 0
+  },
+  {
+    "id": "flow-v1-sunmoon-pair",
+    "strategy": "planned",
+    "seconds": 229.3,
+    "stones": 1831,
+    "choices": 53,
+    "pairedStarts": 1
+  },
+  {
+    "id": "flow-v1-balance-bonus",
+    "strategy": "planned",
+    "seconds": 213.8,
+    "stones": 1999,
+    "choices": 56,
+    "pairedStarts": 0
+  },
+  {
+    "id": "flow-v2-sunmoon-pair-depth",
+    "strategy": "planned",
+    "seconds": 229.3,
+    "stones": 1831,
+    "choices": 53,
+    "pairedStarts": 1
+  },
+  {
+    "id": "flow-v2-sunmoon-pair-depth",
+    "strategy": "largest",
+    "seconds": 212.8,
+    "stones": 1831,
+    "choices": 53,
+    "pairedStarts": 1
+  },
+  {
+    "id": "flow-v2-sunmoon-pair-depth",
+    "strategy": "last",
+    "seconds": 238.2,
+    "stones": 1831,
+    "choices": 53,
+    "pairedStarts": 1
+  },
+  {
+    "id": "flow-v2-acorn-key",
+    "strategy": "planned",
+    "seconds": 206.9,
+    "stones": 1573,
+    "choices": 47,
+    "pairedStarts": 0
+  }
+]
