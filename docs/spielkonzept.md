@@ -1,6 +1,6 @@
 # Spielkonzept und Arbeitsplan
 
-Stand: 6. November 2026 · Version 4 · ausgearbeitete Designentscheidung, noch keine behauptete Spielfreigabe
+Stand: 9. November 2026 · Version 4.1 · ausgearbeitete Designentscheidung, noch keine behauptete Spielfreigabe
 
 ## 1. Geltung und Ziel
 
@@ -111,6 +111,8 @@ Aktueller Iststand als Anlass: Wal460Steine/27Boxen, Eichelhut1573/81, Schleife1
 130 Bildpunkte/s, 1×, Startabstand 0,16s **je Box**, Öffnung 0,35s, Aufnahme 0,18s, zwölf Bots gleichzeitig je Box, keine zusätzliche globale Botgrenze, Freigabe nach letzter Ausfahrt. Bestehende Bewegungs- und Größenprofile werden als vollständiger benannter Vergleich gespeichert, nicht still über Nutzereinstellungen geschrieben. Dieses Profil ist ein Messstart, keine erwiesene optimale Veröffentlichungseinstellung.
 
 Ruhigeres Profil und freie Botzahl bleiben im Testeditor verfügbar. Ein Botlimit dient der Darstellung/Leistung, nicht dem Erzwingen einer schlechten Wartephase. Die aktuelle Entwicklung und Prüfung findet ausschließlich im PC-Browser statt; keine APK und keine Smartphone-Prüfung. Eine korrekt zur vergangenen Zeit laufende Simulation bleibt erforderlich.
+
+Nach dem funktionalen Nutzerfeedback zum ersten Paket wurde [Verkehr A/B](verkehr-ab.md) ergänzt: A zählt alle Bots einer Box bis zur Lieferung, B nur bis zum Ende der Aufnahme. Die globale Grenze bleibt in beiden Fällen eine Grenze aller Bots. B verändert keine Wege oder Geschwindigkeiten, kann aber mehr Rückkehrer gleichzeitig zulassen. Alte Einstellungen und der bisherige Standard bleiben A; B ist eine bewusst wählbare Studie. Beide Referenzläufe werden getrennt von der subjektiven Spielerbewertung geführt.
 
 ### Eigene Zielkorridore bei 1×
 

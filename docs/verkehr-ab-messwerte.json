@@ -1,0 +1,38 @@
+[
+  {
+    "id": "flow-v1-whale",
+    "mode": "all",
+    "seconds": 118.5,
+    "tail": 9.9,
+    "lastReturn": 2.2,
+    "blockedBoxSeconds": 94.8,
+    "peak": 43
+  },
+  {
+    "id": "flow-v1-whale",
+    "mode": "outbound",
+    "seconds": 76.8,
+    "tail": 8.8,
+    "lastReturn": 2.3,
+    "blockedBoxSeconds": 30.6,
+    "peak": 49
+  },
+  {
+    "id": "flow-v1-acorn-key",
+    "mode": "all",
+    "seconds": 289.8,
+    "tail": 16.4,
+    "lastReturn": 2.1,
+    "blockedBoxSeconds": 317.3,
+    "peak": 48
+  },
+  {
+    "id": "flow-v1-acorn-key",
+    "mode": "outbound",
+    "seconds": 215.7,
+    "tail": 12.6,
+    "lastReturn": 2,
+    "blockedBoxSeconds": 126,
+    "peak": 60
+  }
+]
