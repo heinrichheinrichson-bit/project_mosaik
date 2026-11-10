@@ -1,6 +1,6 @@
 # Spielkonzept und Arbeitsplan
 
-Stand: 9. November 2026 · Version 4.3 · ausgearbeitete Designentscheidung, noch keine behauptete Spielfreigabe
+Stand: 10. November 2026 · Version 4.4 · ausgearbeitete Designentscheidung, noch keine behauptete Spielfreigabe
 
 ## 1. Geltung und Ziel
 
@@ -134,6 +134,8 @@ Aufbau: kurze verständliche Eröffnung → erste neue Möglichkeit → Entschei
 
 Für die erste neue Folge:
 
+Spielbarer Entwurf vom 10. November: [Kleine Einstiegsrätsel V1](einstieg-v1.md). Zwei normale Motive, Schlüssel, normale Zwischenrunde, vorderes Paar und einzelne ×2-Box sind als separates Kapitel umgesetzt. Alle sechs Referenzläufe liegen bei 52–59 Simulationssekunden ohne Denkpausen; zwei weitere Auswahlstrategien je Level lösen ebenfalls. Die größere Referenzrunde und ihre Abschlussdaten bleiben erhalten. Die folgende Reihenfolge bleibt das übergeordnete Lehrziel, einschließlich späterer Vertiefung und Kombination:
+
 1. Zwei normale kurze Rätsel zum Lernen von Farbzugang und Arbeitsplatz.
 2. Erstes Schlüssellevel mit sichtbarem Schlüssel in Reihe2; die geöffnete Spalte hilft sofort.
 3. Ein normales Entlastungslevel ohne Sperre.
@@ -191,7 +193,7 @@ Abnahme pro Level:
 - [x] Standard-Schlüsselbox mit klarer Zuordnung und atomarem Auslösezeitpunkt ergänzen; Bodenstudien behalten.
 - [x] Wal und Eichelhut mit neuen Folgen ausarbeiten; normal/Schlüssel A/B technisch prüfen. Spielerbewertung bleibt separat offen.
 - [x] Paar- und einzelne Bonuslevel mit den definierten Regeln als Vergleichsfassungen ausarbeiten und technisch prüfen. Spielerbewertung offen.
-- [ ] Erste Kombination und kurze Einführung zusammenstellen. Teilstand: [Spielrunde V1](spielrunde-v1.md) verbindet sechs Referenzen mit einmaligen Erklärungen, Weiter-Schalten und lokalem Abschlussfortschritt. Kürzere tatsächliche Anfangslevels und Entlastungslevels bleiben auszuarbeiten.
+- [x] Erste Kombination und kurze Einführung technisch zusammenstellen. [Spielrunde V1](spielrunde-v1.md) enthält die große Referenzfolge einschließlich bestätigter Kombination. [Einstieg V1](einstieg-v1.md) ergänzt sechs kürzere Levelentwürfe mit zwei Grundrätseln, Schlüssel, Entlastungsrätsel, Paar und ×2; getrennte Kapitel, Erklärungen, Weiter-Schalten und Abschlussfortschritt. Nutzerabnahme und endgültige Store-Balance bleiben offen.
 - [ ] PC-Browserleistung und Simulationszeit prüfen; danach Tempowerte vergleichen. Aktuell keine APK und keine Smartphone-Tests: Nutzerkorrektur vom 6. November.
 - [ ] Nutzerbewertung des Pakets; abweichende Ergebnisse hier als konkrete Änderung dokumentieren.
 - [ ] Danach Abräumbonus-Konzeptstufe aufgreifen. Weitere Regeln bleiben zurückgestellt.

@@ -1,0 +1,17 @@
+const fs=require('fs'),assert=require('assert'),C=require('../editor-src/core.js');
+const specs=[
+ ['icepop','studio-v2-icepop','Sommerlaune','normal'],
+ ['pear','studio-v2-pear','Freches Früchtchen','normal'],
+ ['teapot-key','studio-teapot','Tee mit Schlüssel','key'],
+ ['roller','studio-v2-roller','Süße Spritztour','normal'],
+ ['cherries-pair','studio-v2-cherries','Doppelt frech','pair'],
+ ['orca-bonus','studio-v4-orca','Wellenreiter','bonus']
+];
+function plan(doc,sizes=[30,40,30,40,50,30]){const p=C.copy(doc.pixels),jobs=[],last=new Map();while(p.flat().some(c=>c!==null)){const candidates=[...C.exposed(p).keys()].map(c=>({c,n:C.removeColor(C.copy(p),c,1e9),age:jobs.length-(last.get(c)??-100)})).sort((a,b)=>(b.n>=8)-(a.n>=8)||b.age-a.age||b.n-a.n||a.c-b.c);const a=candidates[0],target=sizes[jobs.length%sizes.length];let n=Math.min(a.n,target);if(a.n-n>0&&a.n-n<8)n=a.n;C.removeColor(p,a.c,n);jobs.push({c:a.c,n,order:jobs.length});last.set(a.c,jobs.length);}return jobs;}
+function spread(jobs,keyIndex=null){const q=[[],[],[],[]];for(const j of jobs){const lanes=keyIndex!==null&&j.order<=keyIndex?[0,1,2]:[0,1,2,3];const lane=lanes.sort((a,b)=>q[a].length-q[b].length+(q[a].at(-1)?.c===j.c ? .1 : 0)-(q[b].at(-1)?.c===j.c ? .1 : 0)||a-b)[0];q[lane].push({...j});}return q;}
+const tunedPortions={'icepop':[50],'pear':[50],'teapot-key':[80],'roller':[45],'cherries-pair':[60],'orca-bonus':[120]};
+function build(variants=JSON.parse(fs.readFileSync('editor-src/variants.json')),portions=tunedPortions){return specs.map(([slug,source,name,rule])=>{const d=C.copy(variants[source]['32']);Object.assign(d,{id:'intro-v1-'+slug,name,familyId:'',variantKey:'',category:'Einstieg · Kleine Rätsel',status:'draft',updatedAt:'2026-11-10T00:00:00Z',notes:'Kompakte bestehende Atelier-Rasterfassung 32 × 32. Neue separate Einstiegsfolge; Quelle '+source+'. Original und persönliche Bearbeitungen bleiben erhalten. Lernziel: '+rule+'.'});delete d.mechanics;const jobs=plan(d,portions[slug]);d.queues=spread(jobs,rule==='key'?3:null);if(rule==='key'){d.queues.flat().find(j=>j.order===3).keyLane=3;d.mechanics={version:1,keys:[{kind:'box',lane:3}]};assert.equal(d.queues.find(q=>q.some(j=>j.keyLane===3)).findIndex(j=>j.keyLane===3),1);}
+ if(rule==='pair'){const p=C.copy(d.pixels);let chosen=-1;for(let i=0;i<jobs.length-1;i++){const a=jobs[i],b=jobs[i+1];if(i>0&&a.c!==b.c&&C.removeColor(C.copy(p),b.c,b.n)===b.n){chosen=i;break;}C.removeColor(p,a.c,a.n);}assert(chosen>0);const first=jobs.slice(0,chosen),rest=jobs.slice(chosen+2);d.queues=[[],[],[],[]];first.forEach((j,i)=>d.queues[2+i%2].push({...j}));d.queues[0].push({...jobs[chosen],pair:'intro-cherries'});d.queues[1].push({...jobs[chosen+1],pair:'intro-cherries'});for(const j of rest){const lane=[0,1,2,3].sort((a,b)=>d.queues[a].length-d.queues[b].length||a-b)[0];d.queues[lane].push({...j});}}
+ if(rule==='bonus')d.queues.flat().find(j=>j.order===0).capacity=2;
+ assert.deepEqual(d.pixels,variants[source]['32'].pixels);assert(C.checkQueues(d).ok,d.id);return C.validate(d);});}
+module.exports={build,specs,plan,spread};if(require.main===module){const seeds=JSON.parse(fs.readFileSync('editor-src/seeds.json'));for(const d of build()){const i=seeds.findIndex(s=>s.id===d.id);if(i<0)seeds.push(d);else seeds[i]=d;console.log(d.id,C.counts(d).reduce((a,b)=>a+b,0),'stones',d.queues.flat().length,'boxes',d.queues.flat().filter(j=>j.pair||j.capacity===2||j.keyLane!==undefined));}fs.writeFileSync('editor-src/seeds.json',JSON.stringify(seeds));}
