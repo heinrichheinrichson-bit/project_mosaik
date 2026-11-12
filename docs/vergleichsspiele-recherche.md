@@ -1,6 +1,14 @@
 # Vergleichsspiele: Mechaniken, Entscheidungen und Spielfluss
 
-Recherche: 6. November 2026. Zweck: das vorhandene Spielkonzept mit nachvollziehbaren Vergleichsregeln begründen. Keine Änderung an den Spielregeln durch dieses Dokument.
+Recherche: 6. November 2026; eigener PC-Spieltest ergänzt am 12. November 2026. Zweck: das vorhandene Spielkonzept mit nachvollziehbaren Vergleichsregeln begründen. Keine Änderung an den Spielregeln durch dieses Dokument.
+
+## Ergänzung: selbst gespielte Food-Hunt-Level
+
+Der [PC-Spieltest vom 12. November](food-hunt-pc-spieltest-2026-11-12.md) protokolliert Level 1–6. Level 1, 2, 4, 5 und 6 wurden selbst bis zum Erfolg gespielt; bei Level 3 gab es Neustart und zusätzliche manuelle Eingaben. Direkte Beobachtungen sind dort von Empfehlungen getrennt.
+
+Beobachtet: drei Auswahlspalten und fünf Stellplätze in Level 1–5; vier Spalten und Einführung eines zusätzlichen Platzes in Level 6. Nachschub rückt sofort auf, Plätze werden während des Rückverkehrs frei. Wartende Aufträge arbeiten nach Öffnung automatisch weiter. Level 3 erklärt 3× mit Zeitguthaben und beginnt mit drei dunklen Boxen. Level 2 enthält Mengen 31/48/63, Level 5 wieder viele Zehner. Level 4 funktioniert ohne schwarze Kontur. Pauschale Regeln „immer bunter Anfang“, „nur runde Mengen“, „überall schwarze Umrisse“ oder „immer große Boxen“ werden nicht gestützt.
+
+Die Freigabe passt zu unserer Ausfahrtregel; kein interner exakter Zeitpunkt oder Botlimit wurde ermittelt. Keine belastbaren menschlichen Levelzeiten wegen Werkzeugpausen und teils manueller Eingaben. Spätere Schlüssel-/Paarregeln wurden nicht erreicht; deren bisheriger Quellenstatus bleibt bestehen. Die folgenden Abschnitte dokumentieren weiterhin die ursprünglichen Quellen und ihre Grenzen.
 
 ## Aussagekraft
 

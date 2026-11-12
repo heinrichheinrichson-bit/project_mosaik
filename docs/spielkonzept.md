@@ -1,6 +1,6 @@
 # Spielkonzept und Arbeitsplan
 
-Stand: 10. November 2026 · Version 4.4 · ausgearbeitete Designentscheidung, noch keine behauptete Spielfreigabe
+Stand: 12. November 2026 · Version 4.5 · ausgearbeitete Designentscheidung, noch keine behauptete Spielfreigabe
 
 ## 1. Geltung und Ziel
 
@@ -209,3 +209,19 @@ Der Store-Rahmen bleibt Teil der Planung: PC-Editor und ein gemeinsamer Spielker
 Die Recherche stützt Reihenfolge und knappe Plätze als Kern, gekoppelte Auswahl als räumliche Entscheidung und Schlüssel als Freigabe von Nachschub. Sie zeigt auch kräftige Abräumaktionen als Gegenpol zu Einschränkungen. Daraus folgt eine begrenzte erste Fassung statt eines Sammelsuriums von Hindernissen. Konkrete Freigabezeitpunkte, Ausfahrtfreigabe, unabhängige Paararbeit und Doppeltransport sind bewusst für unser Spiel festgelegt.
 
 An der klaren Regeldefinition wird gearbeitet und getestet; nicht bei jedem Detail zwischen unverträglichen Regeln gewechselt. Geprüft werden muss weiterhin, ob die damit gestalteten Levels die Ziele erreichen. Forschung kann das Spielkonzept begründen, aber menschliches Spielen nicht ersetzen.
+
+## 14. Direkter Food-Hunt-Spieltest und nächste Prioritäten
+
+Am 12. November wurden Food-Hunt-Level 1–6 am PC direkt gespielt; fünf vollständig selbst, Level 3 teilweise mit zusätzlichen manuellen Eingaben. [Protokoll und Grenzen](food-hunt-pc-spieltest-2026-11-12.md). Damit stehen unmittelbare Beobachtungen neben der bisherigen Quellenrecherche.
+
+Die vier geplanten Bausteine bleiben bestehen. Der frühe Spielfluss des Vorbilds funktioniert aber bereits durch klare Farbflächen, Zugänge, wechselnde Auftragsmengen und sofortiges Nachrücken. Zusätzliche Regeln dürfen die weitere Arbeit am Grundablauf nicht verdrängen.
+
+Für die nächste Umsetzung empfohlen, noch nicht umgesetzt oder abgenommen:
+
+1. Den bildschirmfüllenden Einstieg durch einen kurzen Hinweis an der echten Auswahl ergänzen/ersetzen; erster Tap ist bereits Spielhandlung. Bestehendes Originaldesign behalten.
+2. Eine getrennte Einstiegsvariante mit drei Auswahlspalten und passender Platzreserve vergleichen, später vier Spalten. Food Hunt hat zunächst drei Spalten/fünf Plätze und führt in Level 6 vier Spalten plus Zusatzplatz ein. Das ändert unsere feste normale Grundlage nicht automatisch.
+3. Wenige größere und mehrere kleinere Aufträge gezielt abwechseln. Weder 28 noch runde Zehner noch ein bunter Anfang sind allgemeine Qualitätsregeln. Konturarbeit muss früh nützliche Folgefarben öffnen.
+4. Wiederanlaufen nach Öffnungen und sichtbare Arbeitszustände prüfen; 1×/2×/3× samt nächster sinnvoller Auswahl und Auslaufphase beurteilen. Keine ungeprüften Konkurrenzwerte für Teamlimits übernehmen.
+5. Anschließend die vorhandenen Schlüssel-, Paar- und Bonuslevel auf dieser Grundlage weiter ausarbeiten. Der Test hat deren spätere Food-Hunt-Ausgestaltung nicht belegt oder widerlegt.
+
+Adaptive Wege, Verkehr B, Ausfahrtfreigabe, Motivbestand und Nutzerprofile bleiben erhalten. Dieser Nachtrag verändert keine Spielparameter und löst keinen APK-Bau aus.
