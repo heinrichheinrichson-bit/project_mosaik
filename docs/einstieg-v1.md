@@ -47,3 +47,11 @@ Einführung und Referenzrunde verwenden getrennte Speicherschlüssel und getrenn
 `tools/build-intro.cjs` erzeugt reproduzierbar ausschließlich die sechs neuen IDs. `tests/intro.cjs` prüft Originalpixel, Mengen, alle 18 vollständigen Lösungen, Schlüssel-/Paarereignisse und einen zusätzlichen Bonus-Kontrolllauf. `tests/intro-browser.cjs` prüft Originalscreen, reale vollständige Lösung, Weiter-Schalten, Neuladen, unabhängige Kapitel, Einstellungen, Schlüssel/Rücknahme und atomaren Paarstart. Rohdaten: [Messwerte](einstieg-messwerte.json).
 
 Nächste Abnahme: Verständlichkeit, Motivqualität in der tatsächlichen Spielansicht und empfundenes Tempo selbst spielen. Diese technische Prüfung ist noch keine Nutzerfreigabe und legt die endgültige Store-Reihenfolge nicht fest. Der spätere Abräumbonus sowie weitere zurückgestellte Konzeptpunkte bleiben im Hauptplan enthalten.
+
+## Einführung am Spiel · 12. November 2026
+
+Der erste Grundspiel-Hinweis verdeckt das Mosaik nicht mehr und pausiert das Spiel nicht. Unter der Auswahl steht eine kurze Erklärung; eine aktuell erreichbare vordere Schatulle ist markiert. Die erste erfolgreiche Auswahl entfernt Hinweis und Markierung und merkt die Einführung als gesehen. Ein abgewiesener Zug zählt nicht. Automatik blendet den Hinweis aus, bestätigt ihn aber nicht als selbst gelernt. Die ausführliche Erklärung bleibt über „Regel noch einmal ansehen“ verfügbar; Sonderregeln behalten zunächst ihre bestehenden Erklärungen.
+
+Direkter Wiederholungstest ohne Löschen des Fortschritts: `/?journey=intro-v1-icepop&coach=show`. Diese URL zeigt den Hinweis auch bei bereits gesehenem Einstieg. Keine Änderung an Motiven, Mengen, Stellplätzen, Bewegungsparametern oder gespeicherten Profilen. Der Drei-Spalten-Vergleich ist ein anschließender eigener Schritt.
+
+Geprüft: erster realer Tap mit Boxauswahl und Hinweisende im Browser, ausführliche Hilfe öffnen/schließen, vollständige bestehende Journey-Simulationen einschließlich Schlüssel, Paar und Rücknahme. Der bestehende Intro-Browsertest wurde auf den direkten ersten Tap angepasst; der separate Testbrowser auf Port 9224 war in dieser Sitzung nicht verfügbar, deshalb wurde dieser Test hier nicht ausgeführt.
